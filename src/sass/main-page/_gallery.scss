@@ -1,0 +1,110 @@
+.gallery {
+}
+.container {
+}
+.gallery__wrap {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(max-width:767px) {
+    width: 280px;
+  }
+  @media screen and(min-width:768px) {
+    width: 704px;
+  }
+}
+.gallery__decor {
+  position: absolute;
+  z-index: -1;
+  width: 73.65px;
+  height: 73.65px;
+  background-color: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  display: block;
+  &--a {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 35px;
+    @media screen and(max-width:767px) {
+      transform: translate(-49px, -46px);
+    }
+    @media screen and(min-width:768px) {
+      transform: translateY(-42px);
+    }
+  }
+  &--b {
+    bottom: 50%;
+    right: 0;
+    transform: translate(50%, -40px);
+    border-radius: 50%;
+    @media screen and(min-width:768px) {
+      transform: translate(49px, -61px);
+    }
+  }
+  &--c {
+    bottom: 50%;
+    left: 0;
+    transform: translate(-50%, 25px);
+    border-radius: 25px 0;
+    @media screen and(min-width:768px) {
+      transform: translateY(15px);
+    }
+  }
+  &--d {
+    bottom: 0;
+    right: 0;
+    transform: translate(40px, 52px);
+    border-radius: 0 25px;
+    @media screen and(min-width:768px) {
+      left: 73.55px;
+      transform: translateY(100%);
+      border-radius: 0 35px 0 0;
+    }
+  }
+  &--e {
+    top: 0;
+    right: 0;
+    transform: translateY(34px);
+    border-radius: 35px 0 0 0;
+    @media screen and(max-width:767px) {
+      display: none;
+    }
+  }
+}
+
+.gallery__title {
+  @include fontstyle(24px, null, 1.25, null, null);
+  color: #487996;
+  margin-bottom: 16px;
+  @media screen and(min-width: 768px) {
+    @include fontstyle(36px, null, 1.25, null, null);
+    margin-bottom: 32px;
+  }
+}
+.gallery__list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+.gallery__item {
+  &:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    width: 336px;
+  }
+}
+.gallery__subtitle {
+  @include fontstyle(16px, 300, 1.25, null, null);
+  color: #487996;
+  width: 280px;
+  margin-top: 8px;
+  @media screen and(min-width:768px) {
+    margin-top: 16px;
+    width: 315px;
+  }
+}

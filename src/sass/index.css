@@ -114,4 +114,139 @@ button {
   .container {
     max-width: 1440px;
   }
+}
+
+.gallery__wrap {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .gallery__wrap {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__wrap {
+    width: 704px;
+  }
+}
+
+.gallery__decor {
+  position: absolute;
+  z-index: -1;
+  width: 73.65px;
+  height: 73.65px;
+  background-color: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+.gallery__decor--a {
+  top: 0;
+  left: 0;
+  border-radius: 0 0 35px;
+}
+@media screen and (max-width: 767px) {
+  .gallery__decor--a {
+    transform: translate(-49px, -46px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__decor--a {
+    transform: translateY(-42px);
+  }
+}
+.gallery__decor--b {
+  bottom: 50%;
+  right: 0;
+  transform: translate(50%, -40px);
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .gallery__decor--b {
+    transform: translate(49px, -61px);
+  }
+}
+.gallery__decor--c {
+  bottom: 50%;
+  left: 0;
+  transform: translate(-50%, 25px);
+  border-radius: 25px 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery__decor--c {
+    transform: translateY(15px);
+  }
+}
+.gallery__decor--d {
+  bottom: 0;
+  right: 0;
+  transform: translate(40px, 52px);
+  border-radius: 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__decor--d {
+    left: 73.55px;
+    transform: translateY(100%);
+    border-radius: 0 35px 0 0;
+  }
+}
+.gallery__decor--e {
+  top: 0;
+  right: 0;
+  transform: translateY(34px);
+  border-radius: 35px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .gallery__decor--e {
+    display: none;
+  }
+}
+
+.gallery__title {
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: 336px;
+  }
+}
+
+.gallery__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #487996;
+  width: 280px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__subtitle {
+    margin-top: 16px;
+    width: 315px;
+  }
 }/*# sourceMappingURL=index.css.map */
