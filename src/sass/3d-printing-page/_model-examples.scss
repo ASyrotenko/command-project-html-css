@@ -87,6 +87,8 @@ display: inline-block;
 
 
 .rectangle12 {
+
+    display: block;
 position: absolute;
 width: 73.65px;
 height: 73.65px;
@@ -99,6 +101,6 @@ border-radius: 0px 0px 35px 0px;
 z-index: -100;
 
 @media screen and (min-width: 768px) {
-    opacity: 0;
+   display: none;
   }
 }
