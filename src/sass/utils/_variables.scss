@@ -1,9 +1,16 @@
-$tablet: 768px;
-$desktop: 1440px;
 
-:root {
-    --grid-gap: 20px;
-    --headers-color:rgba(72, 121, 150, 1);
+$primary-text-color: #2b2b2b;
+$accent-color: #487996;
+$bg-white-color: #ffffff;
+$icon-color: #008cef;
+$language-menu-color: #bdbdbd;
+$bg-color: #f5f5fa;
+$accent-bg-color: rgba(72, 121, 150, 0.5);
+$secondary-text-color: #cdcdcd;
+$backdrop-color: rgba(43, 43, 43, 0.8);
+$box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+$button-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+  5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+$card-gap: 32px;
+$figure-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
-    
-}
