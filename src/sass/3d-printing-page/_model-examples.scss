@@ -1,0 +1,92 @@
+
+.model-examples__title {
+    color: var(--headers-color);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.model-examples__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--grid-gap);
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 3 * var(--grid-gap)) / 2);
+}
+
+.model-examples__item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 158px;
+
+    background: #FFFFFF;
+opacity: 0.8;
+box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+border-radius: 50px 0px;
+}
+
+
+
+// .client {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     gap: var(--card-set-gap);
+//     flex-wrap: wrap;
+//     @media screen and (max-width:479px)
+//     {
+//     flex-basis: calc(100% - 1 * var(--card-set-gap) / 2);
+//     justify-content: center;
+//   }}
+  
+// .client__item {
+  
+//     width: 210px;
+//     justify-content: space-between;
+
+//     @media screen and (min-width:$tablet) {
+//       flex-basis: calc((100% - 2* var(--card-set-gap)) / 3);
+//           }
+
+//     @media screen and (min-width:$desctop) {
+      
+//       flex-direction: row;
+//       flex-wrap: nowrap;
+//       max-width: 170px;
+//     }
+//   }
+
+//   .client__icon {
+//     width: 106px;
+//     height: 60px;
+//     fill: var(--icon-fill);
+  
+//     transition: fill 250ms var(--transition-function);
+//       }
+
+//   .client__link {
+//     @include centredFlex();
+    
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 92px;
+  
+//     border: 1px solid var(--border-client-link);
+//     border-radius: 4px;
+  
+//     transition: border 250ms var(--transition-function);
+
+// &:hover .client__icon, &:focus .client__icon  {fill: var(--accent-color);};
+
+// &:hover, &:focus { border: 1px solid var(--accent-color);
+//   cursor: pointer;};
+//   }
+
