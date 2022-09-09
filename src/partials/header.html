@@ -24,7 +24,7 @@
 
       <button
         type="button"
-        class="button-menu js-open-menu"
+        class="button-menu button-menu--desk js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
@@ -35,7 +35,9 @@
           ></use>
         </svg>
       </button>
-      <button class="button-menu button-menu--mobile js-close-menu">
+      <button
+        class="button-menu button-menu--mobile js-close-menu button-hidden"
+      >
         <svg width="24" height="24" aria-label="Перемикач мобільного меню">
           <use
             class="button-menu__icon-close"
@@ -46,7 +48,9 @@
       <div class="menu">
         <ul class="header__menu">
           <li class="menu__item">
-            <a href="./index.html" class="menu__link">Головна</a>
+            <a href="./index.html" class="menu__link menu__link--active"
+              >Головна</a
+            >
           </li>
           <li class="menu__item menu__item--services">
             <a href="./index.html" class="menu__link">Послуги</a>
@@ -94,8 +98,11 @@
         </svg>
       </button>
 
-      <div class="phone-menu-container js-phone-menu-container" id="phone-menu">
-        <div class="mobile-menu">
+      <div
+        class="phone-menu phone-menu-container js-phone-menu-container"
+        id="phone-menu"
+      >
+        <div class="phone-menu__mobile">
           <ul class="phone-menu__nav">
             <li class="phone-menu__item">
               <a href="tel:+380936432288" class="phone-menu__link"

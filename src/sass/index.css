@@ -226,6 +226,10 @@ button {
   fill: #487996;
 }
 
+.button-hidden {
+  display: none;
+}
+
 .button-contacts {
   background-color: transparent;
 }
@@ -267,6 +271,7 @@ button {
 .header__buttons {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 @media (min-width: 768px) {
@@ -318,7 +323,6 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #ffffff;
@@ -392,6 +396,9 @@ button {
 }
 
 .mobile-menu {
+  padding-top: 112px;
+  padding-right: 20px;
+  padding-left: 20px;
   overflow-y: scroll;
   width: 100%;
   height: 100%;
@@ -411,7 +418,13 @@ button {
   margin-bottom: 24px;
 }
 .mobile-menu__link--current {
-  color: 0;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: transparent;
+  -webkit-text-stroke: 1px #487996;
 }
 .mobile-submenu {
   padding-top: 24px;

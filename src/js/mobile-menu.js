@@ -6,6 +6,15 @@
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+
+    if (!isMenuOpen) {
+      openMenuBtn.classList.add('button-hidden');
+      closeMenuBtn.classList.remove('button-hidden');
+    } else {
+      openMenuBtn.classList.remove('button-hidden');
+      closeMenuBtn.classList.add('button-hidden');
+    }
+
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
