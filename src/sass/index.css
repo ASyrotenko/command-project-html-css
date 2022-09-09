@@ -142,7 +142,7 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer__addres {
     margin-right: 0;
   }
@@ -217,10 +217,21 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  text-align: center;
   letter-spacing: 0.01em;
   color: #2b2b2b;
   padding-bottom: 8px;
+}
+@media screen and (max-width: 767px) {
+  .footer__item,
+.footer-soc__item {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__item,
+.footer-soc__item {
+    text-align: start;
+  }
 }
 
 .addres-link__adres {
@@ -239,7 +250,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .addres-link__adres {
-    text-align: start;
+    text-align: end;
   }
 }
 
