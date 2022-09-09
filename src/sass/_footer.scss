@@ -39,7 +39,7 @@
 .footer-logo__wrap {
   display: block;
   margin-bottom: 20px;
-  @media screen and (max-width: 1440px) {
+  @media screen and (min-width: 1440px) {
     margin-right: 277px;
     margin-left: 0;
     margin-bottom: 0;
