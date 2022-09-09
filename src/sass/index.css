@@ -121,6 +121,10 @@ button {
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 }
 
+.footer-conteiner {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: 1439px) {
   .footer-conteiner {
     padding-top: 32px;
@@ -199,7 +203,12 @@ button {
 }
 
 .footer-navigation__wrap {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer-navigation__wrap {
+    display: flex;
+  }
 }
 
 .footer__item,
