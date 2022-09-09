@@ -1,0 +1,117 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Light.eot");
+  src: local("Cera Pro Light"), local("CeraPro-Light"), url("../fonts/CeraPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.eot");
+  src: local("Cera Pro Medium"), local("CeraPro-Medium"), url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.eot");
+  src: local("Cera Pro Bold"), local("CeraPro-Bold"), url("../fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.eot");
+  src: local("Cera Pro Regular"), local("CeraPro-Regular"), url("../fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.eot");
+  src: local("Caviar Dreams"), local("CaviarDreams"), url("../fonts/CaviarDreams.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams.woff2") format("woff2"), url("../fonts/CaviarDreams.woff") format("woff"), url("../fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams-Bold.eot");
+  src: local("Caviar Dreams Bold"), local("CaviarDreams-Bold"), url("../fonts/CaviarDreams-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams-Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.woff") format("woff"), url("../fonts/CaviarDreams-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Cera Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 1px solid tomato;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}/*# sourceMappingURL=index.css.map */
