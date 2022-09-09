@@ -35,3 +35,7 @@ $figure-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     @content;
   }
 }
+
+@mixin transition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

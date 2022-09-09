@@ -1,0 +1,179 @@
+<header class="header">
+  <div class="header__container container">
+    <nav class="header__nav">
+      <a href="" class="logo-link">
+        <div class="logo">
+          <img
+            srcset="
+              ./images/logo/logo101.png 101w,
+              ./images/logo/logo125.png 125w,
+              ./images/logo/logo192.png 192w,
+              ./images/logo/logo202.png 202w,
+              ./images/logo/logo250.png 250w,
+              ./images/logo/logo303.png 303w,
+              ./images/logo/logo375.png 375w,
+              ./images/logo/logo384.png 384w,
+              ./images/logo/logo576.png 576w
+            "
+            sizes="(min-width: 1440px) 192px, (min-width: 768px) 125px, 101px"
+            src="./images/logo/logo192.png"
+            alt="Логотип сайту"
+          />
+        </div>
+      </a>
+
+      <button
+        type="button"
+        class="button-menu js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32" height="32" aria-label="Перемикач мобільного меню">
+          <use
+            class="button-menu__burger-icon"
+            href="./images/icons.svg#icon-burger-menu"
+          ></use>
+        </svg>
+      </button>
+      <button class="button-menu button-menu--mobile js-close-menu">
+        <svg width="24" height="24" aria-label="Перемикач мобільного меню">
+          <use
+            class="button-menu__icon-close"
+            href="./images/icons.svg#icon-menu-close"
+          ></use>
+        </svg>
+      </button>
+      <div class="menu">
+        <ul class="header__menu">
+          <li class="menu__item">
+            <a href="" class="menu__link">Головна</a>
+          </li>
+          <li class="menu__item menu__item--services">
+            <a href="" class="menu__link">Послуги</a>
+            <ul class="menu__submenu submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">3D Моделювання</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">3D Сканування</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">3D Друк</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Замовити</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__buttons">
+      <button
+        type="button"
+        class="button-phone-menu js-open-phone-menu"
+        aria-expanded="false"
+        aria-controls="phone-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          aria-label="Перемикач меню телефонних номерів"
+        >
+          <use
+            class="phone-menu__icon"
+            href="./images/icons.svg#icon-phone-button"
+          ></use>
+        </svg>
+      </button>
+
+      <div class="phone-menu-container js-phone-menu-container" id="phone-menu">
+        <div class="mobile-menu">
+          <ul class="phone-menu__nav">
+            <li class="phone-menu__item">
+              <a href="tel:+380936432288" class="phone-menu__link"
+                >+38 093 643 22 88</a
+              >
+            </li>
+            <li class="phone-menu__item">
+              <a href="tel:+380503454423" class="phone-menu__link"
+                >+38 050 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__language-menu language-menu">
+        <button class="language-menu__btn">UKR</button>
+        <button class="language-menu__btn active">ENG</button>
+        <button class="language-menu__btn">RUS</button>
+      </div>
+      <div class="phone-nav">
+        <ul class="phone-nav__list">
+          <li class="phone-nav__item">
+            <a href="tel:+380936432288" class="phone-nav__link">
+              <svg width="14px" height="14px" class="phone-nav__icon">
+                <use href="./images/icons.svg#icon-call"></use>
+              </svg>
+              +38 093 643 22 88</a
+            >
+          </li>
+          <li class="phone-nav__item">
+            <a href="tel:+380503454423" class="phone-nav__link">
+              <svg width="14px" height="14px" class="phone-nav__icon">
+                <use href="./images/icons.svg#icon-call"></use>
+              </svg>
+              +38 050 345 44 23</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-menu">
+    <ul class="mobile-menu__nav">
+      <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link mobile-menu__link--current"
+          >ГОЛОВНА</a
+        >
+      </li>
+      <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">ПОСЛУГИ</a>
+        <ul class="mobile-menu__submenu mobile-submenu">
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">3D Моделювання</a>
+          </li>
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">3D Сканування</a>
+          </li>
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">3D Друк</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">ЗАМОВИТИ</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./contacts.html" class="mobile-menu__link">КОНТАКТИ</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+
+<script defer src="./js/mobile-menu.js"></script>
+<script defer src="./js/tel-menu.js"></script>
+<script defer src="./js/language-menu.js"></script>
