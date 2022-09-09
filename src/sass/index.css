@@ -134,14 +134,27 @@ button {
   }
 }
 
-.footer-logo_img {
+.footer-logo {
+  max-width: 192px;
+  max-height: 48px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-logo {
-  max-width: 192px;
-  max-height: 48px;
+.footer-logo__wrap {
+  margin-bottom: 19px;
+}
+
+.footer__navigation {
+  margin-bottom: 24px;
+}
+
+.footer-cont {
+  margin-bottom: 24px;
+}
+
+.addres-list-footer:first-child {
+  margin-bottom: 24px;
 }
 
 .footer__item,

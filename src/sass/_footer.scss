@@ -33,10 +33,8 @@
 .footer__navigation {
   margin-bottom: 24px;
 }
-.footer-cont {
-  margin-bottom: 24px;
-}
-.addres-list-footer:first-child {
+.footer-cont,
+.addres-footer__tel {
   margin-bottom: 24px;
 }
 
@@ -50,6 +48,7 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: #2b2b2b;
+  padding-bottom: 8px;
 }
 
 .addres-link__footer {
