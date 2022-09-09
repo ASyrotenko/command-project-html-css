@@ -1,31 +1,32 @@
-<section class="order">
-  <div class="container">
-    <div class="order-frame">
-      <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
-      <form class="order-form">
-        <div class="order-form__field">
-          <input
-            type="text"
-            class="order-form__input"
-            name="client-name"
-            id="client-name"
-            placeholder="Імʼя"
-            autofocus
-          />
-        </div>
-        <div class="order-form__field">
-          <input
-            type="mail"
-            class="order-form__input"
-            name="client-mail"
-            id="client-mail"
-            placeholder="Email"
-          />
-        </div>
-        <div class="order-form__field">
+<!-- <section class="order"> -->
+<div class="container">
+  <div class="order-frame">
+    <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
+    <form class="order-form">
+      <div class="order-form__field">
+        <input
+          type="text"
+          class="order-form__input"
+          name="client-name"
+          id="client-name"
+          placeholder="Імʼя"
+          autofocus
+        />
+      </div>
+      <div class="order-form__field">
+        <input
+          type="mail"
+          class="order-form__input"
+          name="client-mail"
+          id="client-mail"
+          placeholder="Email"
+        />
+      </div>
+      <div class="order-form__field field--select">
+        <div class="select-wraper">
           <select
-            class="order-form__input"
-            name="client-order"
+            class="order-form__select"
+            name="select-type-plastic"
             id="client-order"
           >
             <option value="1">Види пластика</option>
@@ -33,10 +34,12 @@
             <option value="3">Другий вид</option>
           </select>
         </div>
-        <div class="order-form__field">
+      </div>
+      <div class="order-form__field">
+        <div class="select-wraper">
           <select
             class="order-form__select"
-            name="client-order-print"
+            name="select-print-quality "
             id="client-order-print"
           >
             <option value="1">Якість друку</option>
@@ -46,10 +49,12 @@
             <option value="6">Труднощі у виборі - ми допоможемо</option>
           </select>
         </div>
-        <div class="order-form__field">
+      </div>
+      <div class="order-form__field">
+        <div class="select-wraper">
           <select
             class="order-form__select"
-            name="client-order-print"
+            name="select-color"
             id="client-order-print"
           >
             <option value="2">Колір</option>
@@ -58,29 +63,29 @@
             <option value="4">Білий колір</option>
           </select>
         </div>
-        <div class="order-form__field">
-          <label for="client-text" class="order-form__label"
-            >Повідомлення</label
-          >
-          <textarea
-            type="text"
-            class="order-form__text"
-            name="client-text"
-            id="client-text"
-            placeholder="Залишіть своє повідомлення"
-          />
-          <svg class="textarea-icon" width="24" height="20">
-            <use href="#"></use>
-          </svg>
-        </div>
-        <div class="order-form__field">
-          <p class="textarea-notice">
-            *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
-          </p>
-        </div>
+      </div>
+      <div class="order-form__field field--textarea">
+        <label for="client-text" class="order-form__label">Повідомлення</label>
+        <textarea
+          type="text"
+          class="order-form__text"
+          name="client-text"
+          id="client-text"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
 
-        <button class="order-form__button" type="submit">Відправити</button>
-      </form>
-    </div>
+        <svg class="textarea-icon" width="24" height="20">
+          <use href="#"></use>
+        </svg>
+      </div>
+      <div class="order-form__field field--textarea-notice">
+        <p class="textarea-notice">
+          *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+        </p>
+      </div>
+
+      <button class="order-form__button" type="submit">Відправити</button>
+    </form>
   </div>
-</section>
+</div>
+<!-- </section> -->
