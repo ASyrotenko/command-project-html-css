@@ -15,10 +15,19 @@
   @media screen and (max-width: 1439px) {
     padding-top: 32px;
     padding-bottom: 32px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1440px) {
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: start;
+  }
+}
+.footer__addres {
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
   }
 }
 .footer-logo {
@@ -29,18 +38,32 @@
 }
 .footer-logo__wrap {
   margin-bottom: 20px;
+  @media screen and (max-width: 1440px) {
+    margin-right: 277px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 .footer__navigation {
   @media screen and (max-width: 767px) {
-  margin-bottom: 24px;
-}
-@media screen and (min-width: 768px){
-  margin-bottom: 54px;
-  
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 103px;
+  }
 }
 .footer-cont,
 .addres-footer__tel {
   margin-bottom: 24px;
+}
+.footer-cont {
+  @media screen and (min-width: 1440px) {
+    margin-right: 106px;
+  }
 }
 
 .footer-navigation__container {
@@ -49,9 +72,12 @@
     justify-content: space-between;
   }
 }
+.footer-navigation__wrap {
+  display: flex;
+}
+
 .footer__item,
-.footer-soc__item,
-.addres-link__adres {
+.footer-soc__item {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -61,16 +87,35 @@
   color: #2b2b2b;
   padding-bottom: 8px;
 }
-
+.addres-link__adres {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
+  color: #2b2b2b;
+  padding-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
 .addres-link__footer {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
-  text-align: center;
   // text-transform: capitalize;
   color: #487996;
   padding-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
 }
 link {
   list-style: none;
