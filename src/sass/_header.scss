@@ -72,8 +72,8 @@
     padding-bottom: 10px;
   }
   @media screen and (min-width: 1440px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 .button-menu {
@@ -186,6 +186,7 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  pointer-events: none;
 
   &__item {
   }
@@ -193,11 +194,14 @@
   &__link {
   }
 }
-.menu__item--services:hover {
+.menu__item--services:hover,
+.menu__item--services:focus {
   .submenu {
     opacity: 1;
+    pointer-events: initial;
   }
 }
+
 .menu-lang {
 }
 .contacts {
