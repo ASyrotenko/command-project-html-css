@@ -42,8 +42,13 @@
 }
 
 .more-foto__item{
-  width: 100%;
+  max-width: 100%;
   @media screen and (min-width: 768px) {
+    width: calc((100% - 64px) / 3);
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
     width: calc((100% - 64px) / 3);
   }
 
@@ -54,13 +59,21 @@
 }
 
 .more-foto__item:nth-last-child(-n + 9) {
-  display: none;
+
+  @media screen and (max-width: 768px) {
+     display: none;
+  }
+ 
 }
 
 .more-foto__item:nth-child(3) {
   margin-bottom: 0;
 }
 
+.card{
+  max-width: 100%;
+  height: auto;
+}
 
 /* More foto boxs*/
 .more-foto__box1{
