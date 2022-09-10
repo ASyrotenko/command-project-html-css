@@ -114,4 +114,21 @@ button {
   .container {
     max-width: 1440px;
   }
+}
+
+.connect {
+  width: 280px;
+  height: 580px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.connect__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+  color: #487996;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
