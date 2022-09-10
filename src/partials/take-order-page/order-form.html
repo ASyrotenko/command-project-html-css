@@ -3,24 +3,29 @@
   <div class="order-frame">
     <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
     <form class="order-form">
-      <div class="order-form__field">
+      <div class="order-form__field field--input">
         <input
           type="text"
-          class="order-form__input"
+          class="order-form__input input--form"
           name="client-name"
           id="client-name"
-          placeholder="Імʼя"
-          autofocus
+          placeholder=""
         />
+        <label for="client-name" class="order-form__label label--input"
+          >Імʼя
+        </label>
       </div>
-      <div class="order-form__field">
+      <div class="order-form__field field--input">
         <input
           type="mail"
-          class="order-form__input"
+          class="order-form__input input--form"
           name="client-mail"
           id="client-mail"
-          placeholder="Email"
+          placeholder=""
         />
+        <label for="client-mail" class="order-form__label label--input"
+          >Email
+        </label>
       </div>
       <div class="order-form__field field--select">
         <div class="select-wraper">
@@ -72,8 +77,7 @@
           name="client-text"
           id="client-text"
           placeholder="Залишіть своє повідомлення"
-        >
-        </textarea>
+        ></textarea>
         <div class="attachment-wrap">
           <input
             class="attach-file hidden"

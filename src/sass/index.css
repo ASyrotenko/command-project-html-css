@@ -202,29 +202,15 @@ button {
   }
 }
 
-.order-form__input::-moz-placeholder {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  color: #2b2b2b;
-  padding-bottom: 4px;
+.field--input {
+  position: relative;
 }
 
-.order-form__input:-ms-input-placeholder {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  color: #2b2b2b;
-  padding-bottom: 4px;
-}
-
-.order-form__input::placeholder {
+.label--input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -235,18 +221,14 @@ button {
   padding-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
-  .order-form__input::-moz-placeholder {
+  .label--input {
     font-size: 18px;
     line-height: 1.11;
   }
-  .order-form__input:-ms-input-placeholder {
-    font-size: 18px;
-    line-height: 1.11;
-  }
-  .order-form__input::placeholder {
-    font-size: 18px;
-    line-height: 1.11;
-  }
+}
+
+.input-form:focus + .label--input {
+  transform: translateY(-20px);
 }
 
 .order-form__text {
