@@ -72,11 +72,26 @@
           name="client-text"
           id="client-text"
           placeholder="Залишіть своє повідомлення"
-        ></textarea>
-
-        <svg class="textarea-icon" width="24" height="20">
-          <use href="#"></use>
-        </svg>
+        >
+        </textarea>
+        <div class="attachment-wrap">
+          <input
+            class="attach-file hidden"
+            name="attachment"
+            type="file"
+            id="upload-file"
+            multiple
+          />
+          <label for="upload-file" class="attach-label">
+            <svg class="textarea-icon">
+              <use
+                href="/src/images/icons.svg#icon-paper-clip"
+                weight="21"
+                height="20"
+              ></use>
+            </svg>
+          </label>
+        </div>
       </div>
       <div class="order-form__field field--textarea-notice">
         <p class="textarea-notice">

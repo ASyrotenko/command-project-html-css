@@ -117,7 +117,7 @@ button {
 }
 
 .order-frame {
-  width: 280px;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -357,4 +357,33 @@ button {
     font-size: 18px;
     line-height: 1.11;
   }
+}
+
+.field--textarea {
+  position: relative;
+}
+
+.attachment-wrap {
+  display: flex;
+  position: absolute;
+  bottom: -140px;
+  right: -120px;
+}
+
+.order-form__button {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #487996;
+  padding: 16px 83.5px;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
 }/*# sourceMappingURL=index.css.map */
