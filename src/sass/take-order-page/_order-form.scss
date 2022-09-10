@@ -101,7 +101,8 @@
   }
 }
 
-.input--form:focus + .label--input {
+.input--form:focus + .label--input,
+.input--form:not(:placeholder-shown) + .label--input {
   transform: translateY(-32px);
   font-size: 14px;
   line-height: 1.42;

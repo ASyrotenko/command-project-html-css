@@ -2,14 +2,14 @@
   <div class="container order--container">
     <div class="order-frame">
       <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
-      <!-- <form class="order-form"> -->
+      <!-- <form class="" autocomplete="off"> -->
       <div class="order-form__field field--input">
         <input
           type="text"
           class="order-form__input input--form"
           name="client-name"
           id="client-name"
-          placeholder=""
+          placeholder=" "
         />
         <label for="client-name" class="order-form__label label--input"
           >Імʼя
@@ -17,11 +17,11 @@
       </div>
       <div class="order-form__field field--input">
         <input
-          type="mail"
+          type="email"
           class="order-form__input input--form"
           name="client-mail"
           id="client-mail"
-          placeholder=""
+          placeholder=" "
         />
         <label for="client-mail" class="order-form__label label--input"
           >Email
@@ -95,12 +95,8 @@
           multiple
         />
         <label for="upload-file" class="attach-label">
-          <svg class="textarea-icon">
-            <use
-              href="/src/images/icons.svg#icon-paper-clip"
-              wight="21"
-              height="20"
-            ></use>
+          <svg class="textarea-icon" wight="21" height="20">
+            <use href="/src/images/icons.svg#icon-paper-clip"></use>
           </svg>
         </label>
       </div>
@@ -109,7 +105,6 @@
           *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
         </p>
       </div>
-
       <button class="order-form__button" type="submit">Відправити</button>
       <!-- </form> -->
       <!--  -->
