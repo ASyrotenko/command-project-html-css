@@ -5,6 +5,7 @@
 }
 .create__title {
   font-size: 16px;
+  max-width: 190px;
   line-height: 1.25;
   text-transform: uppercase;
 
@@ -14,9 +15,17 @@
 }
 
 .create__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+  margin-bottom: 40px;
 }
 .create__item {
+  @media screen and (max-width: 320px) {
+    width: calc((100% - 32px) / 2);
+  }
 }
+
 .btn {
 }
 .btn-order__link {
