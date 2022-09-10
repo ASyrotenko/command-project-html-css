@@ -19,6 +19,9 @@
 }
 
 .more-foto__item {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
+.more-foto__item:nth-last-child(-n + 9) {
+  display: none;
+}
