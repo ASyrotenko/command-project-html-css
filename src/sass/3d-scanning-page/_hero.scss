@@ -1,8 +1,10 @@
 .scanning-page {
     position: relative;
-    padding-top: 23px;
+    padding-top: 100px;
     
 }
+
+
 
 
 .scanning-page_list {
@@ -10,6 +12,17 @@
     display: flex;
     flex-wrap: wrap;
 
+}
+
+.scanning-page_item{
+    position: relative;
+}
+
+
+.image {
+    position: absolute;
+    top: 180px;
+    right: 650px;
 }
 
 .scanning-page_item {
@@ -21,7 +34,7 @@
     line-height: 1.3;
     color: #2B2B2B;
     width: 100%;
-    width: calc((100% - 2 * 36px) / 2);
+    width: calc((100% - 2 * 72px) / 2);
     }
     
     //flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
@@ -33,6 +46,11 @@
     
     .scanning-page_item:nth-child(1) {
         margin-bottom: 24px;
+    }
+
+    .scanning-page_item:nth-child(2) {
+        display: block;
+        height: 92px;
     }
 
 .scanning-page_title {
@@ -50,21 +68,21 @@
 
 .box1 {
     position: absolute;
-    left: 35px;
-    top: 190px;
+    left: 235px;
+    top: 80px;
     width: 82px;
     height: 78px;
-    background-color: red;
+    background-color:  #FFFFFF;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 72px 0px;
 }
 
 .box2 {
     position: absolute;
-    left: 1408.32px;
-    top: 0;
+    right: 250px;
+    top: 70px;
 
-background: green;
+background:  #FFFFFF;
 /* 1 */
 
 box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -77,10 +95,10 @@ transform: rotate(90deg);
 
 .box3 {
     position: absolute;
-    left: 1272px;
+    right: 250px;
     top: 552px;
     
-    background: blue;
+    background:  #FFFFFF;
     /* 1 */
     
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
