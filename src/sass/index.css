@@ -119,8 +119,23 @@ button {
 .more-foto {
   position: relative;
   max-width: 1440px;
+}
+
+.more-foto-pd {
   padding-top: 60px;
   padding-bottom: 78px;
+}
+@media screen and (max-width: 768px) {
+  .more-foto-pd {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .more-foto-pd {
+    padding-top: 20px;
+    padding-bottom: 60.5px;
+  }
 }
 
 .more-foto__title {
@@ -134,6 +149,20 @@ button {
   font-size: 48px;
   line-height: 1.25;
   color: #487996;
+}
+@media screen and (max-width: 768px) {
+  .more-foto__title {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .more-foto__title {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
 }
 
 .masonry {
@@ -199,6 +228,24 @@ button {
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 0px 72px;
 }
+@media screen and (max-width: 768px) {
+  .box1 {
+    width: 73.65px;
+    height: 74.05px;
+    top: 43.55px;
+    left: 32px;
+    border-radius: 0px 0px 0px 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box1 {
+    width: 73.65px;
+    height: 74.05px;
+    top: -4.17px;
+    left: -18px;
+    border-radius: 0px 0px 0px 35px;
+  }
+}
 
 .box2 {
   z-index: -1;
@@ -212,6 +259,24 @@ button {
   border-radius: 72px 0px;
   transform: rotate(90deg);
 }
+@media screen and (max-width: 768px) {
+  .box2 {
+    width: 74.05px;
+    height: 73.65px;
+    top: 13px;
+    left: 662px;
+    border-radius: 25px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box2 {
+    width: 73.65px;
+    height: 73.65px;
+    top: -41px;
+    left: 267px;
+    border-radius: 25px 0px;
+  }
+}
 
 .box3 {
   z-index: -1;
@@ -223,6 +288,20 @@ button {
   background: #FFFFFF;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 72px;
+}
+@media screen and (max-width: 768px) {
+  .box3 {
+    width: 73.65px;
+    height: 74.05px;
+    top: 369.23px;
+    left: -17px;
+    border-radius: 72px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box3 {
+    display: none;
+  }
 }
 
 .box4 {
@@ -236,6 +315,20 @@ button {
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 72px 0px;
 }
+@media screen and (max-width: 768px) {
+  .box4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box4 {
+    width: 73.65px;
+    height: 73.65px;
+    top: 285.84px;
+    left: 261px;
+    border-radius: 25px 0px;
+  }
+}
 
 .box5 {
   position: absolute;
@@ -246,4 +339,19 @@ button {
   background: #FFFFFF;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 0px 72px;
+}
+@media screen and (max-width: 768px) {
+  .box5 {
+    z-index: -1;
+    width: 73.65px;
+    height: 74.05px;
+    top: -30px;
+    left: 105.65px;
+    border-radius: 0px 35px 0px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box5 {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
