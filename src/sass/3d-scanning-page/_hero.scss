@@ -1,21 +1,33 @@
+// Hero / 3Dscanning-page
+
 .scanning-page {
     position: relative;
-    padding-top: 100px;
+    padding-top: 190px;
+    padding-bottom: 50px;
     
 }
-
-
-
 
 .scanning-page_list {
-    
     display: flex;
     flex-wrap: wrap;
-
 }
 
-.scanning-page_item{
+.container {
     position: relative;
+}
+
+
+.img {
+    position: absolute;
+    z-index: -1;
+    top: 176px;
+    right: 285px;
+    background-image: url(../images/3d-scanning-page/Scanning_photo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 435px;
+    height: 286px;
 }
 
 
@@ -26,9 +38,6 @@
 }
 
 .scanning-page_item {
-    
-    font-family: 'Cera Pro';
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.3;
@@ -36,26 +45,19 @@
     width: 100%;
     width: calc((100% - 2 * 72px) / 2);
     }
-    
-    //flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
 
-    .scanning-page_item:nth-child(2n + 1) {
-        margin-right: 72px;
+.scanning-page_item:nth-child(2n + 1) {
+    margin-right: 72px;
         
     }
     
     .scanning-page_item:nth-child(1) {
-        margin-bottom: 24px;
+    margin-bottom: 24px;
     }
 
-    .scanning-page_item:nth-child(2) {
-        display: block;
-        height: 92px;
-    }
+
 
 .scanning-page_title {
-    font-family: 'Cera Pro';
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -68,8 +70,9 @@
 
 .box1 {
     position: absolute;
-    left: 235px;
-    top: 80px;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
     width: 82px;
     height: 78px;
     background-color:  #FFFFFF;
@@ -77,30 +80,30 @@
     border-radius: 0px 0px 72px 0px;
 }
 
+.scanning-page_container {
+    padding-left: 149px;
+    padding-right: 149px;
+}
+
 .box2 {
     position: absolute;
-    right: 250px;
-    top: 70px;
-
-background:  #FFFFFF;
-/* 1 */
-
-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-border-radius: 0px 0px 72px 0px;
-transform: rotate(90deg);
-
+    z-index: -1;
+    right: 0px;
+    top: -38px;
+    background:  #FFFFFF;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
     width: 144px;
     height: 136.83px;
 }
 
 .box3 {
     position: absolute;
-    right: 250px;
-    top: 552px;
-    
+    z-index: -1;    
+    right: 0px;
+    top: 362px;
     background:  #FFFFFF;
-    /* 1 */
-    
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px 0px;
     width: 136.83px;
