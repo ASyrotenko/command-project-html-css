@@ -1,4 +1,5 @@
 .more-foto__title{
+  margin-bottom: 16px;
   font-family: 'Cera Pro';
   font-style: normal;
   font-weight: 700;
@@ -11,5 +12,13 @@
 .more-foto__container{
   padding-top: 20px;
   padding-bottom: 60.5px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+.more-foto__item {
+  margin-bottom: 16px;
 }
 
