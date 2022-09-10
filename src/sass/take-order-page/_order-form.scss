@@ -227,6 +227,11 @@
   box-shadow: 0px 0px 0px 4px rgba(176, 198, 225, 0.6);
 }
 
+// .dropdown__button:::after {
+//   content: '';
+//   transform: rotate(180deg);
+// }
+
 .dropdown__button::after {
   content: '';
   position: absolute;
