@@ -1,3 +1,7 @@
+.order-container {
+    position: relative;
+    
+}
 .oreder-hero {
   padding-top: 94px;
   padding-bottom: 20px;
@@ -43,11 +47,19 @@
 }
 
 .main-pic {
-  display: block;
-  border-radius: 15px;
-  //   width: 100%;
-  height: 100%;
+       
+    max-width: 100%;
+    border-radius: 15px;
+  
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 
 .order-description {
   @media screen and (min-width: 768px) {
@@ -149,7 +161,7 @@
   height: 73.65px;
 
   left: -29px;
-  top: 294.61px;
+  top: 194.61px;
 
   background-color: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -160,7 +172,7 @@
   @media screen and (min-width: 768px) {
     width: 71.41px;
     height: 63.79px;
-    top: 83px;
+    top: -22px;
     left: 665px;
     border-radius: 0px 0px 0px 35px;
   }
@@ -168,7 +180,7 @@
   @media screen and (min-width: 1440px) {
     height: 83px;
     width: 137px;
-    top: 152px;
+    top: -38px;
     left: 1271px;
 
     border-radius: 0px 0px 0px 72px;
@@ -181,7 +193,7 @@
     position: absolute;
     width: 82px;
     height: 78px;
-    top: 190px;
+    top: 0;
     left: 35px;
 
     background: #ffffff;
