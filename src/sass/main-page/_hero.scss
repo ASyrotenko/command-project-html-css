@@ -1,0 +1,33 @@
+.main-hero {
+  padding-top: 92px;
+  padding-bottom: 20px;
+}
+.container {
+}
+.main-hero__title {
+  margin-bottom: 32px;
+  font-family: 'Caviar Dreams';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  color: $primary-text-color;
+  @media screen and(max-width:320px) {
+    max-width: 268px;
+  }
+}
+
+.main-hero__list {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.main-hero__item {
+}
+.main-hero__text {
+  font-family: 'Caviar Dreams';
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: $primary-text-color;
+}
