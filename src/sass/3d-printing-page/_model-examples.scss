@@ -1,6 +1,3 @@
-:root {
-  --headers-color: #487996;
-}
 
 .model-examples {
   // outline: 1px solid green;
@@ -81,12 +78,14 @@
   align-items: center;
   justify-content: space-between;
 
-  // min-width: 130px;
-  // width: calc((100% - 16px) / 2);
-  width: 130px;
-  height: 158px;
+  min-width: 130px;
+  height: auto;
+  width: calc((100% - 20px) / 2);
+  // width: 130px;
+  // height: 158px;
 
-  padding: 17px 17px 0 17px;
+  // padding: 17px 17px 0 17px;
+  padding: 17px;
 
   background-color: #ffffff;
   opacity: 0.8;
