@@ -51,22 +51,26 @@
             <a href="./index.html" class="menu__link">Головна</a>
           </li>
           <li class="menu__item menu__item--services">
-            <a href="./index.html" class="menu__link">Послуги</a>
-            <ul class="menu__submenu submenu">
-              <li class="submenu__item">
-                <a href="./3d-modeling.html" class="submenu__link"
-                  >3D Моделювання</a
-                >
-              </li>
-              <li class="submenu__item">
-                <a href="./3d-scanning.html" class="submenu__link"
-                  >3D Сканування</a
-                >
-              </li>
-              <li class="submenu__item">
-                <a href="./3d-printing.html" class="submenu__link">3D Друк</a>
-              </li>
-            </ul>
+            <a href="./index.html" class="menu__link menu__link--services"
+              >Послуги</a
+            >
+            <div class="menu__box">
+              <ul class="menu__submenu submenu">
+                <li class="submenu__item">
+                  <a href="./3d-modeling.html" class="submenu__link"
+                    >3D Моделювання</a
+                  >
+                </li>
+                <li class="submenu__item">
+                  <a href="./3d-scanning.html" class="submenu__link"
+                    >3D Сканування</a
+                  >
+                </li>
+                <li class="submenu__item">
+                  <a href="./3d-printing.html" class="submenu__link">3D Друк</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="menu__item">
             <a href="./take-order.html" class="menu__link">Замовити</a>
@@ -115,11 +119,32 @@
           </ul>
         </div>
       </div>
-      <div class="header__language-menu language-menu">
-        <button class="language-menu__btn">UKR</button>
-        <button class="language-menu__btn active">ENG</button>
-        <button class="language-menu__btn">RUS</button>
+      <div class="language-container">
+        <button
+          type="button"
+          class="lang-menu__btn js-open-lang-menu"
+          aria-expanded="false"
+          aria-controls="lang-menu"
+        >
+          ENG
+        </button>
+        <div
+          class="lang-menu lang-menu-container js-lang-menu-container"
+          id="lang-menu"
+        >
+          <div class="lang-menu__mobile">
+            <ul class="lang-menu__nav">
+              <li class="lang-menu__item">
+                <a href="./index.html" class="lang-menu__link">UKR</a>
+              </li>
+              <li class="lang-menu__item">
+                <a href="./index.html" class="lang-menu__link">POL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <div class="phone-nav">
         <ul class="phone-nav__list">
           <li class="phone-nav__item">
