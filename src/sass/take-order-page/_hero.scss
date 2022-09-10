@@ -1,18 +1,17 @@
-
 .oreder-hero {
-    padding-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 20px;
 }
 .order-hero__header {
-    margin-bottom: 16px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: $accent-color;
-    width: 100%;
-    text-align: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $accent-color;
+  width: 100%;
+  text-align: center;
 
-    
   @media screen and (min-width: 768px) {
     font-size: 36px;
     text-align: left;
@@ -20,10 +19,90 @@
   @media screen and (min-width: 1440px) {
     font-size: 48px;
     margin-bottom: 24px;
-    
+  }
+}
+.order-hero__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
   }
 }
 
 .main-pic {
-    border-radius: 15px;
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.order-description {
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+}
+.order-description__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 16px;
+  color: $primary-text-color;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    font-weight: 400;
+  }
+}
+
+.order-gallery {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.box {
+  width: 203px;
+  height: 203px;
+}
+
+.gallery-pic1 {
+  background-image: url('../images/take-order-page/galery-image1-1x.jpg');
+  background-size: 203px 203px;
+
+  border-radius: 0px 72px 72px 0px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery-pic1 {
+    background-image: url('../images/take-order-page/galery-image1@2x.jpg');
+  }
+}
+
+.gallery-pic2 {
+  background-image: url('../images/take-order-page/galery-image2-1x.jpg');
+  background-size: 203px 203px;
+
+  border-radius: 72px 0px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery-pic2 {
+    background-image: url('../images/take-order-page/galery-image2@2x.jpg');
+  }
+}
+
+.gallery-pic3 {
+  background-image: url('../images/take-order-page/galery-image3-1x.jpg');
+  background-size: 203px 203px;
+  border-radius: 0px 0px 72px 0px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery-pic3 {
+    background-image: url('../images/take-order-page/galery-image3@2x.jpg');
+  }
 }
