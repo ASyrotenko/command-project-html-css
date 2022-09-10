@@ -1,3 +1,7 @@
+.more-foto {
+  position: relative;
+}
+
 .more-foto__title{
   margin-bottom: 16px;
   font-family: 'Cera Pro';
@@ -16,12 +20,91 @@
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+
+.more-foto__list{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.more-foto__item{
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 64px) / 3);
+  }
+
 }
 
 .more-foto__item {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .more-foto__item:nth-last-child(-n + 9) {
   display: none;
+}
+
+.more-foto__item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+
+/* More foto boxs*/
+.more-foto__box1{
+  position: absolute;
+  z-index: -1;
+
+  width: 73.65px;
+  height: 73.65px;
+  left: -18px;
+  top: -4.17px;
+
+  background: #FFFFFF;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+}
+
+.more-foto__box2 {
+  position: absolute;
+  z-index: -1;
+
+  width: 73.65px;
+  height: 73.65px;
+  right: -20.65px;
+  top: -41px;
+
+  background: #FFFFFF;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+}
+
+.more-foto__box3 {
+  position: absolute;
+  z-index: -1;  
+
+  width: 73.65px;
+  height: 73.65px;
+  right: -14.65px;
+  top: 285.84px;
+
+  background: #FFFFFF;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px
 }
