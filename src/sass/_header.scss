@@ -71,7 +71,7 @@
 }
 .button-menu {
   fill: $accent-color;
-  filter: none;
+
   position: absolute;
   left: 50%;
   top: 50%;
@@ -89,12 +89,10 @@
     display: none;
   }
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     fill: #1e6994;
-    filter: drop-shadow(4px 4px 20px black);
   }
 }
 .button-menu--mobile {
@@ -330,64 +328,7 @@
     border-radius: 3px 0px;
   }
 }
-// .decor1 {
-//   position: absolute;
-//   top: 0;
-//   right: 20px;
-//   // z-index: 3;
-//   display: block;
-//   width: 74px;
-//   height: 74px;
-//   background-color: transparent;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 35px 0px 0px 35px;
-// }
-// .phone-menu__nav:before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 50%;
-//   margin-left: -15px;
-//   margin-top: -15px;
-//   width: 0;
-//   z-index: 11;
-//   height: 0;
-//   border-bottom: solid 15px #fff;
-//   border-left: solid 15px #fff;
-//   border-right: solid 15px #fff;
-// }
-.phone-menu__nav:after {
-  content: '';
-  position: absolute;
-  top: -1;
-  left: 50%;
-  margin-left: -15px;
-  margin-top: -15px;
-  width: 0;
-  z-index: 11;
-  height: 0;
-  border-bottom: solid 15px grey;
-  border-left: solid 15px #fff;
-  border-right: solid 15px #fff;
-}
-// .phone-menu__nav:after {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   top: 45%;
 
-//   right: -14px;
-
-//   width: 10px;
-//   height: 4px;
-//   background-image: url(../images/triangle.svg);
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   transform: rotateX(0deg);
-//   transform-origin: bottom center;
-//   @include transition(transform);
-// }
 .phone-menu-container {
   position: absolute;
   border-radius: 2px;
@@ -396,16 +337,13 @@
   right: 0;
   width: 162px;
   height: 82px;
-  padding-top: 18px;
+  // padding-top: 18px;
   padding-right: 8px;
   padding-left: 5px;
-  padding-bottom: 16px;
+  // padding-bottom: 16px;
 
   pointer-events: none;
   background-color: $bg-white-color;
-  // background-image: url(../images/bgi-triangle.png);
-  // -webkit-filter: drop-shadow 4px -5px 4px 20px rgba(0, 0, 0, 0.1);
-  // filter: drop-shadow 4px -5px 4px 20px rgba(0, 0, 0, 0.1);
   transform: scale(0);
   transform-origin: top center;
   @include transition(transform);
@@ -480,14 +418,12 @@
   }
   &__item {
     color: $primary-text-color;
-    filter: none;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__item:hover,
   &__item:focus {
     color: $accent-color;
-    filter: drop-shadow(4px 4px 20px black);
   }
 }
 .phone-nav__link {
@@ -546,7 +482,6 @@
     padding-left: 15px;
     padding-top: 28px;
     padding-bottom: 28px;
-
     background-color: transparent;
     cursor: pointer;
     font-family: Caviar Dreams;
@@ -566,12 +501,41 @@
     }
   }
   &__btn:hover,
-  &__btn:focus,
-  &__btn:active {
+  &__btn:focus {
+    color: $accent-color;
+  }
+  &__item {
+    color: inherit;
+  }
+  &__item:hover,
+  &__item:focus {
     color: $accent-color;
   }
 
   &__link {
     padding-bottom: 4px;
   }
+}
+
+.phone-menu__triangle {
+  background-color: white;
+  z-index: 0;
+}
+.phone-menu__mobile {
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+.phone-menu__triangle:after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: $bg-white-color;
+  transform: translateX(-50%) rotate(45deg);
+  left: 50%;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  top: -8px;
+  opacity: 1;
 }
