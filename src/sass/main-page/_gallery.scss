@@ -7,16 +7,17 @@
     padding: 60px 0;
   }
   &__title {
-    @include fontstyle(24px, null, 1.25, null, null);
-    color: #487996;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $accent-color;
     margin-bottom: 16px;
     @media screen and(min-width: 768px) {
-      @include fontstyle(36px, null, 1.25, null, null);
+      font-size: 36px;
       margin-bottom: 32px;
     }
     @media screen and(min-width:1440px) {
       margin-bottom: 62px;
-      @include fontstyle(48px, null, 1.25, null, null);
+      font-size: 48px;
     }
   }
   &__list {
@@ -51,8 +52,10 @@
     }
   }
   &__subtitle {
-    @include fontstyle(16px, 300, 1.25, null, null);
-    color: #487996;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accent-color;
     margin-top: 8px;
     @media screen and(max-width:767px) {
       max-width: 440px;
@@ -62,7 +65,8 @@
       width: 315px;
     }
     @media screen and(min-width:1440px) {
-      @include fontstyle(18px, null, 1.28, null, null);
+      font-size: 18px;
+      line-height: 1.28;
       width: 555px;
     }
   }
@@ -88,7 +92,7 @@
   z-index: -1;
   width: 74px;
   height: 74px;
-  background-color: #ffffff;
+  background-color: $bg-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   display: block;
   &--a {
