@@ -1,84 +1,94 @@
-<!-- <section class="order"> -->
-<div class="container">
-  <div class="order-frame">
-    <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
-    <form class="order-form">
-      <div class="order-form__field field--input">
-        <input
-          type="text"
-          class="order-form__input input--form"
-          name="client-name"
-          id="client-name"
-          placeholder=""
-        />
-        <label for="client-name" class="order-form__label label--input"
-          >Імʼя
-        </label>
-      </div>
-      <div class="order-form__field field--input">
-        <input
-          type="mail"
-          class="order-form__input input--form"
-          name="client-mail"
-          id="client-mail"
-          placeholder=""
-        />
-        <label for="client-mail" class="order-form__label label--input"
-          >Email
-        </label>
-      </div>
-      <div class="order-form__field field--select">
-        <div class="select-wraper">
-          <select
-            class="order-form__select"
-            name="select-type-plastic"
-            id="client-order"
-          >
-            <option value="1">Види пластика</option>
-            <option value="2">Перший вид</option>
-            <option value="3">Другий вид</option>
-          </select>
+<section class="order">
+  <div class="container order--container">
+    <div class="order-frame">
+      <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
+      <form class="order-form">
+        <div class="order-form__field field--input">
+          <input
+            type="text"
+            class="order-form__input input--form"
+            name="client-name"
+            id="client-name"
+            placeholder=""
+          />
+          <label for="client-name" class="order-form__label label--input"
+            >Імʼя
+          </label>
         </div>
-      </div>
-      <div class="order-form__field">
-        <div class="select-wraper">
-          <select
-            class="order-form__select"
-            name="select-print-quality "
-            id="client-order-print"
-          >
-            <option value="1">Якість друку</option>
-            <option value="2">300 мікрон</option>
-            <option value="3">200 мікрон</option>
-            <option value="5">100 мікрон</option>
-            <option value="6">Труднощі у виборі - ми допоможемо</option>
-          </select>
+        <div class="order-form__field field--input">
+          <input
+            type="mail"
+            class="order-form__input input--form"
+            name="client-mail"
+            id="client-mail"
+            placeholder=""
+          />
+          <label for="client-mail" class="order-form__label label--input"
+            >Email
+          </label>
         </div>
-      </div>
-      <div class="order-form__field">
-        <div class="select-wraper">
-          <select
-            class="order-form__select"
-            name="select-color"
-            id="client-order-print"
-          >
-            <option value="2">Колір</option>
-            <option value="2">Чорний колір</option>
-            <option value="3">Сірий колір</option>
-            <option value="4">Білий колір</option>
-          </select>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button">Види пластика</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Види пластика</li>
+              <li class="dropdown__list-item" data-value="1">Перший вид</li>
+              <li class="dropdown__list-item" data-value="2">Другий вид</li>
+              <li class="dropdown__list-item" data-value="3">Третій вид</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
         </div>
-      </div>
-      <div class="order-form__field field--textarea">
-        <label for="client-text" class="order-form__label">Повідомлення</label>
-        <textarea
-          type="text"
-          class="order-form__text"
-          name="client-text"
-          id="client-text"
-          placeholder="Залишіть своє повідомлення"
-        ></textarea>
-        <div class="attachment-wrap">
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button">Якість друку</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Якість друку</li>
+              <li class="dropdown__list-item" data-value="1">300 мікрон</li>
+              <li class="dropdown__list-item" data-value="2">200 мікрон</li>
+              <li class="dropdown__list-item" data-value="3">100 мікрон</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button">Колір</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Якість друку</li>
+              <li class="dropdown__list-item" data-value="1">Чорний колір</li>
+              <li class="dropdown__list-item" data-value="2">Сірий колір</li>
+              <li class="dropdown__list-item" data-value="3">Білий колір</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
+        <div class="order-form__field field--textarea">
+          <label for="client-text" class="order-form__label"
+            >Повідомлення</label
+          >
+          <textarea
+            type="text"
+            class="order-form__text"
+            name="client-text"
+            id="client-text"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
           <input
             class="attach-file hidden"
             name="attachment"
@@ -90,21 +100,29 @@
             <svg class="textarea-icon">
               <use
                 href="/src/images/icons.svg#icon-paper-clip"
-                weight="21"
+                wight="21"
                 height="20"
               ></use>
             </svg>
           </label>
         </div>
-      </div>
-      <div class="order-form__field field--textarea-notice">
-        <p class="textarea-notice">
-          *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
-        </p>
-      </div>
+        <div class="order-form__field field--textarea-notice">
+          <p class="textarea-notice">
+            *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+          </p>
+        </div>
 
-      <button class="order-form__button" type="submit">Відправити</button>
-    </form>
+        <button class="order-form__button" type="submit">Відправити</button>
+      </form>
+      <!--  -->
+      <div class="rectangle46"></div>
+      <div class="rectangle60"></div>
+      <div class="rectangle68"></div>
+      <div class="rectangle63"></div>
+      <div class="rectangle65"></div>
+      <div class="rectangle19"></div>
+    </div>
   </div>
-</div>
-<!-- </section> -->
+</section>
+
+<script defer src="./partials/js/order-form.js"></script>
