@@ -1,4 +1,5 @@
 .creations {
+  font-family: 'Cera Pro', sans-serif;
   position: relative;
   padding: 20px 0;
   background: $bg-white-color;
@@ -21,7 +22,6 @@
   margin-bottom: 16px;
   width: 280px;
 
-  font-family: 'Cera Pro';
   font-size: 18px;
   line-height: 1.27;
   text-transform: uppercase;
@@ -96,8 +96,6 @@
 .creations__item {
   display: flex;
   align-items: center;
-
-  font-family: 'Cera Pro';
 
   font-weight: 300;
   font-size: 16px;
