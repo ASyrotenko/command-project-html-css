@@ -1,0 +1,169 @@
+.creations {
+  position: relative;
+  padding: 20px 0;
+  background: $bg-white-color;
+  @media screen and (min-width: 1440px) {
+    padding: 50px 0;
+  }
+}
+
+.creations__container {
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+    overflow: visible;
+  }
+}
+
+.creations__title {
+  margin-bottom: 16px;
+  width: 280px;
+
+  font-family: 'Cera Pro';
+  font-size: 18px;
+  line-height: 1.27;
+  text-transform: uppercase;
+
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+  }
+}
+
+.creations__list {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.creations__figure1 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  top: 66;
+  right: -36.65;
+  background: #ffffff;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.creations__figure2 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -17px;
+  top: 129px;
+
+  background: #ffffff;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 71.41px;
+    height: 74.08px;
+    top: 78.65px;
+    left: 665px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 136.83px;
+    height: 144px;
+    left: 1272px;
+    top: 153px;
+
+    border-radius: 72px 0px;
+  }
+}
+
+.creations__item {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Cera Pro';
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.1;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+
+  &::before {
+    content: '';
+    min-width: 7px;
+    min-height: 7px;
+    margin-right: 8px;
+    border-radius: 3px 0px;
+
+    background: #487996;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.creations__background {
+  max-width: 280px;
+  height: 164px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/3d-modeling-page/engine-mob-1x.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url(../images/3d-modeling-page/engine-mob-2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 246px;
+    height: 144px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+
+    top: 25px;
+    right: 32px;
+    background-image: url(../images/3d-modeling-page/engine-tab-1x.png);
+
+    @include retina {
+      background-image: url(../images/3d-modeling-page/engine-tab-2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 555px;
+    width: 555px;
+    height: 301px;
+    top: -60px;
+    left: 736px;
+    background-image: url(../images/3d-modeling-page/engine-desk-1x.png);
+
+    @include retina {
+      background-image: url(../images/3d-modeling-page/engine-desk-2x.png);
+    }
+  }
+}
