@@ -47,18 +47,20 @@
 }
 
 .main-pic {
-       
-    max-width: 100%;
-    border-radius: 15px;
+   
+ border-radius: 15px;
+
+ img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+}
   
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
+
 
 
 .order-description {
@@ -173,7 +175,7 @@ img {
     width: 71.41px;
     height: 63.79px;
     top: -22px;
-    left: 665px;
+    left: 697px;
     border-radius: 0px 0px 0px 35px;
   }
 
