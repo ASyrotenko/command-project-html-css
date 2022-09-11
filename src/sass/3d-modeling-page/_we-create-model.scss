@@ -53,7 +53,13 @@
 }
 
 .create__list {
-  @media screen and (max-width: 768px) {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     row-gap: 16px;
@@ -62,21 +68,16 @@
     flex-basis: calc(100% - 20px / 2);
     justify-content: center;
   }
-
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px 20px;
-
-  @media screen and (min-width: 768px) {
-    gap: 32px;
-  }
 }
+
 .create__item {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     min-width: 130px;
     width: calc(50% - 20px / 2);
+  }
+
+  @media screen and (min-width: 767px) {
+    gap: 32px;
   }
 
   overflow: hidden;
