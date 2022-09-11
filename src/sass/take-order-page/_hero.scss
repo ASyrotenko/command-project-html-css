@@ -1,8 +1,12 @@
 .order-container {
-    position: relative;
-    
+  position: relative;
+
+  margin: 0 auto;
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+  }
 }
-.oreder-hero {
+.order-hero {
   padding-top: 94px;
   padding-bottom: 20px;
 
@@ -14,54 +18,40 @@
     padding-top: 190px;
   }
 }
-.order-hero__header {
+.order-hero__main-title {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $accent-color;
-  width: 100%;
-  text-align: center;
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    text-align: left;
   }
   @media screen and (min-width: 1440px) {
     font-size: 48px;
     margin-bottom: 24px;
-    margin-left: 117px;
   }
 }
 .order-hero__content {
   @media screen and (min-width: 768px) {
-    display: inline-flex;
+    display: flex;
     gap: 32px;
   }
   @media screen and (min-width: 1440px) {
     // outline: 1px solid blue;
     justify-content: space-between;
-    padding-left: 117px;
   }
 }
 
 .main-pic {
-   
- border-radius: 15px;
-
- img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
   border-radius: 15px;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
-  
-}
-
-
-
 
 .order-description {
   @media screen and (min-width: 768px) {
@@ -161,9 +151,8 @@
   position: absolute;
   width: 73.65px;
   height: 73.65px;
-
   left: -29px;
-  top: 194.61px;
+  top: 182px;
 
   background-color: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -175,7 +164,7 @@
     width: 71.41px;
     height: 63.79px;
     top: -22px;
-    left: 697px;
+    left: 665px;
     border-radius: 0px 0px 0px 35px;
   }
 
@@ -190,7 +179,8 @@
 }
 
 .rect58 {
-  //   outline: 1px solid red;
+  // outline: 1px solid red;
+
   @media screen and (min-width: 1440px) {
     position: absolute;
     width: 82px;
