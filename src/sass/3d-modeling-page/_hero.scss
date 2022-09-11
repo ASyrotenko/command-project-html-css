@@ -1,0 +1,116 @@
+.modeling-hero {
+  padding-top: 92px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 104px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 190px;
+  }
+}
+
+.modeling-hero__container {
+  position: relative;
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+
+.modeling-hero__title {
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
+}
+
+.modeling-hero__text-wrapper {
+  margin-top: 16px;
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 24px;
+    display: flex;
+  }
+}
+
+.modeling-hero__text {
+  max-width: 515px;
+
+  font-weight: 300;
+  line-height: 1.25;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 1439px) {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.28;
+    &:not(:last-child) {
+      margin-right: 72px;
+    }
+  }
+}
+
+.modeling-hero__box {
+  position: absolute;
+  z-index: -1;
+  background: $bg-white-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+
+.modeling-hero__box-l {
+  width: 73.65px;
+  height: 73.65px;
+  left: -29px;
+  top: 202.61px;
+  border-radius: 0px 0px 35px 0px;
+
+  @media screen and (min-width: 768px) {
+    width: 74.08px;
+    height: 71.41px;
+    left: 32px;
+    top: 118px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 82px;
+    height: 78px;
+    left: 35px;
+    top: 0;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.modeling-hero__box-tr {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  width: 71.41px;
+  height: 63.79px;
+  right: 0;
+  top: -21.5px;
+  border-radius: 0px 0px 0px 35px;
+
+  @media screen and (min-width: 1440px) {
+    width: 144px;
+    height: 136.83px;
+    top: -38px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
