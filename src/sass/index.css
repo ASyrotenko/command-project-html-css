@@ -1,48 +1,72 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Light.eot");
-  src: local("Cera Pro Light"), local("CeraPro-Light"), url("../fonts/CeraPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Light.eot');
+  src: local('Cera Pro Light'), local('CeraPro-Light'),
+    url('../fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Light.woff2') format('woff2'),
+    url('../fonts/CeraPro-Light.woff') format('woff'),
+    url('../fonts/CeraPro-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Medium.eot");
-  src: local("Cera Pro Medium"), local("CeraPro-Medium"), url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Medium.eot');
+  src: local('Cera Pro Medium'), local('CeraPro-Medium'),
+    url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('../fonts/CeraPro-Medium.woff') format('woff'),
+    url('../fonts/CeraPro-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Bold.eot");
-  src: local("Cera Pro Bold"), local("CeraPro-Bold"), url("../fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Bold.eot');
+  src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+    url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+    url('../fonts/CeraPro-Bold.woff') format('woff'),
+    url('../fonts/CeraPro-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Regular.eot");
-  src: local("Cera Pro Regular"), local("CeraPro-Regular"), url("../fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Regular.eot');
+  src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+    url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('../fonts/CeraPro-Regular.woff') format('woff'),
+    url('../fonts/CeraPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Caviar Dreams";
-  src: url("../fonts/CaviarDreams.eot");
-  src: local("Caviar Dreams"), local("CaviarDreams"), url("../fonts/CaviarDreams.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams.woff2") format("woff2"), url("../fonts/CaviarDreams.woff") format("woff"), url("../fonts/CaviarDreams.ttf") format("truetype");
+  font-family: 'Caviar Dreams';
+  src: url('../fonts/CaviarDreams.eot');
+  src: local('Caviar Dreams'), local('CaviarDreams'),
+    url('../fonts/CaviarDreams.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDreams.woff2') format('woff2'),
+    url('../fonts/CaviarDreams.woff') format('woff'),
+    url('../fonts/CaviarDreams.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Caviar Dreams";
-  src: url("../fonts/CaviarDreams-Bold.eot");
-  src: local("Caviar Dreams Bold"), local("CaviarDreams-Bold"), url("../fonts/CaviarDreams-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams-Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.woff") format("woff"), url("../fonts/CaviarDreams-Bold.ttf") format("truetype");
+  font-family: 'Caviar Dreams';
+  src: url('../fonts/CaviarDreams-Bold.eot');
+  src: local('Caviar Dreams Bold'), local('CaviarDreams-Bold'),
+    url('../fonts/CaviarDreams-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDreams-Bold.woff2') format('woff2'),
+    url('../fonts/CaviarDreams-Bold.woff') format('woff'),
+    url('../fonts/CaviarDreams-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 body {
-  font-family: "Cera Pro", sans-serif;
+  font-family: 'Cera Pro', sans-serif;
 }
 
 h1,
@@ -93,7 +117,7 @@ button {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -116,7 +140,6 @@ button {
   }
 }
 
-<<<<<<< HEAD
 .header {
   position: fixed;
   top: 0;
@@ -229,7 +252,8 @@ button {
   top: 32px;
   transform: translateX(-50%);
 }
-.button-menu--mobile:hover, .button-menu--mobile:focus {
+.button-menu--mobile:hover,
+.button-menu--mobile:focus {
   fill: #487996;
 }
 
@@ -281,7 +305,7 @@ button {
   position: relative;
 }
 .menu__link--services::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
@@ -382,7 +406,7 @@ button {
   position: relative;
 }
 .mobile-submenu__link::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: -19px;
@@ -394,7 +418,7 @@ button {
 }
 
 .phone-menu__nav:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 50%;
@@ -550,7 +574,9 @@ button {
   letter-spacing: 0.01em;
   color: #bdbdbd;
 }
-.lang-menu__btn:hover, .lang-menu__btn:focus, .lang-menu__btn:active {
+.lang-menu__btn:hover,
+.lang-menu__btn:focus,
+.lang-menu__btn:active {
   color: #487996;
 }
 .lang-menu__item:hover {
@@ -558,7 +584,7 @@ button {
 }
 .lang-menu__link {
   padding-bottom: 4px;
-=======
+}
 .modeling-hero {
   padding-top: 92px;
   padding-bottom: 20px;
@@ -681,5 +707,4 @@ button {
     top: -38px;
     border-radius: 0px 0px 0px 72px;
   }
->>>>>>> main
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

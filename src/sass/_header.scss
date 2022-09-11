@@ -442,8 +442,8 @@
 .lang-menu-container {
   position: absolute;
   text-align: center;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
-  top: 70%;
+  // box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  top: 65%;
   right: 0;
   width: 100%;
   padding-top: 5px;
@@ -604,6 +604,6 @@
   }
 }
 
-.body.modal-open .z-index {
+body.modal-open .z-index {
   z-index: 999;
 }
