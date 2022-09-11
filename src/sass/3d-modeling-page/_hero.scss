@@ -16,7 +16,7 @@
 
   @media screen and (min-width: 1440px) {
     padding-left: 149px;
-    padding-right: 189px;
+    padding-right: 149px;
   }
 }
 
@@ -41,7 +41,6 @@
   @media screen and (min-width: 1440px) {
     margin-top: 24px;
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -61,6 +60,9 @@
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.28;
+    &:not(:last-child) {
+      margin-right: 72px;
+    }
   }
 }
 
