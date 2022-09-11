@@ -71,18 +71,13 @@
     }
   }
 }
-.container {
+.gallery__container {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   @media screen and(max-width:767px) {
     max-width: 480px;
   }
-  @media screen and(min-width:768px) {
-    width: 768px;
-  }
+
   @media screen and(min-width:1440px) {
-    width: 1440px;
     padding: 0 149px;
   }
 }
@@ -92,9 +87,8 @@
   z-index: -1;
   width: 74px;
   height: 74px;
-  background-color: $bg-color;
+  background-color: $bg-white-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  display: block;
   &--a {
     top: -46px;
     left: -29px;
