@@ -10,9 +10,11 @@
     if (!isMenuOpen) {
       openMenuBtn.classList.add('button-hidden');
       closeMenuBtn.classList.remove('button-hidden');
+      document.body.classList.add('modal-open');
     } else {
       openMenuBtn.classList.remove('button-hidden');
       closeMenuBtn.classList.add('button-hidden');
+      document.body.classList.remove('modal-open');
     }
 
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
@@ -21,7 +23,7 @@
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    bodyScrollLockscrollLockMethod;
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);

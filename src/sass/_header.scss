@@ -162,7 +162,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 45%;
+    top: 44%;
 
     right: -14px;
 
@@ -172,7 +172,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: rotateX(0deg);
+    transform: rotateX(180deg);
     transform-origin: bottom center;
     @include transition(transform);
   }
@@ -192,7 +192,7 @@
       pointer-events: initial;
     }
     .menu__link--services::after {
-      transform: rotateX(180deg);
+      transform: rotateX(0deg);
     }
   }
 }
@@ -442,8 +442,8 @@
 .lang-menu-container {
   position: absolute;
   text-align: center;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
-  top: 70%;
+  // box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  top: 65%;
   right: 0;
   width: 100%;
   padding-top: 5px;
@@ -602,4 +602,8 @@
     left: 30px;
     border-radius: 72px 0px 0px 0px;
   }
+}
+
+body.modal-open .z-index {
+  z-index: 999;
 }
