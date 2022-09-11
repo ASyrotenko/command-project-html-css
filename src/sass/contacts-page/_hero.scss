@@ -4,6 +4,19 @@
 }
 .contacts-hero__container {
   position: relative;
+  padding-top: 92px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-hero__container {
+    padding-top: 104px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts-hero__container {
+    padding-top: 190px;
+    padding-bottom: 50px;
+  }
 }
 .contacts-hero__header {
   margin-bottom: 16px;
@@ -85,7 +98,7 @@
     font-size: 49px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 10px;
   }
 }
 
@@ -111,7 +124,9 @@ iframe {
 
 .figure1 {
   position: absolute;
-  top: 210px;
+  z-index: -2;
+  background-color: #ffffff;
+  top: 295px;
   left: 0;
   width: 44px;
   height: 73px;
@@ -125,7 +140,9 @@ iframe {
   }
   .figure2 {
     position: absolute;
-    top: 0;
+    z-index: -2;
+    background-color: #ffffff;
+    top: 82px;
     right: 0;
     width: 71px;
     height: 63px;
@@ -142,7 +159,9 @@ iframe {
   }
   .figure3 {
     position: absolute;
-    top: 0;
+    z-index: -2;
+    background-color: #ffffff;
+    top: 190px;
     left: 0;
     width: 82px;
     height: 78px;
@@ -151,10 +170,12 @@ iframe {
   }
   .figure4 {
     position: absolute;
-    top: -13px;
+    z-index: -2;
+    background-color: #ffffff;
+    top: 152px;
     right: 0;
     width: 137px;
-    height: 42px;
+    height: 83px;
     border-radius: 0px 0px 0px 72px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
