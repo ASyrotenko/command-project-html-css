@@ -87,9 +87,6 @@
     transform: translateY(-32px);
   }
 }
-// .contact-form__input:placeholder-shown {
-//   background-color: red;
-// }
 
 .contact-form__text {
   width: 100%;
@@ -148,23 +145,75 @@
   right: 21px;
   bottom: 23px;
 }
-.contact-form__button {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #487996;
-  padding: 16px 83px;
-  background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
+.contact-form__btn {
   @media screen and (min-width: 768px) {
     float: right;
     padding: 16px 32px;
+  }
+}
+.contact-container {
+  position: relative;
+}
+.rec19 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -17px;
+  top: 46px;
+  background: aqua;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  z-index: -100;
+  @media screen and (min-width: 768px) {
+    width: 71.41px;
+    height: 74.08px;
+    top: -1.35px;
+    left: auto;
+    right: 32px;
+    background: aqua;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+  }
+}
+.rec63 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  right: -14.65px;
+  top: -16.47px;
+  background: aqua;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+  z-index: -100;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.rec65 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -18px;
+  top: 465px;
+  background: aqua;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+  z-index: -100;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.rec68 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  right: -20.65px;
+  top: 428px;
+  background: aqua;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  z-index: -100;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
