@@ -1,0 +1,152 @@
+<section class="team">
+        <div class="team__container container">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__content">
+                <picture>
+                  <source
+                    srcset=".\images\main-page\more-foto\design-high-quality-3d-model.jpg 1x, 
+                    .\images\main-page\more-foto\design-high-quality-3d-model-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\design-high-quality-tablet.jpg 1x, 
+                    .\images\main-page\more-foto\design-high-quality-tablet-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\design-high-quality-mobile.jpg 1x, 
+                    .\images\main-page\more-foto\design-high-quality-mobile-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src=".\images\main-page\more-foto\design-high-quality-mobile.jpg" alt="Игорь Демьяненко" />
+                </picture>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__content">
+                <picture>
+                  <source
+                    srcset=".\images\main-page\more-foto\3d-printed-architectural-model.jpg 1x, 
+                    .\images\main-page\more-foto\3d-printed-architectural-model-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\3d-printed-architectural-model.jpg 1x, 
+                    .\images\main-page\more-foto\3d-printed-architectural-tablet-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\3d-printed-architectural-mobile.jpg 1x, 
+                    .\images\main-page\more-foto\3d-printed-architectural-mobile-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src=".\images\main-page\more-foto\3d-printed-architectural-mobile.jpg" alt="Ольга Репина" />
+                </picture>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__content">
+                <picture>
+                  <source
+                    srcset=".\images\main-page\more-foto\robot-wall-e-3d-model.jpg 1x, 
+                    .\images\main-page\more-foto\robot-wall-e-3d-model-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\robot-wall-e-tablet.jpg 1x, 
+                    .\images\main-page\more-foto\robot-wall-e-tablet-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\robot-wall-e-mobile.jpg 1x, 
+                    .\images\main-page\more-foto\robot-wall-e-mobile-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src=".\images\main-page\more-foto\robot-wall-e-mobile.jpg" alt="Николай Тарасов" />
+                </picture>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__content">
+                <picture>
+                  <source
+                    srcset=".\images\main-page\more-foto\human-skull-3d-model.jpg 1x, 
+                    .\images\main-page\more-foto\human-ckull-3d-model-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\human-ckull-tablet.jpg 1x, 
+                    .\images\main-page\more-foto\human-ckull-tablet-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset=".\images\main-page\more-foto\human-ckull-tablet.jpg 1x, 
+                    .\images\main-page\more-foto\human-ckull-tablet-2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src=".\images\main-page\more-foto\human-ckull-tablet.jpg" alt="Михаил Ермаков" />
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__container {
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+  }
+}
+
+
+.team__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 64px) / 3);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: calc((100% - 64px) / 3);
+  }
+}
+
+.team__content {
+  display: block;
+  overflow: hidden;
+}
+
+
+
+
