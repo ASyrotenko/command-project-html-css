@@ -337,10 +337,9 @@
   right: 0;
   width: 162px;
   height: 82px;
-  // padding-top: 18px;
+
   padding-right: 8px;
   padding-left: 5px;
-  // padding-bottom: 16px;
 
   pointer-events: none;
   background-color: $bg-white-color;
@@ -538,4 +537,69 @@
   z-index: -1;
   top: -8px;
   opacity: 1;
+}
+.decor1 {
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border-radius: 0px 35px 35px 0px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  pointer-events: none;
+  @media screen and (min-width: 768px) {
+    left: 200px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 144px;
+    height: 144px;
+    left: 291px;
+    border-radius: 0px 72px 72px 0px;
+  }
+}
+.decor2 {
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border-radius: 0px 35px 35px 0px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  pointer-events: none;
+  transform: rotate(180deg);
+  @media screen and (min-width: 768px) {
+    right: 215px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 144px;
+    height: 144px;
+    right: 234px;
+    border-radius: 0px 72px 72px 0px;
+  }
+}
+.decor3 {
+  display: none;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  background-color: transparent;
+  border-radius: 35px 0px 0px 0px;
+  // box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  pointer-events: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 144px;
+    height: 144px;
+    left: 30px;
+    border-radius: 72px 0px 0px 0px;
+  }
 }
