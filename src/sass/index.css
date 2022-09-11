@@ -1,48 +1,72 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Light.eot");
-  src: local("Cera Pro Light"), local("CeraPro-Light"), url("../fonts/CeraPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Light.eot');
+  src: local('Cera Pro Light'), local('CeraPro-Light'),
+    url('../fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Light.woff2') format('woff2'),
+    url('../fonts/CeraPro-Light.woff') format('woff'),
+    url('../fonts/CeraPro-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Medium.eot");
-  src: local("Cera Pro Medium"), local("CeraPro-Medium"), url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Medium.eot');
+  src: local('Cera Pro Medium'), local('CeraPro-Medium'),
+    url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('../fonts/CeraPro-Medium.woff') format('woff'),
+    url('../fonts/CeraPro-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Bold.eot");
-  src: local("Cera Pro Bold"), local("CeraPro-Bold"), url("../fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Bold.eot');
+  src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+    url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+    url('../fonts/CeraPro-Bold.woff') format('woff'),
+    url('../fonts/CeraPro-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Regular.eot");
-  src: local("Cera Pro Regular"), local("CeraPro-Regular"), url("../fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Regular.eot');
+  src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+    url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('../fonts/CeraPro-Regular.woff') format('woff'),
+    url('../fonts/CeraPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Caviar Dreams";
-  src: url("../fonts/CaviarDreams.eot");
-  src: local("Caviar Dreams"), local("CaviarDreams"), url("../fonts/CaviarDreams.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams.woff2") format("woff2"), url("../fonts/CaviarDreams.woff") format("woff"), url("../fonts/CaviarDreams.ttf") format("truetype");
+  font-family: 'Caviar Dreams';
+  src: url('../fonts/CaviarDreams.eot');
+  src: local('Caviar Dreams'), local('CaviarDreams'),
+    url('../fonts/CaviarDreams.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDreams.woff2') format('woff2'),
+    url('../fonts/CaviarDreams.woff') format('woff'),
+    url('../fonts/CaviarDreams.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Caviar Dreams";
-  src: url("../fonts/CaviarDreams-Bold.eot");
-  src: local("Caviar Dreams Bold"), local("CaviarDreams-Bold"), url("../fonts/CaviarDreams-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams-Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.woff") format("woff"), url("../fonts/CaviarDreams-Bold.ttf") format("truetype");
+  font-family: 'Caviar Dreams';
+  src: url('../fonts/CaviarDreams-Bold.eot');
+  src: local('Caviar Dreams Bold'), local('CaviarDreams-Bold'),
+    url('../fonts/CaviarDreams-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDreams-Bold.woff2') format('woff2'),
+    url('../fonts/CaviarDreams-Bold.woff') format('woff'),
+    url('../fonts/CaviarDreams-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 body {
-  font-family: "Cera Pro", sans-serif;
+  font-family: 'Cera Pro', sans-serif;
 }
 
 h1,
@@ -93,7 +117,7 @@ button {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -120,7 +144,8 @@ button {
   padding-top: 16px;
   padding-bottom: 16px;
   background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
   font-weight: 700;
   font-size: 16px;
@@ -149,10 +174,21 @@ button {
 }
 
 .contacts-hero {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 92px;
+  padding-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-hero {
+    padding-top: 104px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts-hero {
+    padding-top: 190px;
+    padding-bottom: 50px;
+  }
+}
 .contacts-hero__container {
   position: relative;
 }
@@ -184,55 +220,23 @@ button {
     gap: 32px;
   }
 }
-.video-wrapper {
-  position: relative;
+.contacts-hero__video {
   text-align: center;
-  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 1440px) {
-  .video-wrapper {
+  .contacts-hero__video {
     margin-left: 134px;
-  }
-}
-.video-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  background-image: url("../images/contacts-page/contact-hero-mob.jpg");
-  background-size: cover;
-  border-radius: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  .video-overlay {
-    width: 336px;
-    background-image: url("../images/contacts-page/contact-hero-tab.jpg");
-  }
-}
-@media screen and (min-width: 1440px) {
-  .video-overlay {
-    width: 555px;
-    background-image: url("../images/contacts-page/contact-hero-des.jpg");
   }
 }
 .contacts-hero_picture {
   margin-bottom: 16px;
 }
 
-.contacts-hero__text {
-  margin-bottom: 40px;
-}
-
 @media screen and (min-width: 1440px) {
   .contacts-hero__text {
     position: relative;
-    margin-bottom: 0;
+    width: 515px;
   }
 }
 .contacts-hero__par {
@@ -251,6 +255,10 @@ button {
     line-height: 1.27;
   }
 }
+.contacts-hero__par:last-child {
+  margin-bottom: 0;
+}
+
 .contacts-hero__span {
   font-size: 22px;
   vertical-align: middle;
@@ -261,9 +269,10 @@ button {
     font-size: 49px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -7px;
   }
 }
+
 iframe {
   border-radius: 15px;
   width: 270px;
@@ -276,15 +285,19 @@ iframe {
     height: 261px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   iframe {
     width: 555px;
     height: 315px;
   }
 }
-.figura1 {
+
+.figure1 {
   position: absolute;
-  top: 210px;
+  z-index: -2;
+  background-color: #ffffff;
+  top: 200px;
   left: 0;
   width: 44px;
   height: 73px;
@@ -293,12 +306,14 @@ iframe {
 }
 
 @media screen and (min-width: 768px) {
-  .figura1 {
+  .figure1 {
     display: none;
   }
-  .figura2 {
+  .figure2 {
     position: absolute;
-    top: 0;
+    z-index: -2;
+    background-color: #ffffff;
+    top: 26px;
     right: 0;
     width: 71px;
     height: 63px;
@@ -306,29 +321,34 @@ iframe {
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
 }
+
 @media screen and (min-width: 1440px) {
-  .figura1 {
+  .figure1 {
     display: none;
   }
-  .figura2 {
+  .figure2 {
     display: none;
   }
-  .figura3 {
+  .figure3 {
     position: absolute;
-    top: 0;
+    z-index: -2;
+    background-color: #ffffff;
+    top: 38px;
     left: 0;
     width: 82px;
     height: 78px;
     border-radius: 0px 0px 72px 0px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
-  .figura4 {
+  .figure4 {
     position: absolute;
-    top: -13px;
+    z-index: -2;
+    background-color: #ffffff;
+    top: 0px;
     right: 0;
     width: 137px;
-    height: 42px;
+    height: 83px;
     border-radius: 0px 0px 0px 72px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
