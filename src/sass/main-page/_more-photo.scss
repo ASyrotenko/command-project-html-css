@@ -53,19 +53,30 @@
 }
 
 
-
 .masonry--h {
-  //flex-flow: row wrap;
-    //flex-direction: row;
+  flex-flow: row wrap;
+    flex-direction: row;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      display: block;
+    }
+    
+
 }
 
 .masonry-brick--h {
-   @media only screen and (max-width: 1440px) and (min-width: 768px) {
-}
+   
 }
 .masonry-brick {
   margin: 0 0 32px 32px;
+  @media screen and (max-width: 768px) {
+      margin-left: 0;
+      margin-bottom: 16px;
+
+      
+    }
 }
 .masonry-img {
   object-fit: cover;
@@ -74,8 +85,8 @@
   height: 100%;
 }
 img {
-  //vertical-align: middle;
-  //max-width: 100%;
+  vertical-align: middle;
+  max-width: 100%;
 }
 
 
