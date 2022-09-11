@@ -117,7 +117,7 @@ button {
 }
 
 .footer {
-  background: #f5f5fa;
+  background-color: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 }
 
@@ -164,6 +164,7 @@ button {
     margin-right: 277px;
     margin-left: 0;
     margin-bottom: 0;
+    padding-left: 32px;
   }
 }
 
@@ -211,6 +212,17 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__navigation {
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__navigation {
+    padding-left: 0;
+  }
+}
+
 .footer__item,
 .footer-soc__item {
   font-style: normal;
@@ -234,6 +246,12 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__addres {
+    padding-right: 32px;
+  }
+}
+
 .addres-link__adres {
   font-style: normal;
   font-weight: 400;
@@ -253,6 +271,11 @@ button {
     text-align: end;
   }
 }
+@media screen and (min-width: 1440px) {
+  .addres-link__adres {
+    text-align: start;
+  }
+}
 
 .addres-link__footer {
   font-style: normal;
@@ -270,6 +293,11 @@ button {
 @media screen and (min-width: 768px) {
   .addres-link__footer {
     text-align: right;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .addres-link__footer {
+    text-align: start;
   }
 }
 
