@@ -603,3 +603,7 @@
     border-radius: 72px 0px 0px 0px;
   }
 }
+
+.body.modal-open .z-index {
+  z-index: 999;
+}
