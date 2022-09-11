@@ -146,4 +146,104 @@ button {
     padding-left: 32px;
     font-size: 24px;
   }
+}
+
+.contacts-hero {
+  padding-top: 92px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-hero {
+    padding-top: 104px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts-hero {
+    padding-top: 190px;
+    padding-bottom: 50px;
+  }
+}
+.contacts-hero__container {
+  position: relative;
+}
+
+.contacts-hero__header {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #487996;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-hero__header {
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts-hero__header {
+    margin-left: 134px;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-hero__tumb {
+    display: flex;
+    gap: 32px;
+  }
+}
+.contacts-hero__video {
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-hero__video {
+    margin-left: 134px;
+  }
+}
+.contacts-hero_picture {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-hero__text {
+    position: relative;
+    width: 515px;
+  }
+}
+.contacts-hero__par {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-hero__par {
+    margin-bottom: 24px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.27;
+  }
+}
+.contacts-hero__par:last-child {
+  margin-bottom: 0;
+}
+
+.contacts-hero__span {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-hero__span {
+    font-size: 49px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+  }
 }/*# sourceMappingURL=index.css.map */
