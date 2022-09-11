@@ -116,116 +116,143 @@ button {
   }
 }
 
-.more-foto {
-  position: relative;
-  max-width: 1440px;
+.wrapper {
+  margin: 2em auto;
+  max-width: 970px;
 }
 
-.more-foto--tb {
-  padding-top: 60px;
-  padding-bottom: 78px;
-}
-@media screen and (max-width: 768px) {
-  .more-foto--tb {
-    padding-top: 30px;
-    padding-bottom: 40px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .more-foto--tb {
-    padding-top: 20px;
-    padding-bottom: 60.5px;
-  }
+img {
+  vertical-align: middle;
+  max-width: 100%;
 }
 
-.more-foto__title {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.25;
-  color: #487996;
-}
-@media screen and (max-width: 768px) {
-  .more-foto__title {
-    font-size: 36px;
-    line-height: 1.25;
-    margin-bottom: 32px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .more-foto__title {
-    font-size: 24px;
-    line-height: 1.25;
-    margin-bottom: 16px;
-  }
-}
-
-/* Grids --------------------------------------------*/
-.more-container {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(12, 150px);
-  margin: 0 auto;
-  max-width: 90%;
-  padding: 3rem 0;
-}
-
-/* Grid images --------------------------------------------*/
-.img {
-  border-radius: 1rem;
-  height: 100%;
+.masonry {
+  display: flex;
   width: 100%;
+}
+
+a {
+  color: #333;
+}
+
+.masonry--h {
+  flex-flow: row wrap;
+}
+
+.masonry--v {
+  flex-flow: column wrap;
+  max-height: 1080px;
+}
+
+.masonry--h,
+.masonry--v {
+  margin-left: -8px; /* Adjustment for the gutter */
+  counter-reset: brick;
+}
+
+.masonry-brick {
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0 0 8px 8px; /* Some Gutter */
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+.masonry-brick:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5000;
+  transform: translate(-50%, -50%);
+  counter-increment: brick;
+  content: counter(brick);
+  transition: font-size 0.25s, opacity 0.25s ease-in-out;
+  font-weight: 700;
+  opacity: 0.5;
+  font-size: 1.25em;
+}
+
+.masonry-brick:hover:after {
+  font-size: 2.25em;
+  opacity: 1;
+}
+
+.masonry-brick--h {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Horizontal masonry bricks on desktop-sized screen */
+  .masonry-brick--h:nth-child(4n+1) {
+    width: 250px;
+  }
+  .masonry-brick--h:nth-child(4n+2) {
+    width: 325px;
+  }
+  .masonry-brick--h:nth-child(4n+3) {
+    width: 180px;
+  }
+  .masonry-brick--h:nth-child(4n+4) {
+    width: 380px;
+  }
+  /* Adjusting vertical masonry height on desktop-sized screen */
+  .masonry--v {
+    max-height: 1600px;
+  }
+  /* Vertical masonry bricks on desktop-sized screen */
+  .masonry-brick--v {
+    width: 33.33333%;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* Horizontal masonry bricks on tabled-sized screen */
+  .masonry-brick--h:nth-child(4n+1) {
+    width: 200px;
+  }
+  .masonry-brick--h:nth-child(4n+2) {
+    width: 250px;
+  }
+  .masonry-brick--h:nth-child(4n+3) {
+    width: 120px;
+  }
+  .masonry-brick--h:nth-child(4n+4) {
+    width: 280px;
+  }
+  /* Adjusting vertical masonry height on tablet-sized screen */
+  .masonry--v {
+    max-height: 2000px;
+  }
+  /* Vertical masonry bricks on tablet-sized screen */
+  .masonry-brick--v {
+    width: 50%;
+  }
+}
+.masonry-img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
 }
 
-/* Grid items --------------------------------------------*/
-.item-4 {
-  grid-row: 2/5;
+/* Page assets */
+.labs-pagination {
+  margin-bottom: 1.5rem;
+  font-size: 12px;
 }
 
-.item-5 {
-  grid-row: 2/6;
+.labs-page {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  border: 2px solid #333;
 }
 
-.item-6 {
-  grid-row: 2/4;
-}
-
-.item-7 {
-  grid-row: 5/6;
-}
-
-.item-8 {
-  grid-row: 4/6;
-}
-
-.item-9 {
-  grid-row: 6/11;
-}
-
-.item-10 {
-  grid-row: 6/7;
-}
-
-.item-11 {
-  grid-row: 6/9;
-}
-
-.item-12 {
-  grid-row: 7/12;
-}
-
-.item-13 {
-  grid-row: 9/13;
-}
-
-.item-14 {
-  grid-row: 11/13;
+.labs-page:hover,
+.labs-page--current {
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.75);
 }/*# sourceMappingURL=index.css.map */
