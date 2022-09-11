@@ -206,8 +206,6 @@ button {
 .masonry-img {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-fit: none;
-     object-fit: none;
   width: 100%;
   height: 100%;
 }
