@@ -1,23 +1,22 @@
 .contacts-hero {
-  margin-left: auto;
-  margin-right: auto;
-}
-.contacts-hero__container {
-  position: relative;
   padding-top: 92px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .contacts-hero__container {
+  .contacts-hero {
     padding-top: 104px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .contacts-hero__container {
+  .contacts-hero {
     padding-top: 190px;
     padding-bottom: 50px;
   }
 }
+.contacts-hero__container {
+  position: relative;
+}
+
 .contacts-hero__header {
   margin-bottom: 16px;
   font-weight: 700;
@@ -68,6 +67,7 @@
 @media screen and (min-width: 1440px) {
   .contacts-hero__text {
     position: relative;
+    width: 515px;
     margin-bottom: 0;
   }
 }
@@ -126,7 +126,7 @@ iframe {
   position: absolute;
   z-index: -2;
   background-color: #ffffff;
-  top: 295px;
+  top: 200px;
   left: 0;
   width: 44px;
   height: 73px;
@@ -142,7 +142,7 @@ iframe {
     position: absolute;
     z-index: -2;
     background-color: #ffffff;
-    top: 82px;
+    top: 26px;
     right: 0;
     width: 71px;
     height: 63px;
@@ -161,7 +161,7 @@ iframe {
     position: absolute;
     z-index: -2;
     background-color: #ffffff;
-    top: 190px;
+    top: 38px;
     left: 0;
     width: 82px;
     height: 78px;
@@ -172,7 +172,7 @@ iframe {
     position: absolute;
     z-index: -2;
     background-color: #ffffff;
-    top: 152px;
+    top: 0px;
     right: 0;
     width: 137px;
     height: 83px;
