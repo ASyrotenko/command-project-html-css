@@ -1,6 +1,8 @@
 .process-description {
+  @media screen and(min-width: 1440px) {
+    margin-left: 149px;
+  }
 }
-
 .process-description__item {
   margin-bottom: 50px;
 
@@ -12,6 +14,7 @@
   @media screen and(min-width: 1440px) {
     display: flex;
     width: 100%;
+    margin-bottom: 50px;
   }
 }
 .process-description__img {
