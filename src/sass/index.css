@@ -124,13 +124,9 @@ button {
 .footer-conteiner {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 1439px) {
-  .footer-conteiner {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    max-width: 768px;
-  }
+  padding-top: 32px;
+  padding-bottom: 32px;
+  max-width: 768px;
 }
 @media screen and (min-width: 1440px) {
   .footer-conteiner {
@@ -143,20 +139,18 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__addres {
+  .footer__address {
     margin-right: 0;
   }
 }
 
 .footer-logo {
   max-width: 192px;
-  max-height: 48px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer-logo__wrap {
-  display: block;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1440px) {
@@ -168,10 +162,8 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer__navigation {
-    margin-bottom: 24px;
-  }
+.footer__navigation {
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .footer__navigation {
@@ -186,7 +178,7 @@ button {
 }
 
 .footer-cont,
-.addres-footer__tel {
+.address-footer__tel {
   margin-bottom: 24px;
 }
 
@@ -203,9 +195,6 @@ button {
   }
 }
 
-.footer-navigation__wrap {
-  display: block;
-}
 @media screen and (min-width: 768px) {
   .footer-navigation__wrap {
     display: flex;
@@ -247,12 +236,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__addres {
+  .footer__address {
     padding-right: 32px;
   }
 }
 
-.addres-link__adres {
+.address-link__adres {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -262,22 +251,22 @@ button {
   padding-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
-  .addres-link__adres {
+  .address-link__adres {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .addres-link__adres {
+  .address-link__adres {
     text-align: end;
   }
 }
 @media screen and (min-width: 1440px) {
-  .addres-link__adres {
+  .address-link__adres {
     text-align: start;
   }
 }
 
-.addres-link__footer {
+.address-link__footer {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -286,17 +275,17 @@ button {
   padding-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
-  .addres-link__footer {
+  .address-link__footer {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .addres-link__footer {
+  .address-link__footer {
     text-align: right;
   }
 }
 @media screen and (min-width: 1440px) {
-  .addres-link__footer {
+  .address-link__footer {
     text-align: start;
   }
 }
