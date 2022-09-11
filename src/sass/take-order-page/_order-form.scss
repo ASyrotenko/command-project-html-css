@@ -1,3 +1,4 @@
+// order frame
 .order {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -7,6 +8,7 @@
   min-width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
   @media screen and (min-width: 480px) {
     width: 400px;
   }
@@ -15,6 +17,7 @@
   }
   @media screen and (min-width: 1440px) {
     width: 555px;
+    margin: 0 auto;
   }
 }
 .order-frame__title {
@@ -37,9 +40,6 @@
     font-size: 36px;
     line-height: 1.25;
   }
-}
-
-.order-form {
 }
 
 .order-form__field {
@@ -268,6 +268,10 @@
 
 .order--container {
   position: relative;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 149px;
+  }
 }
 
 .rectangle19 {
@@ -368,6 +372,7 @@
 }
 
 // contacts side
+
 .contacts__list {
   @media screen and (max-width: 1439px) {
     padding-top: 30px;
@@ -412,7 +417,7 @@
   font-weight: 700;
   line-height: 1.26;
   letter-spacing: 0.03em;
-  color: #487996;
+  color: $accent-color;
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
@@ -429,7 +434,7 @@
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: #2b2b2b;
+  color: $primary-text-color;
 
   @media screen and (min-width: 1440px) {
     font-size: 18px;
