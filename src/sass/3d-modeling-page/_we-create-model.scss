@@ -1,9 +1,32 @@
 .create {
   padding: 40px 0 30px;
+
+  background-color: $bg-white-color;
+  @media screen and (min-width: 1440px) {
+    padding: 50px 0 40px 0;
+  }
+}
+
+.create__container {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-right: 31px;
+    margin-bottom: 80px;
+    overflow: unset;
+    overflow-x: clip;
+  }
 }
 .container {
 }
 .create__title {
+  position: relative;
+  z-index: 2;
   font-size: 16px;
   max-width: 190px;
   line-height: 1.25;
@@ -12,21 +35,77 @@
   color: $accent-color;
 
   margin-bottom: 16px;
-}
-
-.create__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px 20px;
-  margin-bottom: 40px;
-}
-.create__item {
-  @media screen and (max-width: 320px) {
-    width: calc((100% - 32px) / 2);
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+    max-width: 100%;
+    width: 435px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding-left: 117px;
+    width: 842px;
   }
 }
 
-.btn {
+.create__list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
 }
-.btn-order__link {
+.create__item {
+  overflow: hidden;
+
+  @media screen and (max-width: 320px) {
+    width: calc(50% - 10px);
+  }
+
+  &:nth-child(1) {
+    border-radius: 0px 0px 0px 50px;
+  }
+  &:nth-child(2) {
+    border-radius: 50px 0px;
+  }
+  &:nth-child(3) {
+    border-radius: 0px 0px 0px 50px;
+  }
+  &:nth-child(4) {
+    border-radius: 50px 0px;
+  }
+}
+
+.create__figure {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -18px;
+  top: 38px;
+
+  background: $bg-color;
+
+  box-shadow: $figure-shadow;
+  border-radius: 0px 0px 0px 35px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 136.83px;
+    height: 144px;
+    left: -21.82px;
+    top: -36px;
+    display: block;
+    border-radius: 72px;
+  }
+}
+
+.create__btn-wrap {
+  display: flex;
+  justify-content: center;
 }
