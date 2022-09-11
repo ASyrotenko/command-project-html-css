@@ -158,7 +158,6 @@ button {
     margin-right: 277px;
     margin-left: 0;
     margin-bottom: 0;
-    padding-left: 32px;
   }
 }
 
@@ -201,11 +200,6 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer__navigation {
-    padding-left: 32px;
-  }
-}
 @media screen and (min-width: 1440px) {
   .footer__navigation {
     padding-left: 0;
@@ -220,7 +214,7 @@ button {
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #2b2b2b;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
   .footer__item,
@@ -240,10 +234,8 @@ button {
   color: #487996;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__address {
-    padding-right: 32px;
-  }
+.address-list-footer {
+  margin-bottom: 24px;
 }
 
 .address-link__adres {
@@ -253,7 +245,7 @@ button {
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #2b2b2b;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
   .address-link__adres {
@@ -280,7 +272,7 @@ button {
   font-size: 16px;
   line-height: 1.25;
   color: #487996;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
   .address-link__footer {
