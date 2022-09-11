@@ -11,7 +11,7 @@
     padding-bottom: 60px;
   }
 
-  & > .container {
+  &__container {
     position: relative;
   }
   &__title {
@@ -96,7 +96,7 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  background: $bg-color;
+  background: $bg-white-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
   @include desk {
@@ -117,8 +117,8 @@
     top: -32.5;
     left: 107px;
     background-image: url(../images/main-page/hero/1x/plants-tab.jpg);
-    @include bcg-img(center, no-repet, cover);
-    
+    @include bcg-img(center, no-repeat, cover);
+
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     border-radius: 50%;
 
@@ -173,7 +173,7 @@
     top: 254px;
     left: 32px;
     background-image: url(../images/main-page/hero/1x/scanning-tab.jpg);
-        @include bcg-img(center, no-repet, cover);
+    @include bcg-img(center, no-repeat, cover);
 
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     border-radius: 50%;
@@ -199,7 +199,7 @@
     top: -26px;
     right: 32px;
     background-image: url(../images/main-page/hero/1x/print-tab.jpg);
-        @include bcg-img(center, no-repet, cover);
+    @include bcg-img(center, no-repeat, cover);
 
     border-radius: 0 0 72 0;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
@@ -247,7 +247,7 @@
     top: 192px;
     right: 32px;
     background-image: url(../images/main-page/hero/1x/mushroom-tab.jpg);
-        @include bcg-img(center, no-repet, cover);
+    @include bcg-img(center, no-repeat, cover);
 
     border-radius: 72px 72px 0 0;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
