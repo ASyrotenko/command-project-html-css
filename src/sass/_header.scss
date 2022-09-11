@@ -162,7 +162,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 45%;
+    top: 44%;
 
     right: -14px;
 
@@ -172,7 +172,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: rotateX(0deg);
+    transform: rotateX(180deg);
     transform-origin: bottom center;
     @include transition(transform);
   }
@@ -192,7 +192,7 @@
       pointer-events: initial;
     }
     .menu__link--services::after {
-      transform: rotateX(180deg);
+      transform: rotateX(0deg);
     }
   }
 }
