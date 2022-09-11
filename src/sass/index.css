@@ -234,6 +234,11 @@ button {
     text-align: start;
   }
 }
+.footer__item:hover, .footer__item:focus,
+.footer-soc__item:hover,
+.footer-soc__item:focus {
+  color: #487996;
+}
 
 @media screen and (min-width: 768px) {
   .footer__address {
@@ -265,6 +270,9 @@ button {
     text-align: start;
   }
 }
+.address-link__adres:hover, .address-link__adres:focus {
+  color: #487996;
+}
 
 .address-link__footer {
   font-style: normal;
@@ -288,6 +296,9 @@ button {
   .address-link__footer {
     text-align: start;
   }
+}
+.address-link__footer:hover, .address-link__footer:focus {
+  color: #487996;
 }
 
 link {

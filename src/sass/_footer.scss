@@ -106,6 +106,10 @@
   @media screen and (min-width: 768px) {
     text-align: start;
   }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .footer__address {
   @media screen and (min-width: 768px) {
@@ -130,6 +134,10 @@
   @media screen and (min-width: 1440px) {
     text-align: start;
   }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .address-link__footer {
   font-style: normal;
@@ -148,6 +156,10 @@
   }
   @media screen and (min-width: 1440px) {
     text-align: start;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 link {
