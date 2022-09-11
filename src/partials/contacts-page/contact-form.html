@@ -9,9 +9,9 @@
           class="contact-form__input"
           name="user-name"
           id="user-name"
-          placeholder="Імʼя"
-          autofocus
+          placeholder=" "
         />
+        <label for="user-name" class="contact-form__lable">Імʼя</label>
       </div>
       <div class="contact-form__field">
         <input
@@ -19,8 +19,9 @@
           class="contact-form__input"
           name="user-mail"
           id="user-mail"
-          placeholder="Email"
+          placeholder=" "
         />
+        <label for="user-mail" class="contact-form__lable">Email</label>
       </div>
       <div class="contact-form__field-textarea">
         <label for="user-text" class="contact-form__label">Повідомлення</label>
@@ -31,13 +32,19 @@
           id="user-text"
           placeholder="Залишіть своє повідомлення"
         ></textarea>
-        <label class="textarea-clip">
+        <input
+          class="textarea-attach hidden"
+          type="file"
+          name="attachment"
+          id="textarea-file"
+        />
+        <label for="textarea-file" class="attach">
           <svg class="textarea-icon" width="22" height="20">
             <use
               href="/src/images/icons.svg#icon-simple-line-icons_paper-clip"
             ></use>
           </svg>
-        </div>
+        </label>
       </div>
       <p class="textarea-comment">
         *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
