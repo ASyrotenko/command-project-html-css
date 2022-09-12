@@ -32,6 +32,13 @@
   border-radius: 50px 0px;
   min-width: 130px;
   width: calc(50% - 20px / 2);
+
+  &:nth-child(1) .scan__text {
+    border: 3px solid red;
+  }
+  &:nth-child(2) .scan__text {
+    border: 3px solid aqua;
+  }
 }
 .scan__text {
   font-size: 14px;
@@ -39,6 +46,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100.3px;
 
   color: $accent-color;
 
