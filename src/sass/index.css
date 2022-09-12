@@ -905,18 +905,18 @@ button {
 
 .morephoto {
   padding-top: 60px;
-  padding-bottom: 78px;
+  padding-bottom: 156px;
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .morephoto {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 }
 @media screen and (max-width: 768px) {
   .morephoto {
     padding-top: 20px;
-    padding-bottom: 60.5px;
+    padding-bottom: 121px;
   }
 }
 
@@ -1191,6 +1191,34 @@ img {
 .morephoto-icon {
   width: 45px;
   height: 45px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 43, 43, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  z-index: 0;
+}
+
+.modal-window {
+  position: relative;
+  z-index: 1;
 }
 
 .modeling-hero {
