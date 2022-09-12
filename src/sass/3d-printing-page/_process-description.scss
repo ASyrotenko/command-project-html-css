@@ -110,8 +110,8 @@
 
 .process__box {
   position: absolute;
-  z-index: -1;
-  background: red;
+  z-index: -100;
+  background-color: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,4 +121,99 @@
   border-radius: 72px;
   top: 73px;
   right: -15px;
+
+  @media screen and(min-width: 768px) {
+    width: 71.41px;
+    height: 74.08px;
+    right: 32px;
+    top: 79px;
+    border-radius: 25px 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 136.83px;
+    height: 144px;
+    top: -50px;
+    right: 32px;
+    border-radius: 72px 0px;
+  }
+}
+.process__box-2 {
+  width: 73.65px;
+  height: 73.65px;
+  border-radius: 25px 0px;
+  top: 135px;
+
+  @media screen and(max-width: 767px) {
+    left: -18px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 71.41px;
+    height: 74.08px;
+    right: 32px;
+    top: 570px;
+    border-radius: 25px 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 136.83px;
+    height: 144px;
+    top: 60px;
+    left: -22px;
+    border-radius: 72px;
+  }
+}
+.process__box-3 {
+  width: 73.65px;
+  height: 73.65px;
+  border-radius: 25px 0px;
+  top: 710px;
+  @media screen and(max-width: 767px) {
+    right: -10px;
+  }
+  @media screen and(min-width: 768px) {
+    width: 71.41px;
+    height: 74.08px;
+    top: 942px;
+    border-radius: 72px;
+  }
+  @media screen and (max-width: 1439px) {
+    left: -17px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 142.81px;
+    height: 145px;
+    top: 900px;
+    right: 175px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.process__box-4 {
+  @media screen and(max-width: 767px) {
+    width: 73.65px;
+    height: 73.65px;
+    border-radius: 0px 0px 0px 35px;
+    left: 420px;
+    top: 740px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 142.81px;
+    height: 145px;
+    top: 754px;
+    right: 32px;
+    border-radius: 72px 0px;
+  }
+}
+
+.process__box-5 {
+  width: 73.65px;
+  height: 73.65px;
+  border-radius: 25px 0px;
+  top: 1015px;
+  right: -10px;
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
 }
