@@ -1,6 +1,10 @@
 .contacts {
   padding-top: 20px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
 }
 
 .contact-container {
@@ -19,14 +23,9 @@
 
 .connect {
   position: relative;
-  width: 280px;
-  height: 580px;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 400px;
-  }
   @media screen and (min-width: 768px) {
     width: 400px;
   }
@@ -116,7 +115,18 @@
   border-radius: 50px 0px;
   resize: none;
   margin-top: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 22px 20px;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.1;
+  }
 }
+
 .contact-form__text::placeholder {
   font-family: inherit;
   font-style: normal;
@@ -124,12 +134,12 @@
   font-size: 16px;
   line-height: 1.25;
   color: #cdcdcd;
-  padding: 22px 20px;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.1;
   }
 }
+
 .contact-form__label {
   font-family: inherit;
   font-style: normal;
@@ -159,11 +169,15 @@
 .contact-form__field-textarea {
   position: relative;
 }
+
 .attach {
   position: absolute;
   fill: #cdcdcd;
   right: 21px;
   bottom: 23px;
+  @media screen and (min-width: 1440px) {
+    right: 61px;
+  }
 }
 
 .contact-form__btn {
