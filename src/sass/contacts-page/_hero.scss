@@ -48,6 +48,10 @@
 
 .contacts-hero__video {
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -89,14 +93,12 @@
 
 .contacts-hero__span {
   font-size: 22px;
-  vertical-align: middle;
 }
 @media screen and (min-width: 1440px) {
   .contacts-hero__span {
     font-size: 49px;
     position: absolute;
-    left: 0;
-    bottom: -7px;
+    bottom: 0;
   }
 }
 
@@ -125,56 +127,42 @@ iframe {
   z-index: -2;
   background-color: #ffffff;
   top: 200px;
-  left: 0;
-  width: 44px;
-  height: 73px;
+  left: -29px;
+  width: 73.65px;
+  height: 73.65px;
   border-radius: 0px 0px 35px 0px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-}
 
-@media screen and (min-width: 768px) {
-  .figure1 {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
-  .figure2 {
-    position: absolute;
-    z-index: -2;
-    background-color: #ffffff;
-    top: 26px;
-    right: 0;
-    width: 71px;
-    height: 63px;
-    border-radius: 0px 0px 0px 35px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  }
-}
-@media screen and (min-width: 1440px) {
-  .figure1 {
-    display: none;
-  }
-  .figure2 {
-    display: none;
-  }
-  .figure3 {
-    position: absolute;
-    z-index: -2;
-    background-color: #ffffff;
-    top: 38px;
-    left: 0;
+
+  @media screen and (min-width: 1400px) {
     width: 82px;
     height: 78px;
     border-radius: 0px 0px 72px 0px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 35px;
   }
-  .figure4 {
+}
+
+.figure2 {
+  @media screen and (min-width: 768px) {
     position: absolute;
     z-index: -2;
     background-color: #ffffff;
-    top: 0px;
-    right: 0;
+    top: -22px;
+    right: 32px;
+    width: 71.41px;
+    height: 63.79px;
+    border-radius: 0px 0px 0px 35px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 137px;
     height: 83px;
     border-radius: 0px 0px 0px 72px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    top: -38px;
   }
 }
