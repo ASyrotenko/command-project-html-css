@@ -73,6 +73,14 @@
 }
 .gallery__container {
   position: relative;
+
+  @media screen and(max-width:548px) {
+    overflow: hidden;
+  }
+  @media screen and(min-width:768px) and (max-width: 820px) {
+    overflow: hidden;
+  }
+
   @media screen and(max-width:767px) {
     max-width: 480px;
   }
