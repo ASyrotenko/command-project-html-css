@@ -9,6 +9,9 @@
 
 .scan__container {
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
@@ -37,6 +40,8 @@
   }
 }
 .scan__list {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 16px 20px;
@@ -241,4 +246,34 @@
 
 .scan__btn {
   font-size: 16px;
+}
+
+.scan__r-figure {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  right: -40px;
+  top: 116px;
+  background: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.scan__l-figure {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -17px;
+  top: 147px;
+
+  background: #ffffff;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
