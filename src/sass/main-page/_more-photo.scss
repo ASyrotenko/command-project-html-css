@@ -13,11 +13,11 @@
 .morephoto-indent {
   position: relative;
   @media screen and (min-width: 767px) and (max-width: 803px) {
-      overflow: hidden;
-    }
+    overflow: hidden;
+  }
   @media screen and (max-width: 509px) {
-      overflow: hidden;
-    }
+    overflow: hidden;
+  }
 }
 .morephoto-title {
   max-width: 1140px;
@@ -38,16 +38,16 @@
 
     color: #487996;
   }
-     @media screen and (max-width: 1439px) {
-      font-size: 36px;
-      line-height: 1.25;
-      margin-bottom: 32px;
-     }
-     @media screen and (max-width: 767px) {
-      font-size: 24px;
-      line-height: 1.25;
-      margin-bottom: 16px;
-     }
+  @media screen and (max-width: 1439px) {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
 }
 
 .masonry {
@@ -57,8 +57,8 @@
   margin-left: auto;
   margin-right: auto;
 
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
-      display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    display: flex;
     width: 100%;
     max-width: 704px;
     margin-left: auto;
@@ -70,7 +70,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     display: block;
   }
@@ -78,20 +78,20 @@
 
 .masonry-brick {
   margin: 0 0 32px 32px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 0;
     margin-bottom: 16px;
   }
 }
 
 .masonry-brick:nth-child(3) {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 0;
   }
 }
 
 .masonry-brick:nth-child(n + 4) {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -123,23 +123,23 @@ img {
 }
 
 .morephoto-box1 {
-    z-index: -1;
-    position: absolute;
-    left: 29.85px;
-    top: 430px;
-    width: 140.9px;
-    height: 145px;
-    background: red;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 0px 72px;
+  z-index: -1;
+  position: absolute;
+  left: 29.85px;
+  top: 430px;
+  width: 140.9px;
+  height: 145px;
+  background: red;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 72px;
 
-    @media screen and (max-width: 1439px) {
-      width: 73.65px;
-      height: 74.05px;
-      top: 13.55px;
-      left: 32px;
-      border-radius: 0px 0px 0px 35px;
-     }
+  @media screen and (max-width: 1439px) {
+    width: 73.65px;
+    height: 74.05px;
+    top: 13.55px;
+    left: 32px;
+    border-radius: 0px 0px 0px 35px;
+  }
 
   @media screen and (max-width: 768px) {
     width: 73.65px;
@@ -150,101 +150,79 @@ img {
   }
 }
 .morephoto-box2 {
-    z-index: -1;
-    position: absolute;
-    left: 1265.34px;
-    top: 430px;
-    width: 144px;
-    height: 142.81px;
-    background: red;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px 0px;
-    transform: rotate(90deg);
+  z-index: -1;
+  position: absolute;
+  left: 1265.34px;
+  top: 430px;
+  width: 144px;
+  height: 142.81px;
+  background: red;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px 0px;
+  transform: rotate(90deg);
 
-    @media screen and (max-width: 1439px) {
-      width: 74.05px;
-      height: 73.65px;
-      top: -17px;
-      left: 662px;
-      border-radius: 25px 0px;
-     }
+  @media screen and (max-width: 1439px) {
+    width: 74.05px;
+    height: 73.65px;
+    top: -17px;
+    left: 662px;
+    border-radius: 25px 0px;
+  }
 
-       @media screen and (max-width: 768px) {
-      display: none;
-     }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .morephoto-box3 {
-    z-index: -1;
-    position: absolute;
-    left: -58px;
-    top: 970px;
-    width: 144.18px;
-    height: 144.29px;
-    background: red;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  position: absolute;
+  left: -58px;
+  top: 970px;
+  width: 144.18px;
+  height: 144.29px;
+  background: red;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+
+  @media screen and (max-width: 1439px) {
+    width: 73.65px;
+    height: 74.05px;
+    top: 329.23px;
+    left: -17px;
     border-radius: 72px;
+  }
 
-    @media screen and (max-width: 1439px) {
-      width: 73.65px;
-      height: 74.05px;
-      top: 329.23px;
-      left: -17px;
-      border-radius: 72px;
-     }
-
-     @media screen and (max-width: 768px) {
-     display: none;
-     }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
-.morephoto-box4 {
-    z-index: -1;
-    position: absolute;
-    left: 1265.34px;
-    top: 1108px;
-    width: 142.81px;
-    height: 145px;
-    background: red;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px 0px;
 
-    @media screen  and (min-width: 768px) and (max-width: 1439px) {
-      display: none;
-    }
-    
-     @media screen and (max-width: 767px) {
-      width: 73.65px;
-      height: 73.65px;
-      top: 265.84px;
-      right: -15px;
-      border-radius: 25px 0px;
-     }
-}
 .morephoto-box5 {
+  z-index: -1;
+  position: absolute;
+  left: 1121.56px;
+  top: 1253px;
+  width: 143.77px;
+  height: 116px;
+  background: red;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 72px;
+
+  @media screen and (max-width: 1439px) {
     z-index: -1;
-    position: absolute;
-    left: 1121.56px;
-    top: 1253px;
-    width: 143.77px;
-    height: 116px;
-    background: red;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 0px 72px;
+    width: 73.65px;
+    height: 74.05px;
+    top: -60px;
+    left: 105.65px;
+    border-radius: 0px 35px 0px 0px;
+  }
 
-     @media screen and (max-width: 1439px) {
-      z-index: -1;
-      width: 73.65px;
-      height: 74.05px;
-      top: -60px;
-      left: 105.65px;
-      border-radius: 0px 35px 0px 0px;
-     }
-
-     @media screen and (max-width: 768px) {
-     display: none;
-     }
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 .morephoto-box6 {
-    @media screen and (max-width: 1439px) {
+  @media screen and (min-width: 768px) {
     z-index: -1;
     position: absolute;
     width: 73.65px;
@@ -254,19 +232,24 @@ img {
     background: red;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 0px 35px;
-   }
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 144.18px;
+    height: 144.29px;
+    border-radius: 0px 72px 0px 0px;
+    left: 174px;
+    top: 309px;
+  }
 }
 
 .morephoto-loading {
-    position: absolute;
-    display: inline-flex;
-    bottom: -61px;
-    left: 50%;
-    margin-left: -22.5px;
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
+  position: absolute;
+  display: inline-flex;
+  bottom: -61px;
+  left: 50%;
+  margin-left: -22.5px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
 }
@@ -293,26 +276,8 @@ img {
     display: none;
   }
 }
+
 .morephoto-box4 {
-  // z-index: -1;
-  // position: absolute;
-  // left: 1265.34px;
-  // top: 1108px;
-  // width: 142.81px;
-  // height: 145px;
-  // background: red;
-  // box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  // border-radius: 72px 0px;
-
-  // @media screen and (max-width: 767px) {
-  //   position: absolute;
-  //   width: 73.65px;
-  //   height: 73.65px;
-  //   top: 266px;
-  //   right: -15px;
-  //   border-radius: 25px 0px;
-  // }
-
   z-index: -1;
   position: absolute;
   width: 73.65px;
@@ -320,21 +285,22 @@ img {
   background: red;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 25px 0px;
-  top: 266px;
   right: -15px;
+  top: 266px;
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
 
   @media screen and (min-width: 1440px) {
-    width: 144px;
-    height: 142.81px;
-    border-radius: 0px 72px;
-    right: 32px;
-    top: 430;
+    width: 142.81px;
+    height: 145px;
+    border-radius: 72px 0px;
+    right: 0;
+    top: 1108;
   }
 }
+
 .morephoto-box5 {
   z-index: -1;
   position: absolute;
