@@ -182,7 +182,8 @@
 
 .contact-form__btn {
   @media screen and (min-width: 768px) {
-    float: right;
+    display: block;
+    margin-left: auto;
     padding: 16px 32px;
   }
 }
