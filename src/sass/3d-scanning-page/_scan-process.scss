@@ -73,17 +73,29 @@
   }
 
   &:nth-child(1) .scan__text::before {
-    background-image: url(/src/images/3d-scanning-page/process1-mob-1x.png);
+    background-image: url(../images/3d-scanning-page/process1-mob-1x.png);
     margin-bottom: 15px;
+    @include retina {
+      background-image: url(../images/3d-scanning-page/process1-mob-2x.png);
+    }
   }
   &:nth-child(2) .scan__text::before {
-    background-image: url(/src/images/3d-scanning-page/process2-mob-1x.png);
+    background-image: url(../images/3d-scanning-page/process2-mob-1x.png);
+    @include retina {
+      background-image: url(../images/3d-scanning-page/process2-mob-2x.png);
+    }
   }
   &:nth-child(3) .scan__text::before {
-    background-image: url(/src/images/3d-scanning-page/process3-mob-1x.png);
+    background-image: url(../images/3d-scanning-page/process3-mob-1x.png);
+    @include retina {
+      background-image: url(../images/3d-scanning-page/process3-mob-2x.png);
+    }
   }
   &:nth-child(4) .scan__text::before {
-    background-image: url(/src/images/3d-scanning-page/process4-mob-1x.png);
+    background-image: url(../images/3d-scanning-page/process4-mob-1x.png);
+    @include retina {
+      background-image: url(../images/3d-scanning-page/process4-mob-2x.png);
+    }
   }
 
   @media screen and (min-width: 768px) {
