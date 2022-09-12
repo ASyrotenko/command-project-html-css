@@ -10,6 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      align-items: flex-end;
+    }
   }
 
   &__nav {
@@ -17,6 +20,9 @@
     display: flex;
     align-items: center;
 
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      align-items: flex-end;
+    }
     @media screen and (min-width: 1440px) {
       min-height: 130px;
     }
@@ -61,6 +67,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
   }
   @media screen and (min-width: 1440px) {
     margin-right: 258px;
@@ -79,6 +86,9 @@
   cursor: pointer;
   border: none;
   outline: none;
+  @media screen and (min-width: 768px) {
+    top: 62%;
+  }
 
   @media screen and (min-width: 1440px) {
     display: none;
