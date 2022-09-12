@@ -1,0 +1,296 @@
+.main-hero {
+  padding-top: 92px;
+  padding-bottom: 20px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 104px;
+    padding-bottom: 30px;
+  }
+  @media screen and(min-width:1440px) {
+    padding-top: 188px;
+    padding-bottom: 60px;
+  }
+
+  &__container {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 32px;
+    font-family: 'Caviar Dreams';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    color: $primary-text-color;
+
+    @media screen and(max-width:320px) {
+      max-width: 268px;
+    }
+    @include tablet {
+      margin-bottom: 60px;
+      font-size: 24px;
+      width: 336px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include desk {
+      width: 630px;
+      font-size: 48px;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 14px;
+    margin: 0 auto 32px;
+
+    @include tablet {
+      width: 400px;
+      margin: 0 auto 60px;
+      gap: 29px;
+    }
+    @include desk {
+      width: 672px;
+      gap: 32px;
+    }
+  }
+  &__item {
+    overflow: hidden;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+    &--robo {
+      border-radius: 0 35px 0 0;
+      @include desk {
+        border-radius: 0 72px 0 0;
+      }
+    }
+    &--lamps {
+      border-radius: 50%;
+    }
+    &--scull {
+      border-radius: 0 25px;
+      @include desk {
+        border-radius: 0 72px;
+      }
+    }
+  }
+  &__text {
+    font-family: 'Caviar Dreams';
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $primary-text-color;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 1.17;
+    }
+    @include desk {
+      font-size: 36px;
+    }
+  }
+}
+
+.main-hero__decor {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  background: $bg-white-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  @include desk {
+    width: 144px;
+    height: 144px;
+  }
+  &--a {
+    top: -30px;
+    left: 32px;
+    border-radius: 0 0 35px 0;
+
+    @include desk {
+      top: -43px;
+      left: 30px;
+    }
+  }
+  &--b {
+    top: -32.5;
+    left: 107px;
+    background-image: url(../images/main-page/hero/1x/plants-tab.jpg);
+    @include bcg-img(center, no-repeat, cover);
+
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+
+    @include retina {
+      background-image: url(../images/main-page/hero/2x/plants-tab2x.jpg);
+    }
+    @include desk {
+      top: -48px;
+      left: 174px;
+    }
+  }
+  &--c {
+    top: 44px;
+    left: 107px;
+    border-radius: 0 35px 0 0;
+
+    @include desk {
+      top: 102px;
+      left: 174px;
+      border-radius: 0 72px 0 0;
+    }
+  }
+  &--d {
+    top: 118px;
+    left: 32px;
+    border-radius: 0 0 0 35px;
+
+    @include desk {
+      top: 246px;
+      left: 30px;
+      border-radius: 0 0 0 72px;
+    }
+  }
+  &--e {
+    top: 192px;
+    left: 107px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 35px 0;
+
+    @media screen and(max-width:767px) {
+      display: none;
+    }
+    @include desk {
+      top: 390px;
+      left: 174px;
+      border-radius: 0 0 72px 0;
+    }
+  }
+  &--f {
+    top: 254px;
+    left: 32px;
+    background-image: url(../images/main-page/hero/1x/scanning-tab.jpg);
+    @include bcg-img(center, no-repeat, cover);
+
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+
+    @include retina {
+      background-image: url(../images/main-page/hero/2x/scanning-tab2x.jpg);
+    }
+
+    @include desk {
+      top: 512px;
+      left: 30px;
+    }
+  }
+  &--g {
+    top: -26px;
+    right: 106px;
+    @include desk {
+      top: -43px;
+      right: 176px;
+    }
+  }
+  &--h {
+    top: -26px;
+    right: 32px;
+    background-image: url(../images/main-page/hero/1x/print-tab.jpg);
+    @include bcg-img(center, no-repeat, cover);
+
+    border-radius: 0 0 72 0;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    @include retina {
+      background-image: url(../images/main-page/hero/2x/print-tab2x.jpg);
+    }
+
+    @include desk {
+      top: -43px;
+      right: 32px;
+    }
+  }
+  &--i {
+    top: 49px;
+    right: 106px;
+    border-radius: 50%;
+    @include desk {
+      top: 102px;
+      right: 176px;
+    }
+  }
+  &--j {
+    top: 117px;
+    right: 32px;
+    border-radius: 25px 0;
+    @include desk {
+      top: 246px;
+      right: 32px;
+      border-radius: 72px 0;
+    }
+  }
+  &--k {
+    top: 192px;
+    right: 106px;
+    border-radius: 0 0 0 35px;
+
+    @include desk {
+      top: 390px;
+      right: 176px;
+      border-radius: 0 0 0 72px;
+    }
+  }
+  &--l {
+    top: 192px;
+    right: 32px;
+    background-image: url(../images/main-page/hero/1x/mushroom-tab.jpg);
+    @include bcg-img(center, no-repeat, cover);
+
+    border-radius: 72px 72px 0 0;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    @include retina {
+      background-image: url(../images/main-page/hero/2x/mushroom-tab2x.jpg);
+    }
+
+    @include desk {
+      top: 390px;
+      right: 32px;
+    }
+  }
+  &--m {
+    top: 266px;
+    right: 32px;
+    border-radius: 0 0 0 35px;
+    @include desk {
+      top: 535px;
+      right: 32px;
+      height: 124px;
+      border-radius: 0 0 0 72px;
+    }
+  }
+}
+.main-hero__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.main-hero__icon {
+  fill: $icon-color;
+  transform: scale(1) rotate(0);
+  transition: transform 300ms linear;
+
+  .main-hero__link:hover & {
+    transform: scale(1.3) rotate(360deg);
+  }
+
+  @include desk {
+    width: 32px;
+    height: 32px;
+  }
+}
