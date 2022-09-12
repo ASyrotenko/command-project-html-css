@@ -1,6 +1,6 @@
-<section class="more-foto">
-  <div class="container more-foto-pd">
-    <h2 class="more-foto__title">БІЛЬШЕ ФОТО</h2>
+<section class="morephoto">
+  <div class="container morephoto-indent">
+    <h2 class="morephoto-title">БІЛЬШЕ ФОТО</h2>
     <div class="masonry masonry--h">
       <figure class="masonry-brick masonry-brick--h">
         <picture>
@@ -104,13 +104,22 @@
             media="(min-width: 768px)"
           />
 
+           <source
+            srcset="
+              .\images\main-page\more-foto\robot-wall-e-mobile.jpg    1x,
+              .\images\main-page\more-foto\robot-wall-e-mobile-2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 321px)"
+          />
+
           <source
             srcset="
               .\images\main-page\more-foto\robot-wall-e-mobile.jpg    1x,
               .\images\main-page\more-foto\robot-wall-e-mobile-2x.jpg 2x
             "
             type="image/jpeg"
-            media="(min-width: 480px)"
+            media="(max-width: 320px)"
           />
           <img
             src=".\images\main-page\more-foto\robot-wall-e-3d-model.jpg"
@@ -438,13 +447,13 @@
       </figure>
     </div>
 
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
-    <div class="box5"></div>
-    <div class="foto-loader">
-      <svg class="icon-loader" width="45" height="45" >
+    <div class="morephoto-box1"></div>
+    <div class="morephoto-box2"></div>
+    <div class="morephoto-box3"></div>
+    <div class="morephoto-box4"></div>
+    <div class="morephoto-box5"></div>
+    <div class="morephoto-loading">
+      <svg class="morephoto-icon" width="45" height="45" >
           <use href=".\images\main-page\more-foto\symbol-defs.svg#icon-icon-loader" ></use>
       </svg>
     </div>
