@@ -12,6 +12,13 @@
   text-transform: uppercase;
   color: #487996;
 
+  &:hover, &:focus, &:active {
+    background: #f3f3fc;
+    box-shadow: -20px -20px 30px #ffffff, 20px 20px 30px rgba(72, 121, 150, 0.1),
+    10px 10px 15px rgba(72, 121, 150, 0.25), -10px -10px 15px #ffffff;
+    
+  }
+
   @media screen and (max-width: 767px) {
     width: 100%;
   }
