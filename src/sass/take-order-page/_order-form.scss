@@ -140,11 +140,16 @@
   line-height: 1.25;
   text-transform: capitalize;
   color: $primary-text-color;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.11;
   }
+}
+
+.order-form__label.label--order-form {
+  display: block;
+  margin-bottom: 4px;
 }
 
 .textarea-notice {
@@ -163,11 +168,11 @@
     width: 400px;
   }
   @media screen and (min-width: 768px) {
-    font-size: 18px;
-    line-height: 1.11;
   }
   @media screen and (min-width: 1440px) {
     width: 555px;
+    font-size: 18px;
+    line-height: 1.11;
   }
 }
 
@@ -405,6 +410,9 @@
     border-radius: 72px;
     z-index: -1;
   }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .rectangle67 {
@@ -444,7 +452,7 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 1440px) {
-    margin-bottom: 68px;
+    margin-bottom: 30px;
   }
 }
 
