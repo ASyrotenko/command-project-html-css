@@ -1177,9 +1177,14 @@ img {
   left: 50%;
   margin-left: -22.5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .morephoto-loading {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .morephoto-loading {
+    bottom: -57px;
   }
 }
 
