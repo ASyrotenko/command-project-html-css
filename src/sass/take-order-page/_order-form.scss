@@ -20,7 +20,9 @@
   }
   @media screen and (min-width: 1440px) {
     width: 555px;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 .order-frame__title {
@@ -383,8 +385,8 @@
     position: absolute;
     width: 136.83px;
     height: 144px;
-    left: -240px;
-    top: 40px;
+    left: -180px;
+    top: 60px;
     background: $bg-white-color;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px;
