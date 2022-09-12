@@ -8,16 +8,9 @@
 }
 
 .scan__container {
-  margin-bottom: 40px;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 80px;
-  }
 }
 
 .scan__title {
@@ -240,7 +233,16 @@
 }
 
 .scan__btn-wrap {
+  margin-top: 40px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 80px;
+  }
 }
 
 .scan__btn {
