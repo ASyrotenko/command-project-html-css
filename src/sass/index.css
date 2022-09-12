@@ -1221,6 +1221,11 @@ img {
   z-index: 1;
 }
 
+.modal-img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .modeling-hero {
   padding-top: 92px;
   padding-bottom: 20px;
