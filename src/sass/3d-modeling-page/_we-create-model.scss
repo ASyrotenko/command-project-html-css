@@ -59,7 +59,7 @@
   flex-wrap: wrap;
   gap: 16px 20px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     display: flex;
     flex-wrap: wrap;
     row-gap: 16px;
@@ -71,7 +71,7 @@
 }
 
 .create__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     min-width: 130px;
     width: calc(50% - 20px / 2);
   }
@@ -103,7 +103,7 @@
   left: -18px;
   top: 38px;
 
-  background: #ffffff;
+  background-color: #ffffff;
 
   box-shadow: $figure-shadow;
   border-radius: 0px 0px 0px 35px;
