@@ -24,12 +24,22 @@
 
           <source
             srcset="
-              .\images\main-page\more-foto\design-high-quality-mobile.jpg    1x,
+              .\images\main-page\more-foto\design-high-quality-tablet.jpg    1x,
+              .\images\main-page\more-foto\design-high-quality-tablet-2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 321px)"
+          />
+
+          <source
+            srcset="
+              .\images\main-page\more-foto\design-high-quality-mobile.jpg 1x,
               .\images\main-page\more-foto\design-high-quality-mobile-2x.jpg 2x
             "
             type="image/jpeg"
-            media="(min-width: 480px)"
+            media="(max-width: 320px)"
           />
+          
           <img
             src=".\images\main-page\more-foto\design-high-quality-3d-model.jpg"
             class="masonry-img"
@@ -433,5 +443,10 @@
     <div class="box3"></div>
     <div class="box4"></div>
     <div class="box5"></div>
+    <div class="foto-loader">
+      <svg class="icon-loader" width="45" height="45" >
+          <use href=".\images\main-page\more-foto\symbol-defs.svg#icon-icon-loader" ></use>
+      </svg>
+    </div>
   </div>
 </section>

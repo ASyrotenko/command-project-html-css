@@ -1,8 +1,6 @@
-.more-foto {
-    position: relative;
-    max-width: 1440px;
-}
+
 .more-foto-pd{
+    position: relative;
     padding-top: 60px;
     padding-bottom: 78px;
 
@@ -70,22 +68,28 @@
       flex-direction: column;
       display: block;
     }
-    
-
 }
 
-.masonry-brick--h {
-   
-}
 .masonry-brick {
   margin: 0 0 32px 32px;
   @media screen and (max-width: 768px) {
       margin-left: 0;
       margin-bottom: 16px;
-
-      
     }
 }
+
+.masonry-brick:nth-child(3) {
+  @media screen and (max-width: 768px) {
+      margin-bottom: 0;
+    }
+}
+
+.masonry-brick:nth-child(n + 4){
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 .masonry-img {
   object-fit: cover;
   width: 100%;
@@ -238,3 +242,18 @@ img {
      display: none;
      }
     }
+
+.foto-loader{
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    display: none;
+  }
+}
+.icon-loader {
+ 
+}
+
+
