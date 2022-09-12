@@ -1,10 +1,22 @@
-<section class="process section">
+<section class="process__section">
   <div class="container">
     <h2 class="process__title title hidden">dfghj</h2>
     <ul class="process-description list">
       <li class="process-description__item">
         <div class="process-description__img">
-          <picture>
+          <img
+            srcset="
+              ./images/3d-printing-page/Printingservicemobil.jpg      320w,
+              ./images/3d-printing-page/Printingservicetablet.jpg     768w,
+              ./images/3d-printing-page/Printingservicedesk.jpg      1440w,
+              ./images/3d-printing-page/Printingservicetablet@2x.jpg 1441w
+            "
+            src="./images/3d-printing-page/Printingservicemobil.jpg"
+            alt="3d-Друк"
+            class="process-description__img-image"
+            sizes="(min-width: 1440px) 17vw, (min-width: 768px) 50vw, 100vw"
+          />
+          <!-- <picture>
             <source
               srcset="
                 ./images/3d-printing-page/Printingservicedesk.jpg    1x,
@@ -21,17 +33,26 @@
             />
             <source
               srcset="
-                ./images/3d-printing-page/Printingservicetablet.jpg    1x,
-                ./images/3d-printing-page/Printingservicetablet@2x.jpg 2x
+                ./images/3d-printing-page/Printingservicetablet.jpg    1x 320w,
+                ./images/3d-printing-page/Printingservicetablet@2x.jpg 2x 480w
               "
-              media="(max-width: 767px)"
+              media="(min-width: 320px)"
+              sizes="(min-width: 320px) 100vw"
+            />
+
+            <source
+              srcset="
+                ./images/3d-printing-page/Printingservicedesk.jpg    1x,
+                ./images/3d-printing-page/Printingservicedesk@2x.jpg 2x
+              "
+              media="(min-width: 321px) and (max-width: 767px)"
             />
             <img
               class="process-description__img-image"
-              src="./images/3d-printing-page/Printingservicetablet.jpg "
+              src="./images/3d-printing-page/Printingservicemobil.jpg"
               alt="3d-Друк"
             />
-          </picture>
+          </picture> -->
         </div>
         <div class="process-description__text-wrap">
           <p class="process-description__text">
@@ -47,16 +68,28 @@
             3D друк знайшов широке застосування в архітектурі, промисловості,
             маркетингу, мистецтві і багатьох інших сфер.
           </p>
-          <a class="link" href="">
-            <button class="process-description__button">
-              ЗРОБИТИ ЗАМОВЛЕННЯ
-            </button></a
-          >
+          <button type="button" class="btn process-description__button">
+            <a href="./take-order.html" class="btn-order__link"
+              >Зробити замовлення</a
+            >
+          </button>
         </div>
       </li>
       <li class="process-description__item">
         <div class="process-description__img">
-          <picture>
+          <img
+            srcset="
+              ./images/3d-printing-page/Backgroundmodelingmobil.jpg      320w,
+              ./images/3d-printing-page/Backgroundmodelingtablet.jpg     768w,
+              ./images/3d-printing-page/Backgroundmodelingdesk.jpg      1440w,
+              ./images/3d-printing-page/Backgroundmodelingtablet@2x.jpg 1441w
+            "
+            src="./images/3d-printing-page/Backgroundmodelingmobil.jpg"
+            alt="3d-Друк"
+            class="process-description__img-image"
+            sizes="(min-width: 1440px) 17vw, (min-width: 768px) 50vw, 100vw"
+          />
+          <!-- <picture>
             <source
               srcset="
                 ./images/3d-printing-page/Backgroundmodelingdesk.jpg    1x,
@@ -83,7 +116,7 @@
               src="./images/3d-printing-page/Backgroundmodelingtablet.jpg"
               alt="3d-Друк"
             />
-          </picture>
+          </picture> -->
         </div>
         <div class="process-description__text-wrap">
           <p class="process-description__text">
@@ -101,16 +134,28 @@
             Розуміючи специфіку 3D друку і ваших задач ми створимо деталь яка
             повністю задовольнить ваші потреби.
           </p>
-          <a class="link" href="">
-            <button class="process-description__button">
-              ЗРОБИТИ ЗАМОВЛЕННЯ
-            </button></a
-          >
+          <button type="button" class="btn process-description__button">
+            <a href="./take-order.html" class="btn-order__link"
+              >Зробити замовлення</a
+            >
+          </button>
         </div>
       </li>
       <li class="process-description__item">
         <div class="process-description__img">
-          <picture>
+          <img
+            srcset="
+              ./images/3d-printing-page/scanningservicesmobil.jpg      320w,
+              ./images/3d-printing-page/scanningservicestablet.jpg     768w,
+              ./images/3d-printing-page/scanningservicesdesk.jpg      1440w,
+              ./images/3d-printing-page/scanningservicestablet@2x.jpg 1441w
+            "
+            src="./images/3d-printing-page/scanningservicesmobil.jpg"
+            alt="3d-Друк"
+            class="process-description__img-image"
+            sizes="(min-width: 1440px) 17vw, (min-width: 768px) 50vw, 100vw"
+          />
+          <!-- <picture>
             <source
               srcset="
                 ./images/3d-printing-page/scanningservicesdesk.jpg    1x,
@@ -137,7 +182,7 @@
               src="./images/3d-printing-page/scanningservicestablet.jpg"
               alt="3d-Сканування"
             />
-          </picture>
+          </picture> -->
         </div>
         <div class="process-description__text-wrap">
           <p class="process-description__text">
@@ -150,11 +195,11 @@
             3D-модель для візуалізації в цифровому вигляді, так і 3D-модель для
             подальшого її друку на 3D-принтері.
           </p>
-          <a class="link" href="">
-            <button class="process-description__button">
-              ЗРОБИТИ ЗАМОВЛЕННЯ
-            </button></a
-          >
+          <button type="button" class="btn process-description__button">
+            <a href="./take-order.html" class="btn-order__link"
+              >Зробити замовлення</a
+            >
+          </button>
         </div>
       </li>
     </ul>
