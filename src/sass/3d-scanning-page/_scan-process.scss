@@ -1,11 +1,19 @@
 .scan {
   padding: 20px 0 60px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
 }
 
 .scan__container {
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
   }
 }
 .container {
@@ -20,7 +28,12 @@
   color: $accent-color;
 
   @media screen and (min-width: 768px) {
+    font-size: 24px;
     margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    margin-bottom: 40px;
   }
 }
 .scan__list {
@@ -51,6 +64,9 @@
   padding-bottom: 18px;
   @media screen and (min-width: 768px) {
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1440px) {
+    justify-content: center;
   }
 
   &:nth-child(1) {
@@ -91,7 +107,15 @@
         background-image: url(../images/3d-scanning-page/process1-tab-2x.png);
       }
     }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/3d-scanning-page/process1-desk-1x.png);
+      margin-bottom: 4px;
+      @include retina {
+        background-image: url(../images/3d-scanning-page/process1-desk-2x.png);
+      }
+    }
   }
+
   &:nth-child(2) .scan__text::before {
     background-image: url(../images/3d-scanning-page/process2-mob-1x.png);
     margin-bottom: 16.32px;
@@ -104,6 +128,13 @@
       margin-bottom: 16.59px;
       @include retina {
         background-image: url(../images/3d-scanning-page/process2-tab-2x.png);
+      }
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/3d-scanning-page/process2-desk-1x.png);
+      margin-bottom: 9.35px;
+      @include retina {
+        background-image: url(../images/3d-scanning-page/process2-desk-2x.png);
       }
     }
   }
@@ -120,6 +151,13 @@
         background-image: url(../images/3d-scanning-page/process3-tab-2x.png);
       }
     }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/3d-scanning-page/process3-desk-1x.png);
+      margin-bottom: 4px;
+      @include retina {
+        background-image: url(../images/3d-scanning-page/process3-desk-2x.png);
+      }
+    }
   }
   &:nth-child(4) .scan__text::before {
     background-image: url(../images/3d-scanning-page/process4-mob-1x.png);
@@ -134,11 +172,23 @@
         background-image: url(../images/3d-scanning-page/process4-tab-2x.png);
       }
     }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/3d-scanning-page/process4-desk-1x.png);
+      margin-bottom: 4px;
+      @include retina {
+        background-image: url(../images/3d-scanning-page/process4-desk-2x.png);
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
     width: 152px;
     height: 210px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 320px;
+    height: 381px;
   }
 }
 .scan__text {
@@ -151,6 +201,17 @@
 
   @media screen and (min-width: 768px) {
     width: 117px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    width: 170px;
+    font-weight: 300;
   }
 
   color: $accent-color;
@@ -167,5 +228,17 @@
     @media screen and (min-width: 768px) {
       height: 95px;
     }
+    @media screen and (min-width: 1440px) {
+      height: 240px;
+      width: 240px;
+    }
   }
+}
+
+.scan__btn-wrap {
+  text-align: center;
+}
+
+.scan__btn {
+  font-size: 16px;
 }
