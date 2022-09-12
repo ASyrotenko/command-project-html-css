@@ -9,6 +9,8 @@
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 149px;
   }
 }
 
@@ -27,6 +29,7 @@
   }
   @media screen and (min-width: 1440px) {
     width: 555px;
+    margin: 0;
   }
 }
 
@@ -38,18 +41,18 @@
   line-height: 1.28;
   color: #487996;
   text-transform: uppercase;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
   margin-right: auto;
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 1.25;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
     text-align: center;
   }
   @media screen and (min-width: 1440px) {
     font-size: 36px;
     line-height: 1.25;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
     text-align: left;
   }
 }
@@ -138,7 +141,6 @@
   }
 }
 .textarea-comment {
-  //   margin-top: 4px;
   margin-bottom: 40px;
   font-family: inherit;
   font-style: normal;
@@ -160,6 +162,7 @@
   right: 21px;
   bottom: 23px;
 }
+
 .contact-form__btn {
   @media screen and (min-width: 768px) {
     float: right;
@@ -190,6 +193,7 @@
   @media screen and (min-width: 1440px) {
     width: 136.83px;
     height: 144px;
+    top: -123px;
     background: #ffffff;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px 0px;
@@ -228,10 +232,11 @@
   width: 73.65px;
   height: 73.65px;
   right: -20.65px;
-  top: 428px;
+  top: 408px;
   background: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 25px 0px;
+  transform: rotate(90deg);
   z-index: -100;
   @media screen and (min-width: 768px) {
     display: none;
@@ -241,7 +246,7 @@
 // -------------------------------------------
 .contacts__list {
   @media screen and (max-width: 1439px) {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
@@ -326,17 +331,31 @@
   }
 }
 
-// .rectangle-67 {
-//   position: absolute;
-//   width: 73.65px;
-//   height: 73.65px;
-//   right: -25px;
-//   bottom: 300px;
-//   background: $bg-white-color;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-//   z-index: -1;
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
+.rectangle-67 {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  right: -25px;
+  bottom: 160px;
+  background: $bg-white-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  z-index: -1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.rectangle-46 {
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    width: 136.83px;
+    height: 144px;
+    left: -30px;
+    top: 134px;
+    background: $bg-white-color;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+    z-index: -1;
+  }
+}
