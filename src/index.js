@@ -25,3 +25,23 @@ document.onclick = function (event) {
   hideMenu(event, phoneContainer, openPhoneBtn);
   hideMenu(event, menuContainer, openMenuBtn, closeMenuBtn);
 };
+
+function highlightMenuLink() {
+  const location = window.location;
+
+  const currentPathName = location.pathname;
+  const menuLinks = document.getElementsByClassName('mobile-menu__link');
+  const subMenuLinks = document.getElementsByClassName('mobile-submenu__link');
+
+  const allMenuLinks = [...menuLinks, ...subMenuLinks];
+  for (const menuLink of allMenuLinks) {
+    const pathname = menuLink.pathname;
+
+    if (currentPathName === pathname) {
+      menuLink.classList.add('mobile-menu__link--current');
+    } else {
+      menuLink.classList.remove('mobile-menu__link--current');
+    }
+  }
+}
+highlightMenuLink();
