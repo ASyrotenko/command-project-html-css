@@ -1,0 +1,214 @@
+<section class="order">
+  <div class="container order--container">
+    <div class="order-frame">
+      <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
+      <form class="form" autocomplete="off">
+        <div class="order-form__field field--input">
+          <input
+            type="text"
+            class="order-form__input input--form"
+            name="client-name"
+            id="client-name"
+            placeholder=" "
+          />
+          <label for="client-name" class="order-form__label label--input"
+            >Імʼя
+          </label>
+        </div>
+        <div class="order-form__field field--input">
+          <input
+            type="email"
+            class="order-form__input input--form"
+            name="client-mail"
+            id="client-mail"
+            placeholder=" "
+          />
+          <label for="client-mail" class="order-form__label label--input"
+            >Email
+          </label>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">
+              Види пластика
+            </button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Види пластика</li>
+              <li class="dropdown__list-item" data-value="1">Перший вид</li>
+              <li class="dropdown__list-item" data-value="2">Другий вид</li>
+              <li class="dropdown__list-item" data-value="3">Третій вид</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">Якість друку</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Якість друку</li>
+              <li class="dropdown__list-item" data-value="1">300 мікрон</li>
+              <li class="dropdown__list-item" data-value="2">200 мікрон</li>
+              <li class="dropdown__list-item" data-value="3">100 мікрон</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">Колір</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Колір</li>
+              <li class="dropdown__list-item" data-value="1">Чорний колір</li>
+              <li class="dropdown__list-item" data-value="2">Сірий колір</li>
+              <li class="dropdown__list-item" data-value="3">Білий колір</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
+        <div class="order-form__field--textarea">
+          <label for="client-text" class="order-form__label label--order-form"
+            >Повідомлення</label
+          >
+          <textarea
+            type="text"
+            class="order-form__text"
+            name="client-text"
+            id="client-text"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <input
+            class="attach-file hidden"
+            name="attachment"
+            type="file"
+            id="upload-file"
+            multiple
+          />
+          <label for="upload-file" class="attach-label">
+            <svg class="textarea-icon" wight="21" height="20">
+              <use href="/src/images/icons.svg#icon-paper-clip"></use>
+            </svg>
+          </label>
+        </div>
+          <p class="textarea-notice">
+            *Прикріпіть зображення/ креслення/STL/Obj/CAD-модель
+          </p>
+        <button type="submit" class="btn order-form__btn">Відправити</button>
+      </form>
+      <!--  -->
+      <div class="rectangle46"></div>
+      <div class="rectangle60"></div>
+      <div class="rectangle68"></div>
+      <div class="rectangle63"></div>
+      <div class="rectangle65"></div>
+      <div class="rectangle19"></div>
+    </div>
+    <div class="contact-frame">
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h2 class="contacts__title">ТЕЛЕФОНИ</h2>
+          <a href="tel:+380957384551" class="contacts__link"
+            >+38 (095) -73-84-551</a
+          >
+          <a href="tel:+380980025235" class="contacts__link"
+            >+38 (098) -00-25-235</a
+          >
+        </li>
+        <li class="contacts__item">
+          <h2 class="contacts__title">Email</h2>
+          <a href="mailto:3dfreedom.info@gmail.com" class="contacts__link"
+            >3dfreedom.info@gmail.com</a
+          >
+        </li>
+        <li class="contacts__item">
+          <h2 class="contacts__title">РОБОЧИЙ ЧАС</h2>
+          <p class="contacts__text">
+            <span>Пн-пт:</span>
+            з 8:00 до 19:00
+          </p>
+          <p class="contacts__text">
+            <span>Сб, Нд:</span>
+            з 10:00 до 17:00
+          </p>
+        </li>
+      </ul>
+      <div class="contacts__mosaics">
+        <img
+          srcset="./images/take-order-page/mosaics1-1x.jpeg 1x,
+            ./images/take-order-page/mosaics1-2x.jpeg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo one"
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics2-1x.jpeg 1x,
+            ./images/take-order-page/mosaics2-2x.jpeg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo two"
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics3-1x.jpeg 1x,
+            ./images/take-order-page/mosaics3-2x.jpeg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo three"
+          
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics4-1x.jpeg 1x,
+            ./images/take-order-page/mosaics4-2x.jpeg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo four"
+          
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics5-1x.jpeg 1x,
+            ./images/take-order-page/mosaics5-2x.jpeg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo five"
+          
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics6-1x.jpeg 1x,
+            ./images/take-order-page/mosaics6-2x.jpeg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo six"
+          
+          width="138.42"
+        />
+    </div>
+    <!--  -->
+    <div class="rectangle67"></div>
+    <div class="rectangle69"></div>
+  </div>
+</section>
+
+<script defer src="./partials/js/order-form.js"></script>
