@@ -1,10 +1,13 @@
 .contacts {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .contact-container {
   position: relative;
+  @media screen and (max-width: 520px) {
+    overflow: hidden;
+  }
 
   @media screen and (min-width: 1440px) {
     display: flex;
@@ -246,8 +249,7 @@
 // -------------------------------------------
 .contacts__list {
   @media screen and (max-width: 1439px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 60px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -335,7 +337,7 @@
   position: absolute;
   width: 73.65px;
   height: 73.65px;
-  right: -25px;
+  right: -15px;
   bottom: 160px;
   background: $bg-white-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -345,6 +347,17 @@
     display: none;
   }
 }
+
+// .rectangle-67 {
+//   width: 73.65px;
+//   height: 73.65px;
+//   background: red;
+//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+//   border-radius: 25px 0px;
+//   position: absolute;
+//   top: 775px;
+//   right: -15px;
+// }
 
 .rectangle-46 {
   @media screen and (min-width: 1440px) {
