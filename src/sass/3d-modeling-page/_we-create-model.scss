@@ -1,5 +1,5 @@
 .create {
-  padding: 40px 0 30px;
+  padding: 20px 0 30px;
 
   background-color: $bg-white-color;
   @media screen and (min-width: 1440px) {
@@ -117,6 +117,12 @@
     top: -36px;
     display: block;
     border-radius: 72px;
+  }
+}
+
+.create__btn {
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
   }
 }
 
