@@ -12,11 +12,12 @@
 
 .process__container {
   position: relative;
+  @media screen and (max-width: 525px) {
+    overflow: hidden;
+  }
 }
 
 .process-description {
-  background-color: #ffffff;
-
   @media screen and (min-width: 1440px) {
     padding-left: 149px;
     padding-right: 149px;
@@ -110,7 +111,7 @@
 
 .process__box {
   position: absolute;
-  z-index: -100;
+  z-index: -1;
   background-color: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 }
@@ -194,7 +195,7 @@
     width: 73.65px;
     height: 73.65px;
     border-radius: 0px 0px 0px 35px;
-    left: 420px;
+    right: -21px;
     top: 740px;
   }
 
