@@ -1,6 +1,5 @@
 .footer {
   background-color: $bg-color;
-  // background: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 
   padding-top: 32px;
@@ -11,50 +10,30 @@
     padding-bottom: 40px;
   }
 }
-@mixin retina {
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    @content;
-  }
-}
 
 .footer-conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  // outline: 1px solid tomato;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  max-width: 768px;
-
   @media screen and (min-width: 1440px) {
-    // padding-top: 40px;
-    // padding-bottom: 40px;
-    max-width: 1440px;
     display: flex;
     justify-content: start;
   }
 }
 .footer__address {
+  font-style: inherit;
   @media screen and (min-width: 768px) {
     margin-right: 0;
   }
 }
 .footer-logo {
   max-width: 192px;
-  // max-height: 48px;
   margin-left: auto;
   margin-right: auto;
 }
 .footer-logo__wrap {
-  // display: block;
   margin-bottom: 20px;
   @media screen and (min-width: 1440px) {
     margin-right: 277px;
     margin-left: 0;
     margin-bottom: 0;
-    // padding-left: 32px;
   }
 }
 .footer__navigation {
@@ -85,14 +64,12 @@
   }
 }
 .footer-navigation__wrap {
-  // display: block;
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 .footer__navigation {
   @media screen and (min-width: 768px) {
-    // padding-left: 32px;
   }
   @media screen and (min-width: 1440px) {
     padding-left: 0;
@@ -106,14 +83,10 @@
 }
 .footer__item,
 .footer-soc__item {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.01em;
   color: $primary-text-color;
-  // color: #2b2b2b;
-  // margin-bottom: 8px;
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -126,23 +99,16 @@
     color: $accent-color;
   }
 }
-// .footer__address {
-//   @media screen and (min-width: 768px) {
-//     // padding-right: 32px;
-//   }
-// }
+
 .address-list-footer {
   margin-bottom: 24px;
 }
 
 .address-link__adres {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.01em;
   color: $primary-text-color;
-  // color: #2b2b2b;
   margin-bottom: 8px;
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -153,21 +119,11 @@
   @media screen and (min-width: 1440px) {
     text-align: start;
   }
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
 }
 .address-link__footer {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
-  // text-transform: capitalize;
   color: $accent-color;
-  // color: #487996;
-  // margin-bottom: 8px;
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -185,7 +141,4 @@
 }
 .address-link__tel {
   margin-bottom: 8px;
-}
-link {
-  list-style: none;
 }
