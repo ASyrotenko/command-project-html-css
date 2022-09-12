@@ -33,11 +33,17 @@
   min-width: 130px;
   width: calc(50% - 20px / 2);
 
-  &:nth-child(1) .scan__text {
-    border: 3px solid red;
+  &:nth-child(1) .scan__text::before {
+    background-image: url(/src/images/3d-scanning-page/process1-mob-1x.png);
   }
-  &:nth-child(2) .scan__text {
-    border: 3px solid aqua;
+  &:nth-child(2) .scan__text::before {
+    background-image: url(/src/images/3d-scanning-page/process2-mob-1x.png);
+  }
+  &:nth-child(3) .scan__text::before {
+    background-image: url(/src/images/3d-scanning-page/process3-mob-1x.png);
+  }
+  &:nth-child(4) .scan__text::before {
+    background-image: url(/src/images/3d-scanning-page/process4-mob-1x.png);
   }
 }
 .scan__text {
@@ -55,7 +61,7 @@
     display: block;
     width: 100%;
     height: 81.44px;
-    background-image: url(/src/images/3d-scanning-page/process1-mob-2x.png);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
