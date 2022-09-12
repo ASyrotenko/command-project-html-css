@@ -12,3 +12,48 @@ $button-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1)
   5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
 $card-gap: 32px;
 $figure-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+@mixin fontstyle($fs, $fw, $lh, $ls, $ta: null) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-align: $ta;
+}
+
+@mixin centerflex($dis: flex, $dir: null, $jus: center, $ali: center) {
+  display: $dis;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $ali;
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin transition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin bcg-img($bp, $br, $bs) {
+  background-position: $bp;
+  background-repeat: $br;
+  background-size: $bs;
+}
