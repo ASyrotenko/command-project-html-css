@@ -121,13 +121,14 @@
   }
 }
 
-.create__btn {
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-  }
+.create__btn-wrap {
+  text-align: center;
 }
 
-.create__btn-wrap {
-  display: flex;
-  justify-content: center;
+.create__btn {
+  margin-top: 40px;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    margin-top: 80px;
+  }
 }
