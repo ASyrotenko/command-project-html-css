@@ -13,6 +13,12 @@
 }
 .morephoto-indent{
   position: relative;
+  @media screen and (min-width: 767px) and (max-width: 803px) {
+      overflow: hidden;
+    }
+  @media screen and (max-width: 509px) {
+      overflow: hidden;
+    }
 }
 .morephoto-title {
     max-width: 1140px;
@@ -27,12 +33,12 @@
     line-height: 1.25;
 
     color: #487996;
-     @media screen and (max-width: 1440px) {
+     @media screen and (max-width: 1439px) {
       font-size: 36px;
       line-height: 1.25;
       margin-bottom: 32px;
      }
-     @media screen and (max-width: 768px) {
+     @media screen and (max-width: 767px) {
       font-size: 24px;
       line-height: 1.25;
       margin-bottom: 16px;
@@ -47,7 +53,7 @@
     margin-left: auto;
     margin-right: auto; 
 
-    @media screen and (min-width: 767px) and (max-width: 1439px) {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
       display: flex;
     width: 100%;
     max-width: 704px;
@@ -119,11 +125,11 @@ img {
     top: 430px;
     width: 140.9px;
     height: 145px;
-    background: #FFFFFF;
+    background: red;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 0px 72px;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 1439px) {
       width: 73.65px;
       height: 74.05px;
       top: 13.55px;
@@ -146,12 +152,12 @@ img {
     top: 430px;
     width: 144px;
     height: 142.81px;
-    background: #FFFFFF;
+    background: red;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px 0px;
     transform: rotate(90deg);
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 1439px) {
       width: 74.05px;
       height: 73.65px;
       top: -17px;
@@ -170,14 +176,14 @@ img {
     top: 970px;
     width: 144.18px;
     height: 144.29px;
-    background: #FFFFFF;
+    background: red;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 1439px) {
       width: 73.65px;
       height: 74.05px;
-      top: 339.23px;
+      top: 329.23px;
       left: -17px;
       border-radius: 72px;
      }
@@ -193,20 +199,19 @@ img {
     top: 1108px;
     width: 142.81px;
     height: 145px;
-    background: #FFFFFF;
+    background: red;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px 0px;
 
-    @media screen  and (min-width: 768px) and (max-width: 1440px) {
+    @media screen  and (min-width: 768px) and (max-width: 1439px) {
       display: none;
     }
     
-     @media screen and (max-width: 768px) {
-      position: absolute;
+     @media screen and (max-width: 767px) {
       width: 73.65px;
       height: 73.65px;
-      top: 407px;
-      left: 420px;
+      top: 265.84px;
+      right: -15px;
       border-radius: 25px 0px;
      }
 }
@@ -217,11 +222,11 @@ img {
     top: 1253px;
     width: 143.77px;
     height: 116px;
-    background: #FFFFFF;
+    background: red;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 0px 72px;
 
-     @media screen and (max-width: 1440px) {
+     @media screen and (max-width: 1439px) {
       z-index: -1;
       width: 73.65px;
       height: 74.05px;
@@ -234,6 +239,22 @@ img {
      display: none;
      }
     }
+.morephoto-box6 {
+    @media screen and (max-width: 1439px) {
+    z-index: -1;
+    position: absolute;
+    width: 73.65px;
+    height: 74.05px;
+    left: 588.59px;
+    top: 433.1px;
+    background: red;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+   }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+}
 
 .morephoto-loading {
     position: absolute;
@@ -241,7 +262,7 @@ img {
     bottom: -61px;
     left: 50%;
     margin-left: -22.5px;
-    @media screen and (min-width: 768px) and (max-width: 1440px) {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
     @media screen and (min-width: 768px) {
@@ -253,11 +274,7 @@ img {
     width: 45px;
     height: 45px;
 }
-
-
-
-
-
+/*
 .modal{
   display: flex;
   align-items: center;
@@ -290,3 +307,4 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
+*/
