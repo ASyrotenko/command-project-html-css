@@ -17,6 +17,10 @@
 .scanning-page_container {
   position: relative;
 
+  @media screen and (max-width: 550px) {
+    overflow: hidden;
+  }
+
   @media screen and (min-width: 1440px) {
     padding-left: 149px;
     padding-right: 149px;
