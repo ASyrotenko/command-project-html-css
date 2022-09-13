@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Freedom</title>
+    <link rel="stylesheet" href="/3d-modeling.b07a87f3.css">
+    <script src="/3d-modeling.975ef6c8.js" defer=""></script>
+    <link rel="shortcut icon" href="/favicon.be4b0254.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header">
+  <div class="header__container container">
+    <nav class="header__nav">
+      <a href="/index.html" class="logo-link">
+        <div class="logo">
+          <img srcset="/logo101.0b34436d.png 101w, /logo125.8e9ba8de.png 125w, /logo192.fcefa596.png 192w, /logo202.2c3e1556.png 202w, /logo250.183255bf.png 250w, /logo303.a4175e14.png 303w, /logo375.173d0d81.png 375w, /logo384.a2fdfbae.png 384w, /logo576.afeb0268.png 576w" sizes="(min-width: 1440px) 192px, (min-width: 768px) 125px, 101px" src="/logo192.fcefa596.png" alt="Логотип сайту">
+        </div>
+      </a>
+
+      <button type="button" class="button-menu button-menu--desk js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="32" height="32" aria-label="Перемикач мобільного меню">
+          <use class="button-menu__burger-icon" href="/icons.adfc4680.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <button class="button-menu button-menu--mobile js-close-menu button-hidden">
+        <svg class="phone-icon" width="24" height="24" aria-label="Перемикач мобільного меню">
+          <use class="button-menu__icon-close" href="/icons.adfc4680.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <div class="menu">
+        <ul class="header__menu">
+          <li class="menu__item">
+            <a href="/index.html" class="menu__link">Головна</a>
+          </li>
+          <li class="menu__item menu__item--services">
+            <a href="/3d-modeling.html" class="menu__link menu__link--services">Послуги</a>
+
+            <ul class="menu__submenu submenu">
+              <li class="submenu__item">
+                <a href="/3d-modeling.html" class="submenu__link">3D Моделювання</a>
+              </li>
+              <li class="submenu__item">
+                <a href="/3d-scanning.html" class="submenu__link">3D Сканування</a>
+              </li>
+              <li class="submenu__item">
+                <a href="/3d-printing.html" class="submenu__link">3D Друк</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="/take-order.html" class="menu__link">Замовити</a>
+          </li>
+          <li class="menu__item">
+            <a href="/contacts.html" class="menu__link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__buttons">
+      <button type="button" class="button-phone-menu js-open-phone-menu" aria-expanded="false" aria-controls="phone-menu">
+        <svg width="24" height="24" aria-label="Перемикач меню телефонних номерів">
+          <use class="phone-menu__icon" href="/icons.adfc4680.svg#icon-phone-button"></use>
+        </svg>
+      </button>
+
+      <div class="phone-menu phone-menu-container js-phone-menu-container" id="phone-menu">
+        <div class="phone-menu__triangle">
+          <div class="phone-menu__mobile">
+            <ul class="phone-menu__nav">
+              <li class="phone-menu__item">
+                <a href="tel:+380936432288" class="phone-menu__link">+38 093 643 22 88</a>
+              </li>
+              <li class="phone-menu__item">
+                <a href="tel:+380503454423" class="phone-menu__link">+38 050 345 44 23</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="language-container">
+        <button type="button" class="lang-menu__btn js-open-lang-menu" aria-expanded="false" aria-controls="lang-menu">
+          ENG
+        </button>
+        <div class="lang-menu lang-menu-container js-lang-menu-container" id="lang-menu">
+          <div class="lang-menu__mobile">
+            <ul class="lang-menu__nav">
+              <li class="lang-menu__item">
+                <a href="/index.html" class="lang-menu__link">UKR</a>
+              </li>
+              <li class="lang-menu__item">
+                <a href="/index.html" class="lang-menu__link">POL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-nav">
+        <ul class="phone-nav__list">
+          <li class="phone-nav__item">
+            <a href="tel:+380936432288" class="phone-nav__link">
+              <svg width="14px" height="14px" class="phone-nav__icon">
+                <use href="/icons.adfc4680.svg#icon-call"></use>
+              </svg>
+              +38 093 643 22 88</a>
+          </li>
+          <li class="phone-nav__item">
+            <a href="tel:+380503454423" class="phone-nav__link">
+              <svg width="14px" height="14px" class="phone-nav__icon">
+                <use href="/icons.adfc4680.svg#icon-call"></use>
+              </svg>
+              +38 050 345 44 23</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="decor1"></div>
+    <div class="decor2"></div>
+    <div class="decor3"></div>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-menu">
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="/index.html" class="mobile-menu__link mobile-menu__link--current">ГОЛОВНА</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/3d-modeling.html" class="mobile-menu__link">ПОСЛУГИ</a>
+          <ul class="mobile-menu__submenu mobile-submenu">
+            <li class="mobile-submenu__item">
+              <a href="/3d-modeling.html" class="mobile-submenu__link">3D Моделювання</a>
+            </li>
+            <li class="mobile-submenu__item">
+              <a href="/3d-scanning.html" class="mobile-submenu__link">3D Сканування</a>
+            </li>
+            <li class="mobile-submenu__item">
+              <a href="/3d-printing.html" class="mobile-submenu__link">3D Друк</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/take-order.html" class="mobile-menu__link">ЗАМОВИТИ</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/contacts.html" class="mobile-menu__link">КОНТАКТИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+
+<script defer="" src="/contacts.707f265c.js"></script>
+<script defer="" src="/contacts.5672726b.js"></script>
+<script defer="" src="/contacts.835c3cca.js"></script>
+
+    <main>
+      <section class="main-hero">
+  <div class="container main-hero__container">
+    <div class="main-hero__decor main-hero__decor--a z-index"></div>
+    <div class="main-hero__decor main-hero__decor--b z-index"></div>
+    <div class="main-hero__decor main-hero__decor--c z-index"></div>
+    <div class="main-hero__decor main-hero__decor--d z-index"></div>
+    <div class="main-hero__decor main-hero__decor--e z-index">
+      <a class="main-hero__link link" href="#gallery">
+        <svg class="main-hero__icon" width="16.5" height="16.5" aria-label="посилання для преходу в галерею">
+          <use href="/icons.adfc4680.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="main-hero__decor main-hero__decor--f z-index"></div>
+    <div class="main-hero__decor main-hero__decor--g z-index"></div>
+    <div class="main-hero__decor main-hero__decor--h z-index"></div>
+    <div class="main-hero__decor main-hero__decor--i z-index"></div>
+    <div class="main-hero__decor main-hero__decor--j z-index"></div>
+    <div class="main-hero__decor main-hero__decor--k z-index"></div>
+    <div class="main-hero__decor main-hero__decor--l z-index"></div>
+    <div class="main-hero__decor main-hero__decor--m z-index"></div>
+    <h1 class="main-hero__title">
+      Інженерна, конструкторська та дизайнерська робота
+    </h1>
+    <ul class="main-hero__list">
+      <li class="main-hero__item main-hero__item--robo">
+        <picture>
+          <source srcset="/robo-desk.e76bb2aa.jpg   1x, /robo-desk2x.628453e1.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/robo-tab.ff491765.jpg   1x, /robo-tab2x.0de4f4ab.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/robo-desk.e76bb2aa.jpg   1x, /robo-desk2x.628453e1.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/robo.46db8187.jpg   1x, /robo2x.09a36c73.jpg 2x" media="(max-width: 320px)">
+
+          <img src="/robo.46db8187.jpg" alt="plastic robot">
+        </picture>
+      </li>
+      <li class="main-hero__item main-hero__item--lamps">
+        <picture>
+          <source srcset="/lamps-desk.c6c52982.jpg   1x, /lamps-desk2x.cbf8bc01.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/lamps-tab.9034036d.jpg   1x, /lamps-tab2x.4c506114.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/lamps-desk.c6c52982.jpg   1x, /lamps-desk2x.cbf8bc01.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/lamps.b159a36d.jpg   1x, /lamps2x.e7b9c7ce.jpg 2x" media="(max-width: 320px)">
+
+          <img src="/lamps.b159a36d.jpg" alt="table lamps">
+        </picture>
+      </li>
+      <li class="main-hero__item main-hero__item--scull">
+        <picture>
+          <source srcset="/scull-desk.8c7353f6.jpg   1x, /scull-desk2x.43738884.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/scull-tab.147c3728.jpg   1x, /scull-tab2x.b5af1e99.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/scull-desk.8c7353f6.jpg   1x, /scull-desk2x.43738884.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/scull.19484322.jpg   1x, /scull2x.0b9175e2.jpg 2x" media="(max-width: 320px)">
+
+          <img src="/scull.19484322.jpg" alt="plastic scull">
+        </picture>
+      </li>
+    </ul>
+    <p class="main-hero__text">Ми втілюємо ідеї в реальність</p>
+  </div>
+</section>
+
+      <!-- GALLERY -->
+<section class="gallery">
+  <div class="container gallery__container">
+    <div class="gallery__decor gallery__decor--a z-index"></div>
+    <div class="gallery__decor gallery__decor--b z-index"></div>
+    <div class="gallery__decor gallery__decor--c z-index"></div>
+    <div class="gallery__decor gallery__decor--d z-index"></div>
+    <div class="gallery__decor gallery__decor--e z-index"></div>
+    <h2 class="gallery__title" id="gallery">ГАЛЕРЕЯ</h2>
+
+    <ul class="gallery__list list">
+      <li class="gallery__item">
+        <picture>
+          <source srcset="/engineer-meth-desk.fa7ec98b.jpg   1x, /engineer-meth-desk2x.7a04dce4.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/engineer-meth-tab.37fe2a6a.jpg   1x, /engineer-meth-tab2x.7c6dc0a2.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/engineer-meth-desk.fa7ec98b.jpg   1x, /engineer-meth-desk2x.7a04dce4.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/engineer-meth.0809dca2.jpg   1x, /engineer-meth2x.dea96fe7.jpg 2x" media="(max-width: 320px)">
+          <img src="/engineer-meth-desk.fa7ec98b.jpg" alt="plastic part">
+        </picture>
+
+        <h3 class="gallery__subtitle">
+          Інженерні методи аналізу та контролю якості
+        </h3>
+      </li>
+      <li class="gallery__item">
+        <picture>
+          <source srcset="/scan-desk.c62d2ab3.jpg   1x, /scan-desk2x.ccf48c8c.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/scan-tab.9cec9f25.jpg   1x, /scan-tab2x.96bacbdd.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/scan-desk.c62d2ab3.jpg   1x, /scan-desk2x.ccf48c8c.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/scan.11850abd.jpg   1x, /scan2x.15862f55.jpg 2x" media="(max-width: 320px)">
+          <img src="/scan-desk.c62d2ab3.jpg" alt="scanning machine">
+        </picture>
+        <h3 class="gallery__subtitle">Високоточне 3D сканування</h3>
+      </li>
+      <li class="gallery__item">
+        <picture>
+          <source srcset="/copy-desk.a871a1c2.jpg   1x, /copy-desk2x.02341808.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/copy-tab.2919526c.jpg   1x, /copy-tab2x.d42106cf.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/copy-desk.a871a1c2.jpg   1x, /copy-desk2x.02341808.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/copy.853bace3.jpg   1x, /copy2x.a8de3b75.jpg 2x" media="(max-width: 320px)">
+          <img src="/copy-desk.a871a1c2.jpg" alt="plastic part">
+        </picture>
+
+        <h3 class="gallery__subtitle">
+          Створення точної копії на базі сканування reverse engineering
+        </h3>
+      </li>
+      <li class="gallery__item">
+        <picture>
+          <source srcset="/cycles-desk.b7781ccc.jpg   1x, /cycles-desk2x.84f8944a.jpg 2x" media="(min-width: 1440px)">
+          <source srcset="/cycles-tab.f0270795.jpg   1x, /cycles-tab2x.60c0aa8a.jpg 2x" media="(min-width: 768px)">
+          <source srcset="/cycles-desk.b7781ccc.jpg   1x, /cycles-desk2x.84f8944a.jpg 2x" media="(min-width: 321px)">
+          <source srcset="/cycles.d84bc7b5.jpg   1x, /cycles2x.11e7b09b.jpg 2x" media="(max-width: 320px)">
+          <img src="/cycles-desk.b7781ccc.jpg" alt="creating project">
+        </picture>
+        <h3 class="gallery__subtitle">
+          Всі цикли 3D проектування, створення фотореалістичних цифрових моделей
+        </h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="morephoto">
+  <div class="container morephoto-indent">
+    <h2 class="morephoto-title">БІЛЬШЕ ФОТО</h2>
+    <div class="masonry masonry--h">
+ 
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/design-high-quality-3d-model.9b605557.jpg    1x, /design-high-quality-3d-model-2x.847155f0.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/design-high-quality-tablet.b0e272c0.jpg    1x, /design-high-quality-tablet-2x.898b04cb.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/design-high-quality-tablet.b0e272c0.jpg    1x, /design-high-quality-tablet-2x.898b04cb.jpg 2x" type="image/jpg" media="(min-width: 321px)">
+
+          <source srcset="/design-high-quality-mobile.3e4e5938.jpg 1x, /design-high-quality-mobile-2x.e45b4ec1.jpg 2x" type="image/jpg" media="(max-width: 320px)">
+
+          <img src="/design-high-quality-3d-model.9b605557.jpg" class="masonry-img" alt="Design-high-quality-3d-model">
+          </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/3d-printed-architectural-model.1189baa9.jpg    1x, /3d-printed-architectural-model-2x.4a0cd713.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/3d-printed-architectural-tablet.e9c920e8.jpg    1x, /3d-printed-architectural-tablet-2x.616626f4.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/3d-printed-architectural-mobile.182f1528.jpg    1x, /3d-printed-architectural-mobile-2x.362720a8.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/3d-printed-architectural-model.1189baa9.jpg" class="masonry-img" alt="3d-printed-architectural-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/robot-wall-e-3d-model.f6656834.jpg    1x, /robot-wall-e-3d-model-2x.555dbea7.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/robot-wall-e-tablet.d62bdda8.jpg    1x, /robot-wall-e-tablet-2x.985c1d42.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/robot-wall-e-mobile.56f18dbe.jpg    1x, /robot-wall-e-mobile-2x.253ee084.jpg 2x" type="image/jpg" media="(min-width: 321px)">
+
+          <source srcset="/robot-wall-e-mobile.56f18dbe.jpg    1x, /robot-wall-e-mobile-2x.253ee084.jpg 2x" type="image/jpg" media="(max-width: 320px)">
+          <img src="/robot-wall-e-3d-model.f6656834.jpg" class="masonry-img" alt="Robot-wall-e-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/human-skull-3d-model.b0a76a37.jpg    1x, /human-ckull-3d-model-2x.70627695.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/human-ckull-tablet.66f268d6.jpg    1x, /human-ckull-tablet-2x.e6369810.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/human-ckull-tablet.66f268d6.jpg    1x, /human-ckull-tablet-2x.e6369810.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/human-skull-3d-model.b0a76a37.jpg" class="masonry-img" alt="Human-skull-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/T-29-tank-3d-model.519cf25c.jpg    1x, /T-29-tank-3d-model-2x.275daa2b.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/T-29-tank-tablet.7b5129d3.jpg    1x, /T-29-tank-tablet-2x.fa71c47a.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/T-29-tank-tablet.7b5129d3.jpg    1x, /T-29-tank-tablet-2x.fa71c47a.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/T-29-tank-3d-model.519cf25c.jpg" class="masonry-img" alt="T-29-tank-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/two-lamp-pixar-3d-model.13bb7fd7.jpg    1x, /two-lamp-pixar-3d-model-2x.6ea309c9.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/two-lamp-pixar-tablet.d330c87d.jpg    1x, /two-lamp-pixar-tablet-2x.9614d491.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/two-lamp-pixar-tablet.d330c87d.jpg    1x, /two-lamp-pixar-tablet-2x.9614d491.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/two-lamp-pixar-3d-model.13bb7fd7.jpg" class="masonry-img" alt="Two-lamp-pixar-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/supercar-bugatti-3d-model.fab0dc3a.jpg    1x, /supercar-bugatti-3d-model-2x.4f42a5cd.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/supercar-bugatti-tablet.b6c50519.jpg    1x, /supercar-bugatti-tablet-2x.2dcea05a.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/supercar-bugatti-tablet.b6c50519.jpg    1x, /supercar-bugatti-tablet-2x.2dcea05a.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/supercar-bugatti-3d-model.fab0dc3a.jpg" class="masonry-img" alt="Supercar-bugatti-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/usa-capitol-3d-model.f2c87f7e.jpg    1x, /usa-capitol-3d-model-2x.cc030856.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+
+          <source srcset="/usa-capitol-tablet.2db089bf.jpg    1x, /usa-capitol-tablet-2x.a0d72d6b.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+
+          <source srcset="/usa-capitol-tablet.2db089bf.jpg    1x, /usa-capitol-tablet-2x.a0d72d6b.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/usa-capitol-3d-model.f2c87f7e.jpg" class="masonry-img" alt="USA-Capitol-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/mushroom-lamp-3d-model.78c822be.jpg    1x, /muchroom-lamp-3d-model-2x.8394f43c.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+          <source srcset="/muchroom-lamp-tablet.9aa71db3.jpg    1x, /muchroom-lamp-tablet-2x.90bc3933.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+          <!---->
+          <source srcset="/muchroom-lamp-tablet.9aa71db3.jpg    1x, /muchroom-lamp-tablet-2x.90bc3933.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/mushroom-lamp-3d-model.78c822be.jpg" class="masonry-img" alt="Mushroom-lamp-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/nox-sleepace-3d-model.49aa1e55.jpg    1x, /nox-sleepace-3d-model-2x.ed2b426f.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+          <source srcset="/nox-sleepace-tablet.48e64e41.jpg    1x, /nox-sleepace-tablet-2x.f0da7bec.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+          <source srcset="/nox-sleepace-tablet.48e64e41.jpg    1x, /nox-sleepace-tablet-2x.f0da7bec.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/nox-sleepace-3d-model.49aa1e55.jpg" class="masonry-img" alt="Nox-sleepace-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/tesla-cybertruck-3d-model.3d217f4a.jpg    1x, /tesla-cybertruck-3d-model-2x.f1a4a1fb.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+          <source srcset="/tesla-cybertruck-tablet.0fcdc834.jpg    1x, /tesla-cybertruck-tablet-2x.a69752e9.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+          <source srcset="/tesla-cybertruck-tablet.0fcdc834.jpg    1x, /tesla-cybertruck-tablet-2x.a69752e9.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/tesla-cybertruck-3d-model.3d217f4a.jpg" class="masonry-img" alt="Tesla-cybertruck-3d-model">
+        </picture>
+      </figure>
+
+      <figure class="masonry-brick masonry-brick--h">
+        <picture>
+          <source srcset="/flower-pots-3d-model.c398137b.jpg    1x, /flower-post-3d-model-2x.f3452259.jpg 2x" type="image/jpg" media="(min-width: 1440px)">
+          <source srcset="/flower-pots-tablet.d3fcbc72.jpg    1x, /flower-pots-tablet-2x.b158144d.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+          <source srcset="/flower-pots-tablet.d3fcbc72.jpg    1x, /flower-pots-tablet-2x.b158144d.jpg 2x" type="image/jpg" media="(min-width: 480px)">
+          <img src="/flower-pots-3d-model.c398137b.jpg" class="masonry-img" alt="Flower-pots-3d-model">
+        </picture>
+      </figure>
+    </div>
+
+    <div class="morephoto-box1 z-index"></div>
+    <div class="morephoto-box2 z-index"></div>
+    <div class="morephoto-box3 z-index"></div>
+    <div class="morephoto-box4 z-index"></div>
+    <div class="morephoto-box5 z-index"></div>
+    <div class="morephoto-box6 z-index"></div>
+
+    <div class="morephoto-loading">
+      <svg class="morephoto-icon" width="45" height="45">
+        <use href="/symbol-defs.225adb37.svg#icon-icon-loader"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+<!--
+<div class="modal">
+  <div class="modal-window">
+    <picture>
+          <source srcset="
+              ./images/main-page/more-foto/overlay-desk.jpg    1x,
+              ./images/main-page/more-foto/overlay-desk-2x.jpg 2x
+            " type="image/jpg" media="(min-width: 1440px)" />
+          <source srcset="
+              ./images/main-page/more-foto/overlay-tablet.jpg   1x,
+              ./images/main-page/more-foto/overlay-tablet-2x.jpg 2x
+            " type="image/jpg" media="(min-width: 768px)" />
+          <source srcset="
+              ./images/main-page/more-foto/overlay-tablet.jpg   1x,
+              ./images/main-page/more-foto/overlay-tablet-2x.jpg 2x
+            " type="image/jpg" media="(min-width: 321px)" />
+          <source srcset="
+              ./images/main-page/more-foto/overlay-mobile.jpg   1x,
+              ./images/main-page/more-foto/overlay-mobile-2x.jpg 2x
+            " type="image/jpg" media="(max-width: 320px)" />
+          <img src="./images/main-page/more-foto/overlay-desk.jpg" class="modal-img"
+            alt="Flower-pots-3d-model" />
+        </picture>
+  </div>
+  <div class="overlay"></div>
+  -->
+
+
+
+
+
+    </main>
+    <footer class="footer">
+  <div class="footer-conteiner container">
+    <div class="footer-logo__wrap">
+      <a href="/index.html" class="footer-logo link"><picture class="footer-logo_img">
+          <source srcset="/logo192.fcefa596.png 1x, /logo384.a2fdfbae.png 2x" media="(min-width: 1440px)">
+          <img src="/logo192.fcefa596.png" alt="logo" width="192" height="48">
+        </picture>
+      </a>
+    </div>
+    <div class="footer-navigation__container">
+      <div class="footer-navigation__wrap">
+        <nav class="footer__navigation">
+          <ul class="footer__link list">
+            <li class="footer__item">
+              <a href="/index.html" class="site-nav site-nav-link link current-axent-color">Головна</a>
+            </li>
+            <li class="footer__item">
+              <a href="/3d-modeling.html" class="site-nav site-nav-link link">3D Моделювання</a>
+            </li>
+            <li class="footer__item">
+              <a href="/3d-scanning.html" class="site-nav site-nav-link link">3D Сканування</a>
+            </li>
+            <li class="footer__item">
+              <a href="/3d-printing.html" class="site-nav site-nav-link link">3D Друк</a>
+            </li>
+            <li class="footer__item">
+              <a href="/take-order.html" class="site-nav site-nav-link link">Замовити</a>
+            </li>
+            <li class="footer__item">
+              <a href="/contacts.html" class="site-nav site-nav-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-cont">
+          <p class="footer-hed hidden"></p>
+          <ul class="footer-soc list">
+            <li class="footer-soc__item">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener nofollow" class="footer-soc-link link">Instagram</a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener nofollow" class="footer-soc-link link">YouTube</a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nofollow" class="footer-soc-link link">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <address class="footer__address">
+        <ul class="address-list-footer list">
+          <li class="address-footer link">
+            <p class="address-link__adres">Email</p>
+            <a href="mailto:3dfreedom.info@gmail.com" class="address-link__footer link">3dfreedom.info@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="address-footer__tel link">
+          <li class="address-footer link">
+            <p class="address-link__adres">Телефони</p>
+            <a href="tel:+38(093)6432288" class="address-link__footer address-link__tel link">+38 (093) 643 22 88</a>
+          </li>
+          <li class="address-footer link">
+            <a href="+38(050)3454423" class="address-link__footer link">+38 (050) 345 44 23</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

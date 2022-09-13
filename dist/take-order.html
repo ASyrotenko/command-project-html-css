@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Order</title>
+    <link rel="stylesheet" href="/3d-modeling.b07a87f3.css">
+    <script src="/3d-modeling.975ef6c8.js" defer=""></script>
+    <link rel="shortcut icon" href="/favicon.be4b0254.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header">
+  <div class="header__container container">
+    <nav class="header__nav">
+      <a href="/index.html" class="logo-link">
+        <div class="logo">
+          <img srcset="/logo101.0b34436d.png 101w, /logo125.8e9ba8de.png 125w, /logo192.fcefa596.png 192w, /logo202.2c3e1556.png 202w, /logo250.183255bf.png 250w, /logo303.a4175e14.png 303w, /logo375.173d0d81.png 375w, /logo384.a2fdfbae.png 384w, /logo576.afeb0268.png 576w" sizes="(min-width: 1440px) 192px, (min-width: 768px) 125px, 101px" src="/logo192.fcefa596.png" alt="Логотип сайту">
+        </div>
+      </a>
+
+      <button type="button" class="button-menu button-menu--desk js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="32" height="32" aria-label="Перемикач мобільного меню">
+          <use class="button-menu__burger-icon" href="/icons.adfc4680.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <button class="button-menu button-menu--mobile js-close-menu button-hidden">
+        <svg class="phone-icon" width="24" height="24" aria-label="Перемикач мобільного меню">
+          <use class="button-menu__icon-close" href="/icons.adfc4680.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <div class="menu">
+        <ul class="header__menu">
+          <li class="menu__item">
+            <a href="/index.html" class="menu__link">Головна</a>
+          </li>
+          <li class="menu__item menu__item--services">
+            <a href="/3d-modeling.html" class="menu__link menu__link--services">Послуги</a>
+
+            <ul class="menu__submenu submenu">
+              <li class="submenu__item">
+                <a href="/3d-modeling.html" class="submenu__link">3D Моделювання</a>
+              </li>
+              <li class="submenu__item">
+                <a href="/3d-scanning.html" class="submenu__link">3D Сканування</a>
+              </li>
+              <li class="submenu__item">
+                <a href="/3d-printing.html" class="submenu__link">3D Друк</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="/take-order.html" class="menu__link">Замовити</a>
+          </li>
+          <li class="menu__item">
+            <a href="/contacts.html" class="menu__link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__buttons">
+      <button type="button" class="button-phone-menu js-open-phone-menu" aria-expanded="false" aria-controls="phone-menu">
+        <svg width="24" height="24" aria-label="Перемикач меню телефонних номерів">
+          <use class="phone-menu__icon" href="/icons.adfc4680.svg#icon-phone-button"></use>
+        </svg>
+      </button>
+
+      <div class="phone-menu phone-menu-container js-phone-menu-container" id="phone-menu">
+        <div class="phone-menu__triangle">
+          <div class="phone-menu__mobile">
+            <ul class="phone-menu__nav">
+              <li class="phone-menu__item">
+                <a href="tel:+380936432288" class="phone-menu__link">+38 093 643 22 88</a>
+              </li>
+              <li class="phone-menu__item">
+                <a href="tel:+380503454423" class="phone-menu__link">+38 050 345 44 23</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="language-container">
+        <button type="button" class="lang-menu__btn js-open-lang-menu" aria-expanded="false" aria-controls="lang-menu">
+          ENG
+        </button>
+        <div class="lang-menu lang-menu-container js-lang-menu-container" id="lang-menu">
+          <div class="lang-menu__mobile">
+            <ul class="lang-menu__nav">
+              <li class="lang-menu__item">
+                <a href="/index.html" class="lang-menu__link">UKR</a>
+              </li>
+              <li class="lang-menu__item">
+                <a href="/index.html" class="lang-menu__link">POL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-nav">
+        <ul class="phone-nav__list">
+          <li class="phone-nav__item">
+            <a href="tel:+380936432288" class="phone-nav__link">
+              <svg width="14px" height="14px" class="phone-nav__icon">
+                <use href="/icons.adfc4680.svg#icon-call"></use>
+              </svg>
+              +38 093 643 22 88</a>
+          </li>
+          <li class="phone-nav__item">
+            <a href="tel:+380503454423" class="phone-nav__link">
+              <svg width="14px" height="14px" class="phone-nav__icon">
+                <use href="/icons.adfc4680.svg#icon-call"></use>
+              </svg>
+              +38 050 345 44 23</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="decor1"></div>
+    <div class="decor2"></div>
+    <div class="decor3"></div>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-menu">
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="/index.html" class="mobile-menu__link mobile-menu__link--current">ГОЛОВНА</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/3d-modeling.html" class="mobile-menu__link">ПОСЛУГИ</a>
+          <ul class="mobile-menu__submenu mobile-submenu">
+            <li class="mobile-submenu__item">
+              <a href="/3d-modeling.html" class="mobile-submenu__link">3D Моделювання</a>
+            </li>
+            <li class="mobile-submenu__item">
+              <a href="/3d-scanning.html" class="mobile-submenu__link">3D Сканування</a>
+            </li>
+            <li class="mobile-submenu__item">
+              <a href="/3d-printing.html" class="mobile-submenu__link">3D Друк</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/take-order.html" class="mobile-menu__link">ЗАМОВИТИ</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/contacts.html" class="mobile-menu__link">КОНТАКТИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+
+<script defer="" src="/contacts.707f265c.js"></script>
+<script defer="" src="/contacts.5672726b.js"></script>
+<script defer="" src="/contacts.835c3cca.js"></script>
+
+    <main>
+      <section class="order-hero">
+  <div class="container order-container">
+    <h1 class="order-hero__main-title">зробити замовлення</h1>
+
+    <div class="order-hero__content">
+      <picture class="main-pic">
+        <source srcset="/main1x.fce9d98a.jpg  1x, /main@2x.e08cb18a.jpg 2x" media="(min-width: 1440px)">
+        <source srcset="/main-tablet-1x.dd072fcb.jpg 1x, /main-tablet@2x.fab8cd15.jpg 2x" media="(min-width: 768px)">
+        <source srcset="/main-mob-1x.643944e7.jpg 1x, /main-mob@2x.f73fb049.jpg 2x" media="(max-width: 767px)">
+        <img src="/main1x.fce9d98a.jpg" alt="main-photo">
+      </picture>
+
+      <div class="order-description">
+        <p class="order-description__text">
+          На цій сторінці ви можете зробити замовлення заповнивши форму і ми
+          зв'яжемося з вами.
+        </p>
+
+        <p class="order-description__text">
+          Наші фахівці допоможуть підібрати оптимальні для вас параметри і
+          дадуть відповідь на всі ваші запитання.
+        </p>
+
+        <ul class="order-gallery">
+          <li class="box gallery-pic1"></li>
+          <li class="box gallery-pic2"></li>
+          <li class="box gallery-pic3"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rect12 z-index"></div>
+    <div class="rect58 z-index"></div>
+  </div>
+</section>
+
+      <section class="order">
+  <div class="container order--container">
+    <div class="order-frame">
+      <h2 class="order-frame__title title">Звʼяжіться з нами</h2>
+      <form class="form" autocomplete="off">
+        <div class="order-form__field field--input">
+          <input type="text" class="order-form__input input--form" name="client-name" id="client-name" placeholder=" ">
+          <label for="client-name" class="order-form__label label--input">Імʼя
+          </label>
+        </div>
+        <div class="order-form__field field--input">
+          <input type="email" class="order-form__input input--form" name="client-mail" id="client-mail" placeholder=" ">
+          <label for="client-mail" class="order-form__label label--input">Email
+          </label>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">
+              Види пластика
+            </button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Види пластика</li>
+              <li class="dropdown__list-item" data-value="1">Перший вид</li>
+              <li class="dropdown__list-item" data-value="2">Другий вид</li>
+              <li class="dropdown__list-item" data-value="3">Третій вид</li>
+            </ul>
+            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+          </div>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">Якість друку</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Якість друку</li>
+              <li class="dropdown__list-item" data-value="1">300 мікрон</li>
+              <li class="dropdown__list-item" data-value="2">200 мікрон</li>
+              <li class="dropdown__list-item" data-value="3">100 мікрон</li>
+            </ul>
+            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+          </div>
+        </div>
+        <div class="order-form__field field--select">
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">Колір</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="0">Колір</li>
+              <li class="dropdown__list-item" data-value="1">Чорний колір</li>
+              <li class="dropdown__list-item" data-value="2">Сірий колір</li>
+              <li class="dropdown__list-item" data-value="3">Білий колір</li>
+            </ul>
+            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+          </div>
+        </div>
+        <div class="order-form__field--textarea">
+          <label for="client-text" class="order-form__label label--order-form">Повідомлення</label>
+          <textarea class="order-form__text" name="client-text" id="client-text" placeholder="Залишіть своє повідомлення"></textarea>
+          <input class="attach-file hidden" name="attachment" type="file" id="upload-file" multiple="">
+          <label for="upload-file" class="attach-label">
+            <svg class="textarea-icon">
+              <use href="/icons.adfc4680.svg#icon-paper-clip"></use>
+            </svg>
+          </label>
+        </div>
+        <p class="textarea-notice">
+          *Прикріпіть зображення/ креслення/STL/Obj/CAD-модель
+        </p>
+        <button type="submit" class="btn order-form__btn">Відправити</button>
+      </form>
+      <!--  -->
+      <div class="rectangle46"></div>
+      <div class="rectangle60"></div>
+      <div class="rectangle68"></div>
+      <div class="rectangle63"></div>
+      <div class="rectangle65"></div>
+      <div class="rectangle19"></div>
+    </div>
+    <div class="contacts-frame">
+      <ul class="take-order-contacts__list">
+        <li class="take-order-contacts__item">
+          <h2 class="contacts__title">ТЕЛЕФОНИ</h2>
+          <a href="tel:+380957384551" class="contacts__link">+38 (095) -73-84-551</a>
+          <a href="tel:+380980025235" class="contacts__link">+38 (098) -00-25-235</a>
+        </li>
+        <li class="take-order-contacts__item">
+          <h2 class="contacts__title">Email</h2>
+          <a href="mailto:3dfreedom.info@gmail.com" class="contacts__link">3dfreedom.info@gmail.com</a>
+        </li>
+        <li class="take-order-contacts__item">
+          <h2 class="contacts__title">РОБОЧИЙ ЧАС</h2>
+          <p class="contacts__text">
+            <span>Пн-пт:</span>
+            з 8:00 до 19:00
+          </p>
+          <p class="contacts__text">
+            <span>Сб, Нд:</span>
+            з 10:00 до 17:00
+          </p>
+        </li>
+      </ul>
+      <div class="contacts__mosaics">
+        <img srcset="/mosaics1-1x.6cd5fcec.jpeg 1x, /mosaics1-2x.c112580f.jpeg 2x" src="/mosaics1-1x.6cd5fcec.jpeg" alt="Частина мозаїки" class="contacts__photo one" width="138">
+        <img srcset="/mosaics2-1x.e79c6094.jpeg 1x, /mosaics2-2x.954b3400.jpeg 2x" src="/mosaics2-1x.e79c6094.jpeg" alt="Частина мозаїки" class="contacts__photo two" width="138">
+        <img srcset="/mosaics3-1x.b3d41b61.jpeg 1x, /mosaics3-2x.be0e4e48.jpeg 2x" src="/mosaics3-1x.b3d41b61.jpeg" alt="Частина мозаїки" class="contacts__photo three" width="138">
+        <img srcset="/mosaics4-1x.fba96495.jpeg 1x, /mosaics4-2x.f76a7c56.jpeg 2x" src="/mosaics4-1x.fba96495.jpeg" alt="Частина мозаїки" class="contacts__photo four" width="138">
+        <img srcset="/mosaics5-1x.8a945285.jpeg 1x, /mosaics5-2x.4f4aed57.jpeg 2x" src="/mosaics5-1x.8a945285.jpeg" alt="Частина мозаїки" class="contacts__photo five" width="138">
+        <img srcset="/mosaics6-1x.2cdb0190.jpeg 1x, /mosaics6-2x.77eb378f.jpeg 2x" src="/mosaics6-1x.2cdb0190.jpeg" alt="Частина мозаїки" class="contacts__photo six" width="138">
+      </div>
+      <!--  -->
+      <div class="rectangle67 z-index"></div>
+      <div class="rectangle69 z-index"></div>
+    </div>
+  </div>
+</section>
+
+<script defer="" src="/take-order.075d816a.js"></script>
+
+      <!-- Contacts-take-order-page__contacts-->
+<!-- <section class="contacts">
+  <div class="container">  
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <h2 class="contacts__title">ТЕЛЕФОНИ</h2>
+        <a href="tel:+380957384551" class="contacts__link"
+          >+38 (095) -73-84-551</a
+        >
+        <a href="tel:+380980025235" class="contacts__link"
+          >+38 (098) -00-25-235</a
+        >
+      </li>
+      <li class="contacts__item">
+        <h2 class="contacts__title">Email</h2>
+        <a href="mailto:3dfreedom.info@gmail.com" class="contacts__link"
+          >3dfreedom.info@gmail.com</a
+        >
+      </li>
+      <li class="contacts__item">
+        <h2 class="contacts__title">РОБОЧИЙ ЧАС</h2>
+        <p class="contacts__text">
+          <span>Пн-пт:</span>
+          з 8:00 до 19:00
+        </p>
+        <p class="contacts__text">
+          <span>Сб, Нд:</span>
+          з 10:00 до 17:00
+        </p>
+      </li>
+    </ul>
+    <div class="contacts__mosaics">
+        <img
+          srcset="
+            ./images/take-order-page/mosaics1-1x.jpg 1x,
+            ./images/take-order-page/mosaics1-2x.jpg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo one"
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics2-1x.jpg 1x,
+            ./images/take-order-page/mosaics2-2x.jpg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo two"
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics3-1x.jpg 1x,
+            ./images/take-order-page/mosaics3-2x.jpg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo three"
+          
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics4-1x.jpg 1x,
+            ./images/take-order-page/mosaics4-2x.jpg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo four"
+          
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics5-1x.jpg 1x,
+            ./images/take-order-page/mosaics5-2x.jpg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo five"
+          
+          width="138.42"
+        />
+        <img
+          srcset="
+            ./images/take-order-page/mosaics6-1x.jpg 1x,
+            ./images/take-order-page/mosaics6-2x.jpg 2x
+          "
+          alt="Частина мозаїки"
+          class="contacts__photo six"
+          
+          width="138.42"
+        />
+    </div>  
+</section> -->
+
+    </main>
+    <footer class="footer">
+  <div class="footer-conteiner container">
+    <div class="footer-logo__wrap">
+      <a href="/index.html" class="footer-logo link"><picture class="footer-logo_img">
+          <source srcset="/logo192.fcefa596.png 1x, /logo384.a2fdfbae.png 2x" media="(min-width: 1440px)">
+          <img src="/logo192.fcefa596.png" alt="logo" width="192" height="48">
+        </picture>
+      </a>
+    </div>
+    <div class="footer-navigation__container">
+      <div class="footer-navigation__wrap">
+        <nav class="footer__navigation">
+          <ul class="footer__link list">
+            <li class="footer__item">
+              <a href="/index.html" class="site-nav site-nav-link link current-axent-color">Головна</a>
+            </li>
+            <li class="footer__item">
+              <a href="/3d-modeling.html" class="site-nav site-nav-link link">3D Моделювання</a>
+            </li>
+            <li class="footer__item">
+              <a href="/3d-scanning.html" class="site-nav site-nav-link link">3D Сканування</a>
+            </li>
+            <li class="footer__item">
+              <a href="/3d-printing.html" class="site-nav site-nav-link link">3D Друк</a>
+            </li>
+            <li class="footer__item">
+              <a href="/take-order.html" class="site-nav site-nav-link link">Замовити</a>
+            </li>
+            <li class="footer__item">
+              <a href="/contacts.html" class="site-nav site-nav-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-cont">
+          <p class="footer-hed hidden"></p>
+          <ul class="footer-soc list">
+            <li class="footer-soc__item">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener nofollow" class="footer-soc-link link">Instagram</a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener nofollow" class="footer-soc-link link">YouTube</a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nofollow" class="footer-soc-link link">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <address class="footer__address">
+        <ul class="address-list-footer list">
+          <li class="address-footer link">
+            <p class="address-link__adres">Email</p>
+            <a href="mailto:3dfreedom.info@gmail.com" class="address-link__footer link">3dfreedom.info@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="address-footer__tel link">
+          <li class="address-footer link">
+            <p class="address-link__adres">Телефони</p>
+            <a href="tel:+38(093)6432288" class="address-link__footer address-link__tel link">+38 (093) 643 22 88</a>
+          </li>
+          <li class="address-footer link">
+            <a href="+38(050)3454423" class="address-link__footer link">+38 (050) 345 44 23</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
