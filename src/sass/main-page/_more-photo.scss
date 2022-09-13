@@ -377,3 +377,12 @@ img {
   padding-right: 20px;
 }
 */
+
+// slick-slider
+
+.slick-container {
+  @media screen and (min-width: 1440px) {
+    padding-right: 267px;
+    padding-left: 267px;
+  }
+}
