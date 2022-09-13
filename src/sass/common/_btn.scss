@@ -11,21 +11,21 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #487996;
-  
+  display: inline-block;
+  text-align: center;
 
-  &:hover, &:focus  {
-    
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     box-shadow: -20px -20px 30px #ffffff, 20px 20px 30px rgba(72, 121, 150, 0.1),
-    10px 10px 15px rgba(72, 121, 150, 0.25), -10px -10px 15px #ffffff;
-
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      10px 10px 15px rgba(72, 121, 150, 0.25), -10px -10px 15px #ffffff;
   }
 
   &:active {
-    background-color: #f3f3fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #ddd4d4;
   }
-
 
   @media screen and (max-width: 767px) {
     width: 100%;
