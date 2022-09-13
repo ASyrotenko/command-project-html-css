@@ -113,6 +113,8 @@
       top: -43px;
       left: 30px;
     }
+
+ 
   }
   &--b {
     top: -32.5;
@@ -130,6 +132,16 @@
       top: -48px;
       left: 174px;
     }
+
+    @media screen and (min-width:1440px) {
+      background-image: url(../images/main-page/hero/1x/plants-desk.jpg);
+      @include bcg-img(center, no-repeat, cover);
+  
+      @include retina {
+        background-image: url(../images/main-page/hero/2x/plants-desk2x.jpg);
+      }
+     }  
+
   }
   &--c {
     top: 44px;
@@ -187,6 +199,17 @@
       top: 512px;
       left: 30px;
     }
+ @media screen and (min-width:1440px) {
+      background-image: url(../images/main-page/hero/1x/scanning-desk.jpg);
+      @include bcg-img(center, no-repeat, cover);
+         
+      @include retina {
+        background-image: url(../images/main-page/hero/2x/scanning-desk2x.jpg);
+      }
+     } 
+
+
+
   }
   &--g {
     top: -26px;
@@ -213,6 +236,18 @@
       top: -43px;
       right: 32px;
     }
+    @media screen and (min-width:1440px){
+
+      background-image: url(../images/main-page/hero/1x/print-desk.jpg);
+    @include bcg-img(center, no-repeat, cover);
+
+      @include retina {
+      background-image: url(../images/main-page/hero/2x/print-desk2x.jpg);
+    }
+    }
+
+
+
   }
   &--i {
     top: 49px;
@@ -261,6 +296,17 @@
       top: 390px;
       right: 32px;
     }
+
+    @media screen and (min-width:1440px) {
+
+      background-image: url(../images/main-page/hero/1x/mushroom-desk.jpg);
+      @include bcg-img(center, no-repeat, cover);
+  
+      @include retina {
+        background-image: url(../images/main-page/hero/2x/mushroom-desk2x.jpg);
+      }
+    }
+
   }
   &--m {
     top: 266px;
