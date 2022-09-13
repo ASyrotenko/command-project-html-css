@@ -178,19 +178,19 @@
       }
     }
   }
-  &--e {
-    top: 33px;
-    right: 32px;
-    border-radius: 35px 0 0 0;
-    @media screen and(max-width:767px) {
-      display: none;
-    }
-    @media screen and(min-width:1440px) {
-      width: 144px;
-      height: 124px;
-      top: 0;
-      transform: translateY(-100%);
-      border-radius: 0 0 0 72px;
-    }
-  }
+  // &--e {
+  //   top: 33px;
+  //   right: 32px;
+  //   border-radius: 35px 0 0 0;
+  //   @media screen and(max-width:767px) {
+  //     display: none;
+  //   }
+  //   @media screen and(min-width:1440px) {
+  //     width: 144px;
+  //     height: 124px;
+  //     top: 0;
+  //     transform: translateY(-100%);
+  //     border-radius: 0 0 0 72px;
+  //   }
+  // }
 }
