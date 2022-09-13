@@ -381,8 +381,42 @@ img {
 // slick-slider
 
 .slick-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media screen and (min-width: 1440px) {
     padding-right: 267px;
     padding-left: 267px;
   }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  // padding: 93px 15px;
+  overflow-y: scroll;
+
+  visibility: visible;
+  opacity: 1;
+  transition: all 500ms linear;
+  background-color: #2b2b2bcc;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+body.slick-open {
+  overflow: hidden;
+}
+
+.slick-container__close-btn {
+  display: none;
 }
