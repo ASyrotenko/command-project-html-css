@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelector("[data-slick-open]"),closeModalBtn:document.querySelector("[data-slick-close]"),modal:document.querySelector("[data-slick]")};function o(){document.body.classList.toggle("slick-open"),e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.1869cd49.js.map
