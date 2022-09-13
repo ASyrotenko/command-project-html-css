@@ -187,8 +187,8 @@
 }
 
 .textarea-icon {
-  width: 25px;
-  height: 25px;
+  width: 21px;
+  height: 20px;
   cursor: pointer;
 }
 
@@ -300,6 +300,7 @@
     overflow: hidden;
   }
   @media screen and (min-width: 1440px) {
+    display: flex;
     padding-left: 149px;
     display: flex;
     gap: 149px;
@@ -378,8 +379,6 @@
     height: 74.08px;
     right: -130px;
     top: 100px;
-    // left: 664.59px;
-    // top: 465.65px;
     background: $bg-white-color;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 25px 0px;
@@ -435,8 +434,11 @@
 }
 
 // contacts side
-
-.contacts__list {
+.contacts-frame {
+  display: flex;
+  flex-direction: column;
+}
+.take-order-contacts__list {
   @media screen and (max-width: 1439px) {
   }
   @media screen and (min-width: 768px) {
@@ -450,7 +452,7 @@
   }
 }
 
-.contacts__item:not(:last-child) {
+.take-order-contacts__item:not(:last-child) {
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -460,13 +462,13 @@
   }
 }
 
-.contacts__item:first-child {
+.take-order-contacts__item:first-child {
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-right: 28px;
   }
 }
 
-.contacts__item:last-child {
+.take-order-contacts__item:last-child {
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-left: auto;
   }
@@ -528,6 +530,7 @@
 .contacts__mosaics {
   display: none;
   @media screen and (min-width: 1440px) {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -539,40 +542,45 @@
 
 .contacts__photo {
   display: block;
-  position: relative;
+  position: absolute;
   height: 138.42px;
   box-shadow: 20px 20px 80px 0px rgb(0 0 0 / 25%);
 }
 
 .one {
   border-top-right-radius: 72px;
-  right: 23px;
+  left: 5px;
+  top: 0;
 }
 
 .two {
   border-bottom-left-radius: 72px;
-  right: 11px;
+  right: 145px;
   top: 10px;
 }
 
 .three {
   border-top-left-radius: 69.2px;
   border-bottom-right-radius: 69.2px;
+  top: 0;
+  right: 0;
 }
 
 .four {
   border-top-right-radius: 72px;
   border-bottom-left-radius: 72px;
-  right: 21px;
+  bottom: 5px;
+  left: 5px;
 }
 
 .five {
   border-radius: 72px;
-  right: 17px;
-  top: 7px;
+  right: 150px;
+  bottom: 0;
 }
 
 .six {
   border-bottom-right-radius: 72px;
-  right: 11px;
+  right: 7px;
+  bottom: 9px;
 }
