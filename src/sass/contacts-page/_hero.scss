@@ -46,16 +46,14 @@
   }
 }
 
-.contacts-hero__video {
-  text-align: center;
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .contacts-hero__wrapper {
     margin-bottom: 16px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .contacts-hero__video {
+  .contacts-hero__wrapper {
     margin-left: 134px;
   }
 }
@@ -102,26 +100,6 @@
   }
 }
 
-iframe {
-  border-radius: 15px;
-  width: 270px;
-  height: 171px;
-}
-
-@media screen and (min-width: 768px) {
-  iframe {
-    width: 336px;
-    height: 261px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  iframe {
-    width: 555px;
-    height: 315px;
-  }
-}
-
 .figure1 {
   position: absolute;
   z-index: -2;
@@ -165,4 +143,93 @@ iframe {
     border-radius: 0px 0px 0px 72px;
     top: -38px;
   }
+}
+
+.player {
+  margin: auto;
+  position: relative;
+  width: 280px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .player {
+    width: 336px;
+    height: 261px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .player {
+    width: 555px;
+    height: 315px;
+  }
+}
+
+.controls {
+  width: 280px;
+  position: absolute;
+  background-image: url(../images/contact-page-hero/image-contact-mob.jpg);
+  background-size: cover;
+
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .controls {
+    background-image: url(../images/contact-page-hero/image-contact-tab.jpg);
+    width: 336px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .controls {
+    background-image: url(../images/contact-page-hero/image-contact-des.jpg);
+    width: 555px;
+  }
+}
+.video {
+  width: 280px;
+  height: 167px;
+  border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .video {
+    width: 336px;
+    height: 261px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .video {
+    width: 555px;
+    height: 315px;
+  }
+}
+
+.controls__play {
+  position: absolute;
+  top: 56px;
+  left: 104px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .controls__play {
+    top: 92px;
+    left: 137px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .controls__play {
+    top: 122px;
+    left: 250px;
+  }
+}
+.play__btn {
+  width: 63px;
+  height: 63px;
 }
