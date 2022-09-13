@@ -10,16 +10,10 @@
 .create__container {
   position: relative;
   z-index: 2;
-  overflow: hidden;
-  margin-bottom: 40px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-  }
+  overflow-x: clip;
+
   @media screen and (min-width: 1440px) {
     padding-right: 31px;
-    margin-bottom: 80px;
-    overflow: unset;
-    overflow-x: clip;
   }
 }
 
