@@ -9,8 +9,10 @@
 
 .scan__container {
   position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
+
+  @media screen and (max-width: 560px) {
+    overflow: hidden;
+  }
 }
 
 .scan__title {
