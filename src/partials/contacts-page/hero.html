@@ -2,13 +2,23 @@
   <div class="container contacts-hero__container">
     <h2 class="contacts-hero__header">контакти</h2>
     <div class="contacts-hero__tumb">
-      <div class="contacts-hero__video">
-        <iframe
-          src="https://www.youtube.com/embed/pNYRR3ZfoHA"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="contacts-hero__wrapper">
+        <div class="player">
+          <video
+            src="./video/contact-page-video.mp4"
+            class="video"
+            controls
+          ></video>
+          <div class="controls">
+            <div class="controls__play">
+              <img
+                class="play__btn"
+                src="./images/contact-page-hero/play-button-mob.svg"
+                alt="play"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="contacts-hero__text">
         <p class="contacts-hero__par">
@@ -26,4 +36,26 @@
     <div class="figure1 z-index"></div>
     <div class="figure2 z-index"></div>
   </div>
+
+  <script>
+    const video = document.querySelector('.video'),
+      playBtn = document.querySelector('.controls__play'),
+      playBtnImg = document.querySelector('.play__btn');
+
+    //play
+
+    function toggleVideoStatus() {
+      if (video.paused) {
+        video.play();
+        playBtnImg;
+      } else {
+        video.pause();
+      }
+    }
+    playBtn.addEventListener('click', toggleVideoStatus);
+
+    document.querySelector('.controls').onclick = function () {
+      this.style.display = 'none';
+    };
+  </script>
 </section>
