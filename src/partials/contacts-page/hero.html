@@ -2,13 +2,29 @@
   <div class="container contacts-hero__container">
     <h2 class="contacts-hero__header">контакти</h2>
     <div class="contacts-hero__tumb">
-      <div class="contacts-hero__video">
-        <iframe
+      <div class="contacts-hero__wrapper">
+        <!-- <iframe
           src="https://www.youtube.com/embed/pNYRR3ZfoHA"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
+        ></iframe> -->
+
+        <div class="player">
+          <video src="./video/video-test.mp4" class="video" controls></video>
+          <div class="controls">
+            <div class="controls__play">
+              <img
+                class="play__btn"
+                src="./images/play-button.svg"
+                alt="play"
+              />
+            </div>
+            <div class="controls__stop">
+              <img class="stop__btn" src="./images/icon-send.png" />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="contacts-hero__text">
         <p class="contacts-hero__par">
