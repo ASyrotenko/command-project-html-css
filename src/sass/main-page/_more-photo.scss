@@ -385,9 +385,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 236px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 554px;
+  }
   @media screen and (min-width: 1440px) {
-    padding-right: 267px;
-    padding-left: 267px;
+    max-width: 906px;
   }
 }
 
@@ -419,4 +423,9 @@ body.slick-open {
 
 .slick-container__close-btn {
   display: none;
+}
+
+.slick__close-btn {
+  width: 100%;
+  height: 100%;
 }
