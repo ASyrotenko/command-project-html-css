@@ -24,7 +24,7 @@
     @media screen and(min-width:768px) {
       display: flex;
       flex-wrap: wrap;
-      column-gap: 32px;
+      gap: 40px 32px;
       @media screen and(max-width:1440px) {
         gap: 32px;
       }
@@ -36,11 +36,7 @@
         margin-bottom: 24px;
       }
     }
-    &:nth-child(-n + 2) {
-      @media screen and(min-width:1440px) {
-        margin-bottom: 40px;
-      }
-    }
+
     @media screen and(max-width:767px) {
       max-width: 440px;
     }
