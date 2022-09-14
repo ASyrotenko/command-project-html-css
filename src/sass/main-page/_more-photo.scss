@@ -15,7 +15,7 @@
   @media screen and (min-width: 767px) and (max-width: 803px) {
     overflow: hidden;
   }
-/*
+  /*
   @media screen and (max-width: 509px) {
     overflow: hidden;
   }
@@ -71,13 +71,11 @@
 .masonry--h {
   flex-direction: row;
   flex-wrap: wrap;
-  
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     display: block;
   }
-  
 }
 
 .masonry-brick {
@@ -100,15 +98,14 @@
   }
 }
 
-
-.pictures-hover{
+.pictures-hover {
   cursor: pointer;
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pictures-hover:hover{
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.06),
-  2px 8px 12px rgba(0, 0, 0, 0.16);
+.pictures-hover:hover {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.644), 0px 8px 8px rgba(0, 0, 0, 0.849),
+    2px 8px 12px rgba(0, 0, 0, 0.16);
 }
 
 .masonry-img {
@@ -371,11 +368,10 @@ img {
   padding-left: 0;
   padding-right: 0;
 
-  
   @media screen and (min-width: 480px) {
     max-width: 440px;
   }
-  
+
   @media screen and (min-width: 768px) {
     max-width: 554px;
   }
@@ -425,7 +421,6 @@ body.slick-open {
   @media screen and (min-width: 480px) {
     right: -70px;
   }
-
 
   @media screen and (min-width: 768px) {
     right: -70px;
