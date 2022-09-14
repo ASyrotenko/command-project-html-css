@@ -441,9 +441,21 @@ body.slick-open {
   }
 }
 
-
+/*
 .carousel-item:nth-child(n + 4) {
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+
+.display-none {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.active:nth-child(n + 4) {
+   @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+*/
