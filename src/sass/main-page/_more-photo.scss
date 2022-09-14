@@ -15,9 +15,11 @@
   @media screen and (min-width: 767px) and (max-width: 803px) {
     overflow: hidden;
   }
+/*
   @media screen and (max-width: 509px) {
     overflow: hidden;
   }
+*/
 }
 .morephoto-title {
   max-width: 1140px;
@@ -69,11 +71,13 @@
 .masonry--h {
   flex-direction: row;
   flex-wrap: wrap;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     display: block;
   }
+  
 }
 
 .masonry-brick {
@@ -335,7 +339,7 @@ img {
   @media screen and (min-width: 768px) and (max-width: 1440px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     bottom: -57px;
   }
 }
@@ -344,41 +348,8 @@ img {
   width: 45px;
   height: 45px;
 }
-/*
-.modal{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-.modal .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(43, 43, 43, 0.8);
-  backdrop-filter: blur(4px);
-  z-index: 0;
-}
-
-.modal-window {
-  position: relative;
-  z-index: 1;
-}
-
-.modal-img {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-*/
-
-// slick-slider
+/*Slick-slider*/
 
 .slick-container {
   position: absolute;
@@ -389,6 +360,11 @@ img {
   padding-left: 0;
   padding-right: 0;
 
+  
+  @media screen and (min-width: 480px) {
+    max-width: 440px;
+  }
+  
   @media screen and (min-width: 768px) {
     max-width: 554px;
   }
@@ -435,6 +411,11 @@ body.slick-open {
 .carousel-control-next {
   right: -35px;
 
+  @media screen and (min-width: 480px) {
+    right: -70px;
+  }
+
+
   @media screen and (min-width: 768px) {
     right: -70px;
   }
@@ -447,11 +428,22 @@ body.slick-open {
 .carousel-control-prev {
   left: -35px;
 
+  @media screen and (min-width: 480px) {
+    left: -70px;
+  }
+
   @media screen and (min-width: 768px) {
     left: -70px;
   }
 
   @media screen and (min-width: 1440px) {
     left: -110px;
+  }
+}
+
+
+.carousel-item:nth-child(n + 4) {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
