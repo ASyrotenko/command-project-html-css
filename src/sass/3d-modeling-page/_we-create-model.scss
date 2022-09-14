@@ -30,14 +30,14 @@
   @media screen and (min-width: 768px) {
     font-size: 24px;
     margin-bottom: 24px;
-    max-width: 100%;
-    width: 435px;
+
+    max-width: 435px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 36px;
     margin-bottom: 40px;
     padding-left: 117px;
-    width: 842px;
+    max-width: 842px;
   }
 }
 
@@ -116,12 +116,17 @@
 
 .create__btn-wrap {
   text-align: center;
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 80px;
+  }
 }
 
 .create__btn {
-  margin-top: 40px;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
-    margin-top: 80px;
   }
 }
