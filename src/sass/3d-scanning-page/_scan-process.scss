@@ -11,7 +11,7 @@
   position: relative;
 
   @media screen and (max-width: 560px) {
-    overflow: hidden;
+    overflow-x: clip;
   }
 }
 
