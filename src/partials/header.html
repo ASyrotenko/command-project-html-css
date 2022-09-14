@@ -53,34 +53,57 @@
       <div class="menu">
         <ul class="header__menu">
           <li class="menu__item">
-            <a href="./index.html" class="menu__link">Головна</a>
+            <a href="./index.html" class="menu__link lang" key="main"
+              >Головна</a
+            >
           </li>
           <li class="menu__item menu__item--services">
-            <a href="./3d-modeling.html" class="menu__link menu__link--services"
+            <a
+              href="./3d-modeling.html"
+              class="menu__link menu__link--services lang"
+              key="product"
               >Послуги</a
             >
 
             <ul class="menu__submenu submenu">
               <li class="submenu__item">
-                <a href="./3d-modeling.html" class="submenu__link"
+                <a
+                  href="./3d-modeling.html"
+                  class="submenu__link lang"
+                  key="modeling"
                   >3D Моделювання</a
                 >
               </li>
               <li class="submenu__item">
-                <a href="./3d-scanning.html" class="submenu__link"
+                <a
+                  href="./3d-scanning.html"
+                  class="submenu__link lang"
+                  key="scan"
                   >3D Сканування</a
                 >
               </li>
               <li class="submenu__item">
-                <a href="./3d-printing.html" class="submenu__link">3D Друк</a>
+                <a
+                  href="./3d-printing.html"
+                  class="submenu__link lang"
+                  key="print"
+                  >3D Друк</a
+                >
               </li>
             </ul>
           </li>
           <li class="menu__item">
-            <a href="./take-order.html" class="menu__link">Замовити</a>
+            <a href="./take-order.html" class="menu__link lang" key="order"
+              >Замовити</a
+            >
           </li>
           <li class="menu__item">
-            <a href="./contacts.html" class="menu__link">Контакти</a>
+            <a
+              href="./contacts.html"
+              class="menu__link lang lang"
+              key="contacts"
+              >Контакти</a
+            >
           </li>
         </ul>
       </div>
@@ -128,11 +151,12 @@
       <div class="language-container">
         <button
           type="button"
-          class="lang-menu__btn js-open-lang-menu"
+          class="lang-menu__btn js-open-lang-menu lang"
           aria-expanded="false"
           aria-controls="lang-menu"
+          key="lang"
         >
-          ENG
+          Мова
         </button>
         <div
           class="lang-menu lang-menu-container js-lang-menu-container"
@@ -141,7 +165,12 @@
           <div class="lang-menu__mobile">
             <ul class="lang-menu__nav">
               <li class="lang-menu__item">
-                <a href="./index.html" class="lang-menu__link">UKR</a>
+                <button id="ru" class="translate">
+                  <p class="lang-menu__link">UKR</p>
+                </button>
+                <button id="en" class="translate">
+                  <p class="lang-menu__link">ENG</p>
+                </button>
               </li>
               <li class="lang-menu__item">
                 <a href="./index.html" class="lang-menu__link">POL</a>
@@ -227,3 +256,4 @@
 <script defer src="./js/mobile-menu.js"></script>
 <script defer src="./js/tel-menu.js"></script>
 <script defer src="./js/language-menu.js"></script>
+<script defer src="./js/lang.js"></script>
