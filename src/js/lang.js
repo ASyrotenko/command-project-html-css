@@ -5791,14 +5791,14 @@ var arrLang = {
     phone: 'Phone',
     mainherotitle: 'Engineering, construction and design work',
     mainherotext: 'We turn ideas into reality',
-    maingallerytitle: 'Gallery',
+    maingallerytitle: 'GALLERY',
     maingallerytext1: 'Engineering methods of analysis and quality control',
     maingallerytext2: 'High-precision 3D scanning',
     maingallerytext3:
       'Creating an exact copy based on a reverse engineering scan',
     maingallerytext4:
       'All cycles of 3D design, creation of photorealistic digital models',
-    mainmorephototitle: 'More photo',
+    mainmorephototitle: 'MORE PHOTO',
   },
   ru: {
     lang: 'Мова',
