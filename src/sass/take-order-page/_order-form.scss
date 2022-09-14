@@ -53,14 +53,7 @@
 }
 
 .field--textarea {
-  // margin-bottom: 0;
-  // margin-bottom: 24px;
 }
-
-// .field--textarea-notice {
-//   margin-top: 4px;
-//   margin-bottom: 40px;
-// }
 
 .order-form__input,
 .order-form__text {
@@ -85,7 +78,7 @@
   position: relative;
 }
 
-.label--input {
+.label--order-form {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -105,8 +98,8 @@
   }
 }
 
-.input--form:focus + .label--input,
-.input--form:not(:placeholder-shown) + .label--input {
+.order-form__input:focus + .order-form__label,
+.order-form__input:not(:placeholder-shown) + .order-form__label {
   transform: translateY(-32px);
   font-size: 14px;
   line-height: 1.42;
@@ -140,14 +133,13 @@
   line-height: 1.25;
   text-transform: capitalize;
   color: $primary-text-color;
-  margin-bottom: 4px;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.11;
   }
 }
 
-.order-form__label.label--order-form {
+.label--textarea {
   display: block;
   margin-bottom: 4px;
 }
