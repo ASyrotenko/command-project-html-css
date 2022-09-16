@@ -10,12 +10,12 @@
             class="order-form__input"
             name="client-name"
             id="client-name"
-            placeholder=" "
+            required="required"
             required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
           />
-          <label for="client-name" class="order-form__label label--order-form"
-            >Імʼя
-          </label>
+          <span class="input-title">Імʼя </span>
         </div>
         <div class="order-form__field field--input">
           <input
@@ -23,12 +23,9 @@
             class="order-form__input"
             name="client-mail"
             id="client-mail"
-            placeholder=" "
-            required
+            required="required"
           />
-          <label for="client-mail" class="order-form__label label--order-form"
-            >Email
-          </label>
+          <span class="input-title">Email </span>
         </div>
         <div class="order-form__field field--select">
           <div class="dropdown">
