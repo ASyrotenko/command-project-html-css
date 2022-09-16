@@ -12,8 +12,7 @@
             id="client-name"
             required="required"
             required
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            title="Username must be two words separated by space."
+            autocomplete="name"
           />
           <span class="input-title">Імʼя </span>
         </div>
@@ -24,6 +23,7 @@
             name="client-mail"
             id="client-mail"
             required="required"
+            autocomplete="email"
           />
           <span class="input-title">Email </span>
         </div>
@@ -95,6 +95,7 @@
             name="attachment"
             type="file"
             id="upload-file"
+            accept="image/*, .STL, .Obj, .CAD"
             multiple
           />
           <label for="upload-file" class="attach-label">
