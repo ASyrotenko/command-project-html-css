@@ -61,7 +61,8 @@
   height: 100%;
   border: none;
   border-bottom: 1px solid $accent-color;
-  outline: none;
+  outline: transparent;
+  background-color: transparent;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -102,8 +103,9 @@
   }
 }
 
-.order-form__input:valid ~ .input-title,
-.order-form__input:focus ~ .input-title {
+.order-form__input:hover ~ .input-title,
+.order-form__input:focus ~ .input-title,
+.order-form__input:not(:placeholder-shown) ~ .input-title {
   transform: translateY(-32px);
   font-size: 14px;
   line-height: 1.42;
@@ -181,6 +183,7 @@
   position: absolute;
   right: 25px;
   bottom: 15px;
+  color: $secondary-text-color;
 }
 
 .textarea-icon {
@@ -188,11 +191,9 @@
   height: 20px;
   cursor: pointer;
   transition: transform 500ms;
-}
-
-.textarea-icon:hover {
-  transform: scale(1.8);
-  fill: $accent-color;
+  &:hover {
+    transform: scale(1.8);
+  }
 }
 
 .order-form__btn {
