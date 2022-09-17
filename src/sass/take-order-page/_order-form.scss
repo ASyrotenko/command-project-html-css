@@ -76,6 +76,8 @@
 
 .field--input {
   position: relative;
+  transition: transform 500ms;
+  transition: font-size 200ms;
 }
 
 .input-title {
@@ -92,12 +94,14 @@
   color: $primary-text-color;
   padding-bottom: 4px;
   transition: transform 500ms;
-  transition: font-size 200ms;
+  transition: font-size 500ms;
+  pointer-events: none;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.11;
   }
 }
+
 .order-form__input:valid ~ .input-title,
 .order-form__input:focus ~ .input-title {
   transform: translateY(-32px);
@@ -183,6 +187,12 @@
   width: 21px;
   height: 20px;
   cursor: pointer;
+  transition: transform 500ms;
+}
+
+.textarea-icon:hover {
+  transform: scale(1.8);
+  fill: $accent-color;
 }
 
 .order-form__btn {
